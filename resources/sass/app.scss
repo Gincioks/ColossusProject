@@ -1,0 +1,26 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+//Bootstrap
+@import "~bootstrap/scss/bootstrap";
+// Font-awesome
+@import 'font-awesome';
+
+// Variables
+@import 'variables';
+
+// Anime
+@import 'animate';
+
+@import 'style';
+
+// VenoBox
+@import 'venobox';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+
