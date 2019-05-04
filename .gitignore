@@ -1,4 +1,5 @@
 /public/hot
+/node_modules
 /.idea
 /public/storage
 /storage/*.key

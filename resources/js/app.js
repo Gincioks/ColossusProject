@@ -6,9 +6,8 @@
 
 require('./bootstrap');
 require('./easing');
-require('./jquery-3.4.0');
 require('./owl.carousel');
-require('./hoverIntent')
+require('./hoverIntent');
 require('./superfish');
 require('./venobox');
 require('./wow');
@@ -16,6 +15,7 @@ require('./main');
 
 
 window.Vue = require('vue');
+
 
 /**
  * The following block of code may be used to automatically register your

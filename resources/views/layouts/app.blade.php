@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -12,7 +12,6 @@
     <link href="{{asset("image/favicon.png")}}" rel="icon">
     <link href="{{asset("image/apple-touch-icon.png")}}"  rel="apple-touch-icon">
 
-
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
           rel="stylesheet">
@@ -20,22 +19,21 @@
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- Main Stylesheet File -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+
 </head>
 <body>
 @include('inc.navbar')
-@include('inc.intro')
+ @include('inc.intro')
 @include('inc.games')
 @include('inc.gallery')
 @include('inc.sponsor')
 @include('inc.duk')
 @include('inc.footer')
 
-
-
 @yield('content')
 <!-- Template Main Javascript File -->
-<script src="{{asset("js/app.js")}}"></script>
+<script src="{{asset("/js/app.js")}}"></script>
 
 </body>
 </html>
