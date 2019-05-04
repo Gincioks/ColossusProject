@@ -63,6 +63,50 @@
         ]
     },
     {
+        "name": "components/jquery",
+        "version": "3.3.1",
+        "version_normalized": "3.3.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/components/jquery.git",
+            "reference": "459648cda77875519c5da3ae1dd0ed5d170aa649"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/components/jquery/zipball/459648cda77875519c5da3ae1dd0ed5d170aa649",
+            "reference": "459648cda77875519c5da3ae1dd0ed5d170aa649",
+            "shasum": ""
+        },
+        "time": "2018-03-04T13:23:48+00:00",
+        "type": "component",
+        "extra": {
+            "component": {
+                "scripts": [
+                    "jquery.js"
+                ],
+                "files": [
+                    "jquery.min.js",
+                    "jquery.min.map",
+                    "jquery.slim.js",
+                    "jquery.slim.min.js",
+                    "jquery.slim.min.map"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "JS Foundation and other contributors"
+            }
+        ],
+        "description": "jQuery JavaScript Library",
+        "homepage": "http://jquery.com"
+    },
+    {
         "name": "dnoegel/php-xdg-base-dir",
         "version": "0.1",
         "version_normalized": "0.1.0.0",
@@ -1313,6 +1357,47 @@
             "date",
             "datetime",
             "time"
+        ]
+    },
+    {
+        "name": "nicolafranchini/venobox",
+        "version": "1.8.5",
+        "version_normalized": "1.8.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nicolafranchini/VenoBox.git",
+            "reference": "1e542ba979ca727dbd37eeaa79579e27a1a1e05d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/nicolafranchini/VenoBox/zipball/1e542ba979ca727dbd37eeaa79579e27a1a1e05d",
+            "reference": "1e542ba979ca727dbd37eeaa79579e27a1a1e05d",
+            "shasum": ""
+        },
+        "require": {
+            "components/jquery": ">=1.7.0"
+        },
+        "time": "2018-08-27T00:13:26+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicola Franchini",
+                "role": "Developer"
+            }
+        ],
+        "description": "Responsive jQuery modal window plugin",
+        "keywords": [
+            "jquery",
+            "jquery-plugin",
+            "lightbox",
+            "modal",
+            "popup",
+            "responsive"
         ]
     },
     {

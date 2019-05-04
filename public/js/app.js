@@ -6232,6 +6232,376 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/owl.carousel/dist/assets/owl.carousel.css":
+/*!************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/owl.carousel/dist/assets/owl.carousel.css ***!
+  \************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var escape = __webpack_require__(/*! ../../../css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
+exports = module.exports = __webpack_require__(/*! ../../../css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "/**\n * Owl Carousel v2.3.4\n * Copyright 2013-2018 David Deutsch\n * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE\n */\n/*\n *  Owl Carousel - Core\n */\n.owl-carousel {\n  display: none;\n  width: 100%;\n  -webkit-tap-highlight-color: transparent;\n  /* position relative and z-index fix webkit rendering fonts issue */\n  position: relative;\n  z-index: 1; }\n  .owl-carousel .owl-stage {\n    position: relative;\n    touch-action: manipulation;\n    -moz-backface-visibility: hidden;\n    /* fix firefox animation glitch */ }\n  .owl-carousel .owl-stage:after {\n    content: \".\";\n    display: block;\n    clear: both;\n    visibility: hidden;\n    line-height: 0;\n    height: 0; }\n  .owl-carousel .owl-stage-outer {\n    position: relative;\n    overflow: hidden;\n    /* fix for flashing background */\n    -webkit-transform: translate3d(0px, 0px, 0px); }\n  .owl-carousel .owl-wrapper,\n  .owl-carousel .owl-item {\n    -webkit-backface-visibility: hidden;\n    -moz-backface-visibility: hidden;\n    -ms-backface-visibility: hidden;\n    -webkit-transform: translate3d(0, 0, 0);\n    -moz-transform: translate3d(0, 0, 0);\n    -ms-transform: translate3d(0, 0, 0); }\n  .owl-carousel .owl-item {\n    position: relative;\n    min-height: 1px;\n    float: left;\n    -webkit-backface-visibility: hidden;\n    -webkit-tap-highlight-color: transparent;\n    -webkit-touch-callout: none; }\n  .owl-carousel .owl-item img {\n    display: block;\n    width: 100%; }\n  .owl-carousel .owl-nav.disabled,\n  .owl-carousel .owl-dots.disabled {\n    display: none; }\n  .owl-carousel .owl-nav .owl-prev,\n  .owl-carousel .owl-nav .owl-next,\n  .owl-carousel .owl-dot {\n    cursor: pointer;\n    -webkit-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none; }\n  .owl-carousel .owl-nav button.owl-prev,\n  .owl-carousel .owl-nav button.owl-next,\n  .owl-carousel button.owl-dot {\n    background: none;\n    color: inherit;\n    border: none;\n    padding: 0 !important;\n    font: inherit; }\n  .owl-carousel.owl-loaded {\n    display: block; }\n  .owl-carousel.owl-loading {\n    opacity: 0;\n    display: block; }\n  .owl-carousel.owl-hidden {\n    opacity: 0; }\n  .owl-carousel.owl-refresh .owl-item {\n    visibility: hidden; }\n  .owl-carousel.owl-drag .owl-item {\n    touch-action: pan-y;\n    -webkit-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none; }\n  .owl-carousel.owl-grab {\n    cursor: move;\n    cursor: -webkit-grab;\n    cursor: grab; }\n  .owl-carousel.owl-rtl {\n    direction: rtl; }\n  .owl-carousel.owl-rtl .owl-item {\n    float: right; }\n\n/* No Js */\n.no-js .owl-carousel {\n  display: block; }\n\n/*\n *  Owl Carousel - Animate Plugin\n */\n.owl-carousel .animated {\n  -webkit-animation-duration: 1000ms;\n          animation-duration: 1000ms;\n  -webkit-animation-fill-mode: both;\n          animation-fill-mode: both; }\n\n.owl-carousel .owl-animated-in {\n  z-index: 0; }\n\n.owl-carousel .owl-animated-out {\n  z-index: 1; }\n\n.owl-carousel .fadeOut {\n  -webkit-animation-name: fadeOut;\n          animation-name: fadeOut; }\n\n@-webkit-keyframes fadeOut {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes fadeOut {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n/*\n * \tOwl Carousel - Auto Height Plugin\n */\n.owl-height {\n  transition: height 500ms ease-in-out; }\n\n/*\n * \tOwl Carousel - Lazy Load Plugin\n */\n.owl-carousel .owl-item {\n  /**\n\t\t\tThis is introduced due to a bug in IE11 where lazy loading combined with autoheight plugin causes a wrong\n\t\t\tcalculation of the height of the owl-item that breaks page layouts\n\t\t */ }\n  .owl-carousel .owl-item .owl-lazy {\n    opacity: 0;\n    transition: opacity 400ms ease; }\n  .owl-carousel .owl-item .owl-lazy[src^=\"\"], .owl-carousel .owl-item .owl-lazy:not([src]) {\n    max-height: 0; }\n  .owl-carousel .owl-item img.owl-lazy {\n    -webkit-transform-style: preserve-3d;\n            transform-style: preserve-3d; }\n\n/*\n * \tOwl Carousel - Video Plugin\n */\n.owl-carousel .owl-video-wrapper {\n  position: relative;\n  height: 100%;\n  background: #000; }\n\n.owl-carousel .owl-video-play-icon {\n  position: absolute;\n  height: 80px;\n  width: 80px;\n  left: 50%;\n  top: 50%;\n  margin-left: -40px;\n  margin-top: -40px;\n  background: url(" + escape(__webpack_require__(/*! ./owl.video.play.png */ "./node_modules/owl.carousel/dist/assets/owl.video.play.png")) + ") no-repeat;\n  cursor: pointer;\n  z-index: 1;\n  -webkit-backface-visibility: hidden;\n  transition: -webkit-transform 100ms ease;\n  transition: transform 100ms ease;\n  transition: transform 100ms ease, -webkit-transform 100ms ease; }\n\n.owl-carousel .owl-video-play-icon:hover {\n  -webkit-transform: scale(1.3, 1.3);\n          transform: scale(1.3, 1.3); }\n\n.owl-carousel .owl-video-playing .owl-video-tn,\n.owl-carousel .owl-video-playing .owl-video-play-icon {\n  display: none; }\n\n.owl-carousel .owl-video-tn {\n  opacity: 0;\n  height: 100%;\n  background-position: center center;\n  background-repeat: no-repeat;\n  background-size: contain;\n  transition: opacity 400ms ease; }\n\n.owl-carousel .owl-video-frame {\n  position: relative;\n  z-index: 1;\n  height: 100%;\n  width: 100%; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/lib/css-base.js":
+/*!*************************************************!*\
+  !*** ./node_modules/css-loader/lib/css-base.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function(useSourceMap) {
+	var list = [];
+
+	// return the list of modules as css string
+	list.toString = function toString() {
+		return this.map(function (item) {
+			var content = cssWithMappingToString(item, useSourceMap);
+			if(item[2]) {
+				return "@media " + item[2] + "{" + content + "}";
+			} else {
+				return content;
+			}
+		}).join("");
+	};
+
+	// import a list of modules into the list
+	list.i = function(modules, mediaQuery) {
+		if(typeof modules === "string")
+			modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for(var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if(typeof id === "number")
+				alreadyImportedModules[id] = true;
+		}
+		for(i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if(mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if(mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+	var content = item[1] || '';
+	var cssMapping = item[3];
+	if (!cssMapping) {
+		return content;
+	}
+
+	if (useSourceMap && typeof btoa === 'function') {
+		var sourceMapping = toComment(cssMapping);
+		var sourceURLs = cssMapping.sources.map(function (source) {
+			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
+		});
+
+		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+	}
+
+	return [content].join('\n');
+}
+
+// Adapted from convert-source-map (MIT)
+function toComment(sourceMap) {
+	// eslint-disable-next-line no-undef
+	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+
+	return '/*# ' + data + ' */';
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/lib/url/escape.js":
+/*!***************************************************!*\
+  !*** ./node_modules/css-loader/lib/url/escape.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function escape(url) {
+    if (typeof url !== 'string') {
+        return url
+    }
+    // If url is already wrapped in quotes, remove them
+    if (/^['"].*['"]$/.test(url)) {
+        url = url.slice(1, -1);
+    }
+    // Should url be wrapped?
+    // See https://drafts.csswg.org/css-values-3/#urls
+    if (/["'() \t\n]/.test(url)) {
+        return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"'
+    }
+
+    return url
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/easing-js/easing.js":
+/*!******************************************!*\
+  !*** ./node_modules/easing-js/easing.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+var Easing = {
+  linear: function linear(t, b, c, d) {
+    return c * t / d + b;
+  },
+  easeInQuad: function easeInQuad(t, b, c, d) {
+    return c * (t /= d) * t + b;
+  },
+  easeOutQuad: function easeOutQuad(t, b, c, d) {
+    return -c * (t /= d) * (t - 2) + b;
+  },
+  easeInOutQuad: function easeInOutQuad(t, b, c, d) {
+    if ((t /= d / 2) < 1) {
+      return c / 2 * t * t + b;
+    } else {
+      return -c / 2 * (--t * (t - 2) - 1) + b;
+    }
+  },
+  easeInCubic: function easeInCubic(t, b, c, d) {
+    return c * (t /= d) * t * t + b;
+  },
+  easeOutCubic: function easeOutCubic(t, b, c, d) {
+    return c * ((t = t / d - 1) * t * t + 1) + b;
+  },
+  easeInOutCubic: function easeInOutCubic(t, b, c, d) {
+    if ((t /= d / 2) < 1) {
+      return c / 2 * t * t * t + b;
+    } else {
+      return c / 2 * ((t -= 2) * t * t + 2) + b;
+    }
+  },
+  easeInQuart: function easeInQuart(t, b, c, d) {
+    return c * (t /= d) * t * t * t + b;
+  },
+  easeOutQuart: function easeOutQuart(t, b, c, d) {
+    return -c * ((t = t / d - 1) * t * t * t - 1) + b;
+  },
+  easeInOutQuart: function easeInOutQuart(t, b, c, d) {
+    if ((t /= d / 2) < 1) {
+      return c / 2 * t * t * t * t + b;
+    } else {
+      return -c / 2 * ((t -= 2) * t * t * t - 2) + b;
+    }
+  },
+  easeInQuint: function easeInQuint(t, b, c, d) {
+    return c * (t /= d) * t * t * t * t + b;
+  },
+  easeOutQuint: function easeOutQuint(t, b, c, d) {
+    return c * ((t = t / d - 1) * t * t * t * t + 1) + b;
+  },
+  easeInOutQuint: function easeInOutQuint(t, b, c, d) {
+    if ((t /= d / 2) < 1) {
+      return c / 2 * t * t * t * t * t + b;
+    } else {
+      return c / 2 * ((t -= 2) * t * t * t * t + 2) + b;
+    }
+  },
+  easeInSine: function easeInSine(t, b, c, d) {
+    return -c * Math.cos(t / d * (Math.PI / 2)) + c + b;
+  },
+  easeOutSine: function easeOutSine(t, b, c, d) {
+    return c * Math.sin(t / d * (Math.PI / 2)) + b;
+  },
+  easeInOutSine: function easeInOutSine(t, b, c, d) {
+    return -c / 2 * (Math.cos(Math.PI * t / d) - 1) + b;
+  },
+  easeInExpo: function easeInExpo(t, b, c, d) {
+    var _ref;
+    return (_ref = t === 0) !== null ? _ref : {
+      b: c * Math.pow(2, 10 * (t / d - 1)) + b
+    };
+  },
+  easeOutExpo: function easeOutExpo(t, b, c, d) {
+    var _ref;
+    return (_ref = t === d) !== null ? _ref : b + {
+      c: c * (-Math.pow(2, -10 * t / d) + 1) + b
+    };
+  },
+  easeInOutExpo: function easeInOutExpo(t, b, c, d) {
+    if (t === 0) {
+      b;
+    }
+    if (t === d) {
+      b + c;
+    }
+    if ((t /= d / 2) < 1) {
+      return c / 2 * Math.pow(2, 10 * (t - 1)) + b;
+    } else {
+      return c / 2 * (-Math.pow(2, -10 * --t) + 2) + b;
+    }
+  },
+  easeInCirc: function easeInCirc(t, b, c, d) {
+    return -c * (Math.sqrt(1 - (t /= d) * t) - 1) + b;
+  },
+  easeOutCirc: function easeOutCirc(t, b, c, d) {
+    return c * Math.sqrt(1 - (t = t / d - 1) * t) + b;
+  },
+  easeInOutCirc: function easeInOutCirc(t, b, c, d) {
+    if ((t /= d / 2) < 1) {
+      return -c / 2 * (Math.sqrt(1 - t * t) - 1) + b;
+    } else {
+      return c / 2 * (Math.sqrt(1 - (t -= 2) * t) + 1) + b;
+    }
+  },
+  easeInElastic: function easeInElastic(t, b, c, d) {
+    var a, p, s;
+    s = 1.70158;
+    p = 0;
+    a = c;
+    if (t === 0) {
+      b;
+    } else if ((t /= d) === 1) {
+      b + c;
+    }
+    if (!p) {
+      p = d * 0.3;
+    }
+    if (a < Math.abs(c)) {
+      a = c;
+      s = p / 4;
+    } else {
+      s = p / (2 * Math.PI) * Math.asin(c / a);
+    }
+    return -(a * Math.pow(2, 10 * (t -= 1)) * Math.sin((t * d - s) * (2 * Math.PI) / p)) + b;
+  },
+  easeOutElastic: function easeOutElastic(t, b, c, d) {
+    var a, p, s;
+    s = 1.70158;
+    p = 0;
+    a = c;
+    if (t === 0) {
+      b;
+    } else if ((t /= d) === 1) {
+      b + c;
+    }
+    if (!p) {
+      p = d * 0.3;
+    }
+    if (a < Math.abs(c)) {
+      a = c;
+      s = p / 4;
+    } else {
+      s = p / (2 * Math.PI) * Math.asin(c / a);
+    }
+    return a * Math.pow(2, -10 * t) * Math.sin((t * d - s) * (2 * Math.PI) / p) + c + b;
+  },
+  easeInOutElastic: function easeInOutElastic(t, b, c, d) {
+    var a, p, s;
+    s = 1.70158;
+    p = 0;
+    a = c;
+    if (t === 0) {
+      b;
+    } else if ((t /= d / 2) === 2) {
+      b + c;
+    }
+    if (!p) {
+      p = d * (0.3 * 1.5);
+    }
+    if (a < Math.abs(c)) {
+      a = c;
+      s = p / 4;
+    } else {
+      s = p / (2 * Math.PI) * Math.asin(c / a);
+    }
+    if (t < 1) {
+      return -0.5 * (a * Math.pow(2, 10 * (t -= 1)) * Math.sin((t * d - s) * (2 * Math.PI) / p)) + b;
+    } else {
+      return a * Math.pow(2, -10 * (t -= 1)) * Math.sin((t * d - s) * (2 * Math.PI) / p) * 0.5 + c + b;
+    }
+  },
+  easeInBack: function easeInBack(t, b, c, d, s) {
+    if (s === void 0) {
+      s = 1.70158;
+    }
+    return c * (t /= d) * t * ((s + 1) * t - s) + b;
+  },
+  easeOutBack: function easeOutBack(t, b, c, d, s) {
+    if (s === void 0) {
+      s = 1.70158;
+    }
+    return c * ((t = t / d - 1) * t * ((s + 1) * t + s) + 1) + b;
+  },
+  easeInOutBack: function easeInOutBack(t, b, c, d, s) {
+    if (s === void 0) {
+      s = 1.70158;
+    }
+    if ((t /= d / 2) < 1) {
+      return c / 2 * (t * t * (((s *= 1.525) + 1) * t - s)) + b;
+    } else {
+      return c / 2 * ((t -= 2) * t * (((s *= 1.525) + 1) * t + s) + 2) + b;
+    }
+  },
+  easeInBounce: function easeInBounce(t, b, c, d) {
+    var v;
+    v = Easing.easeOutBounce(d - t, 0, c, d);
+    return c - v + b;
+  },
+  easeOutBounce: function easeOutBounce(t, b, c, d) {
+    if ((t /= d) < 1 / 2.75) {
+      return c * (7.5625 * t * t) + b;
+    } else if (t < 2 / 2.75) {
+      return c * (7.5625 * (t -= 1.5 / 2.75) * t + 0.75) + b;
+    } else if (t < 2.5 / 2.75) {
+      return c * (7.5625 * (t -= 2.25 / 2.75) * t + 0.9375) + b;
+    } else {
+      return c * (7.5625 * (t -= 2.625 / 2.75) * t + 0.984375) + b;
+    }
+  },
+  easeInOutBounce: function easeInOutBounce(t, b, c, d) {
+    var v;
+    if (t < d / 2) {
+      v = Easing.easeInBounce(t * 2, 0, c, d);
+      return v * 0.5 + b;
+    } else {
+      v = Easing.easeOutBounce(t * 2 - d, 0, c, d);
+      return v * 0.5 + c * 0.5 + b;
+    }
+  }
+};
+
+exports.default = Easing;
+module.exports = exports["default"];
+
+/***/ }),
+
 /***/ "./node_modules/is-buffer/index.js":
 /*!*****************************************!*\
   !*** ./node_modules/is-buffer/index.js ***!
@@ -6260,6 +6630,634 @@ function isBuffer (obj) {
 function isSlowBuffer (obj) {
   return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0))
 }
+
+
+/***/ }),
+
+/***/ "./node_modules/jquery-migrate/dist/jquery-migrate.js":
+/*!************************************************************!*\
+  !*** ./node_modules/jquery-migrate/dist/jquery-migrate.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * jQuery Migrate - v3.0.1 - 2017-09-26
+ * Copyright jQuery Foundation and other contributors
+ */
+;( function( factory ) {
+	if ( true ) {
+
+		// AMD. Register as an anonymous module.
+		__webpack_require__(/*! !webpack amd define */ "./node_modules/webpack/buildin/amd-define.js")( [ "jquery" ], window, factory );
+	} else {}
+} )( function( jQuery, window ) {
+"use strict";
+
+
+jQuery.migrateVersion = "3.0.1";
+
+/* exported migrateWarn, migrateWarnFunc, migrateWarnProp */
+
+( function() {
+
+	var rbadVersions = /^[12]\./;
+
+	// Support: IE9 only
+	// IE9 only creates console object when dev tools are first opened
+	// IE9 console is a host object, callable but doesn't have .apply()
+	if ( !window.console || !window.console.log ) {
+		return;
+	}
+
+	// Need jQuery 3.0.0+ and no older Migrate loaded
+	if ( !jQuery || rbadVersions.test( jQuery.fn.jquery ) ) {
+		window.console.log( "JQMIGRATE: jQuery 3.0.0+ REQUIRED" );
+	}
+	if ( jQuery.migrateWarnings ) {
+		window.console.log( "JQMIGRATE: Migrate plugin loaded multiple times" );
+	}
+
+	// Show a message on the console so devs know we're active
+	window.console.log( "JQMIGRATE: Migrate is installed" +
+		( jQuery.migrateMute ? "" : " with logging active" ) +
+		", version " + jQuery.migrateVersion );
+
+} )();
+
+var warnedAbout = {};
+
+// List of warnings already given; public read only
+jQuery.migrateWarnings = [];
+
+// Set to false to disable traces that appear with warnings
+if ( jQuery.migrateTrace === undefined ) {
+	jQuery.migrateTrace = true;
+}
+
+// Forget any warnings we've already given; public
+jQuery.migrateReset = function() {
+	warnedAbout = {};
+	jQuery.migrateWarnings.length = 0;
+};
+
+function migrateWarn( msg ) {
+	var console = window.console;
+	if ( !warnedAbout[ msg ] ) {
+		warnedAbout[ msg ] = true;
+		jQuery.migrateWarnings.push( msg );
+		if ( console && console.warn && !jQuery.migrateMute ) {
+			console.warn( "JQMIGRATE: " + msg );
+			if ( jQuery.migrateTrace && console.trace ) {
+				console.trace();
+			}
+		}
+	}
+}
+
+function migrateWarnProp( obj, prop, value, msg ) {
+	Object.defineProperty( obj, prop, {
+		configurable: true,
+		enumerable: true,
+		get: function() {
+			migrateWarn( msg );
+			return value;
+		},
+		set: function( newValue ) {
+			migrateWarn( msg );
+			value = newValue;
+		}
+	} );
+}
+
+function migrateWarnFunc( obj, prop, newFunc, msg ) {
+	obj[ prop ] = function() {
+		migrateWarn( msg );
+		return newFunc.apply( this, arguments );
+	};
+}
+
+if ( window.document.compatMode === "BackCompat" ) {
+
+	// JQuery has never supported or tested Quirks Mode
+	migrateWarn( "jQuery is not compatible with Quirks Mode" );
+}
+
+
+var oldInit = jQuery.fn.init,
+	oldIsNumeric = jQuery.isNumeric,
+	oldFind = jQuery.find,
+	rattrHashTest = /\[(\s*[-\w]+\s*)([~|^$*]?=)\s*([-\w#]*?#[-\w#]*)\s*\]/,
+	rattrHashGlob = /\[(\s*[-\w]+\s*)([~|^$*]?=)\s*([-\w#]*?#[-\w#]*)\s*\]/g;
+
+jQuery.fn.init = function( arg1 ) {
+	var args = Array.prototype.slice.call( arguments );
+
+	if ( typeof arg1 === "string" && arg1 === "#" ) {
+
+		// JQuery( "#" ) is a bogus ID selector, but it returned an empty set before jQuery 3.0
+		migrateWarn( "jQuery( '#' ) is not a valid selector" );
+		args[ 0 ] = [];
+	}
+
+	return oldInit.apply( this, args );
+};
+jQuery.fn.init.prototype = jQuery.fn;
+
+jQuery.find = function( selector ) {
+	var args = Array.prototype.slice.call( arguments );
+
+	// Support: PhantomJS 1.x
+	// String#match fails to match when used with a //g RegExp, only on some strings
+	if ( typeof selector === "string" && rattrHashTest.test( selector ) ) {
+
+		// The nonstandard and undocumented unquoted-hash was removed in jQuery 1.12.0
+		// First see if qS thinks it's a valid selector, if so avoid a false positive
+		try {
+			window.document.querySelector( selector );
+		} catch ( err1 ) {
+
+			// Didn't *look* valid to qSA, warn and try quoting what we think is the value
+			selector = selector.replace( rattrHashGlob, function( _, attr, op, value ) {
+				return "[" + attr + op + "\"" + value + "\"]";
+			} );
+
+			// If the regexp *may* have created an invalid selector, don't update it
+			// Note that there may be false alarms if selector uses jQuery extensions
+			try {
+				window.document.querySelector( selector );
+				migrateWarn( "Attribute selector with '#' must be quoted: " + args[ 0 ] );
+				args[ 0 ] = selector;
+			} catch ( err2 ) {
+				migrateWarn( "Attribute selector with '#' was not fixed: " + args[ 0 ] );
+			}
+		}
+	}
+
+	return oldFind.apply( this, args );
+};
+
+// Copy properties attached to original jQuery.find method (e.g. .attr, .isXML)
+var findProp;
+for ( findProp in oldFind ) {
+	if ( Object.prototype.hasOwnProperty.call( oldFind, findProp ) ) {
+		jQuery.find[ findProp ] = oldFind[ findProp ];
+	}
+}
+
+// The number of elements contained in the matched element set
+jQuery.fn.size = function() {
+	migrateWarn( "jQuery.fn.size() is deprecated and removed; use the .length property" );
+	return this.length;
+};
+
+jQuery.parseJSON = function() {
+	migrateWarn( "jQuery.parseJSON is deprecated; use JSON.parse" );
+	return JSON.parse.apply( null, arguments );
+};
+
+jQuery.isNumeric = function( val ) {
+
+	// The jQuery 2.2.3 implementation of isNumeric
+	function isNumeric2( obj ) {
+		var realStringObj = obj && obj.toString();
+		return !jQuery.isArray( obj ) && ( realStringObj - parseFloat( realStringObj ) + 1 ) >= 0;
+	}
+
+	var newValue = oldIsNumeric( val ),
+		oldValue = isNumeric2( val );
+
+	if ( newValue !== oldValue ) {
+		migrateWarn( "jQuery.isNumeric() should not be called on constructed objects" );
+	}
+
+	return oldValue;
+};
+
+migrateWarnFunc( jQuery, "holdReady", jQuery.holdReady,
+	"jQuery.holdReady is deprecated" );
+
+migrateWarnFunc( jQuery, "unique", jQuery.uniqueSort,
+	"jQuery.unique is deprecated; use jQuery.uniqueSort" );
+
+// Now jQuery.expr.pseudos is the standard incantation
+migrateWarnProp( jQuery.expr, "filters", jQuery.expr.pseudos,
+	"jQuery.expr.filters is deprecated; use jQuery.expr.pseudos" );
+migrateWarnProp( jQuery.expr, ":", jQuery.expr.pseudos,
+	"jQuery.expr[':'] is deprecated; use jQuery.expr.pseudos" );
+
+
+var oldAjax = jQuery.ajax;
+
+jQuery.ajax = function( ) {
+	var jQXHR = oldAjax.apply( this, arguments );
+
+	// Be sure we got a jQXHR (e.g., not sync)
+	if ( jQXHR.promise ) {
+		migrateWarnFunc( jQXHR, "success", jQXHR.done,
+			"jQXHR.success is deprecated and removed" );
+		migrateWarnFunc( jQXHR, "error", jQXHR.fail,
+			"jQXHR.error is deprecated and removed" );
+		migrateWarnFunc( jQXHR, "complete", jQXHR.always,
+			"jQXHR.complete is deprecated and removed" );
+	}
+
+	return jQXHR;
+};
+
+
+var oldRemoveAttr = jQuery.fn.removeAttr,
+	oldToggleClass = jQuery.fn.toggleClass,
+	rmatchNonSpace = /\S+/g;
+
+jQuery.fn.removeAttr = function( name ) {
+	var self = this;
+
+	jQuery.each( name.match( rmatchNonSpace ), function( i, attr ) {
+		if ( jQuery.expr.match.bool.test( attr ) ) {
+			migrateWarn( "jQuery.fn.removeAttr no longer sets boolean properties: " + attr );
+			self.prop( attr, false );
+		}
+	} );
+
+	return oldRemoveAttr.apply( this, arguments );
+};
+
+jQuery.fn.toggleClass = function( state ) {
+
+	// Only deprecating no-args or single boolean arg
+	if ( state !== undefined && typeof state !== "boolean" ) {
+		return oldToggleClass.apply( this, arguments );
+	}
+
+	migrateWarn( "jQuery.fn.toggleClass( boolean ) is deprecated" );
+
+	// Toggle entire class name of each element
+	return this.each( function() {
+		var className = this.getAttribute && this.getAttribute( "class" ) || "";
+
+		if ( className ) {
+			jQuery.data( this, "__className__", className );
+		}
+
+		// If the element has a class name or if we're passed `false`,
+		// then remove the whole classname (if there was one, the above saved it).
+		// Otherwise bring back whatever was previously saved (if anything),
+		// falling back to the empty string if nothing was stored.
+		if ( this.setAttribute ) {
+			this.setAttribute( "class",
+				className || state === false ?
+				"" :
+				jQuery.data( this, "__className__" ) || ""
+			);
+		}
+	} );
+};
+
+
+var internalSwapCall = false;
+
+// If this version of jQuery has .swap(), don't false-alarm on internal uses
+if ( jQuery.swap ) {
+	jQuery.each( [ "height", "width", "reliableMarginRight" ], function( _, name ) {
+		var oldHook = jQuery.cssHooks[ name ] && jQuery.cssHooks[ name ].get;
+
+		if ( oldHook ) {
+			jQuery.cssHooks[ name ].get = function() {
+				var ret;
+
+				internalSwapCall = true;
+				ret = oldHook.apply( this, arguments );
+				internalSwapCall = false;
+				return ret;
+			};
+		}
+	} );
+}
+
+jQuery.swap = function( elem, options, callback, args ) {
+	var ret, name,
+		old = {};
+
+	if ( !internalSwapCall ) {
+		migrateWarn( "jQuery.swap() is undocumented and deprecated" );
+	}
+
+	// Remember the old values, and insert the new ones
+	for ( name in options ) {
+		old[ name ] = elem.style[ name ];
+		elem.style[ name ] = options[ name ];
+	}
+
+	ret = callback.apply( elem, args || [] );
+
+	// Revert the old values
+	for ( name in options ) {
+		elem.style[ name ] = old[ name ];
+	}
+
+	return ret;
+};
+
+var oldData = jQuery.data;
+
+jQuery.data = function( elem, name, value ) {
+	var curData;
+
+	// Name can be an object, and each entry in the object is meant to be set as data
+	if ( name && typeof name === "object" && arguments.length === 2 ) {
+		curData = jQuery.hasData( elem ) && oldData.call( this, elem );
+		var sameKeys = {};
+		for ( var key in name ) {
+			if ( key !== jQuery.camelCase( key ) ) {
+				migrateWarn( "jQuery.data() always sets/gets camelCased names: " + key );
+				curData[ key ] = name[ key ];
+			} else {
+				sameKeys[ key ] = name[ key ];
+			}
+		}
+
+		oldData.call( this, elem, sameKeys );
+
+		return name;
+	}
+
+	// If the name is transformed, look for the un-transformed name in the data object
+	if ( name && typeof name === "string" && name !== jQuery.camelCase( name ) ) {
+		curData = jQuery.hasData( elem ) && oldData.call( this, elem );
+		if ( curData && name in curData ) {
+			migrateWarn( "jQuery.data() always sets/gets camelCased names: " + name );
+			if ( arguments.length > 2 ) {
+				curData[ name ] = value;
+			}
+			return curData[ name ];
+		}
+	}
+
+	return oldData.apply( this, arguments );
+};
+
+var oldTweenRun = jQuery.Tween.prototype.run;
+var linearEasing = function( pct ) {
+		return pct;
+	};
+
+jQuery.Tween.prototype.run = function( ) {
+	if ( jQuery.easing[ this.easing ].length > 1 ) {
+		migrateWarn(
+			"'jQuery.easing." + this.easing.toString() + "' should use only one argument"
+		);
+
+		jQuery.easing[ this.easing ] = linearEasing;
+	}
+
+	oldTweenRun.apply( this, arguments );
+};
+
+jQuery.fx.interval = jQuery.fx.interval || 13;
+
+// Support: IE9, Android <=4.4
+// Avoid false positives on browsers that lack rAF
+if ( window.requestAnimationFrame ) {
+	migrateWarnProp( jQuery.fx, "interval", jQuery.fx.interval,
+		"jQuery.fx.interval is deprecated" );
+}
+
+var oldLoad = jQuery.fn.load,
+	oldEventAdd = jQuery.event.add,
+	originalFix = jQuery.event.fix;
+
+jQuery.event.props = [];
+jQuery.event.fixHooks = {};
+
+migrateWarnProp( jQuery.event.props, "concat", jQuery.event.props.concat,
+	"jQuery.event.props.concat() is deprecated and removed" );
+
+jQuery.event.fix = function( originalEvent ) {
+	var event,
+		type = originalEvent.type,
+		fixHook = this.fixHooks[ type ],
+		props = jQuery.event.props;
+
+	if ( props.length ) {
+		migrateWarn( "jQuery.event.props are deprecated and removed: " + props.join() );
+		while ( props.length ) {
+			jQuery.event.addProp( props.pop() );
+		}
+	}
+
+	if ( fixHook && !fixHook._migrated_ ) {
+		fixHook._migrated_ = true;
+		migrateWarn( "jQuery.event.fixHooks are deprecated and removed: " + type );
+		if ( ( props = fixHook.props ) && props.length ) {
+			while ( props.length ) {
+				jQuery.event.addProp( props.pop() );
+			}
+		}
+	}
+
+	event = originalFix.call( this, originalEvent );
+
+	return fixHook && fixHook.filter ? fixHook.filter( event, originalEvent ) : event;
+};
+
+jQuery.event.add = function( elem, types ) {
+
+	// This misses the multiple-types case but that seems awfully rare
+	if ( elem === window && types === "load" && window.document.readyState === "complete" ) {
+		migrateWarn( "jQuery(window).on('load'...) called after load event occurred" );
+	}
+	return oldEventAdd.apply( this, arguments );
+};
+
+jQuery.each( [ "load", "unload", "error" ], function( _, name ) {
+
+	jQuery.fn[ name ] = function() {
+		var args = Array.prototype.slice.call( arguments, 0 );
+
+		// If this is an ajax load() the first arg should be the string URL;
+		// technically this could also be the "Anything" arg of the event .load()
+		// which just goes to show why this dumb signature has been deprecated!
+		// jQuery custom builds that exclude the Ajax module justifiably die here.
+		if ( name === "load" && typeof args[ 0 ] === "string" ) {
+			return oldLoad.apply( this, args );
+		}
+
+		migrateWarn( "jQuery.fn." + name + "() is deprecated" );
+
+		args.splice( 0, 0, name );
+		if ( arguments.length ) {
+			return this.on.apply( this, args );
+		}
+
+		// Use .triggerHandler here because:
+		// - load and unload events don't need to bubble, only applied to window or image
+		// - error event should not bubble to window, although it does pre-1.7
+		// See http://bugs.jquery.com/ticket/11820
+		this.triggerHandler.apply( this, args );
+		return this;
+	};
+
+} );
+
+jQuery.each( ( "blur focus focusin focusout resize scroll click dblclick " +
+	"mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave " +
+	"change select submit keydown keypress keyup contextmenu" ).split( " " ),
+	function( i, name ) {
+
+	// Handle event binding
+	jQuery.fn[ name ] = function( data, fn ) {
+		migrateWarn( "jQuery.fn." + name + "() event shorthand is deprecated" );
+		return arguments.length > 0 ?
+			this.on( name, null, data, fn ) :
+			this.trigger( name );
+	};
+} );
+
+// Trigger "ready" event only once, on document ready
+jQuery( function() {
+	jQuery( window.document ).triggerHandler( "ready" );
+} );
+
+jQuery.event.special.ready = {
+	setup: function() {
+		if ( this === window.document ) {
+			migrateWarn( "'ready' event is deprecated" );
+		}
+	}
+};
+
+jQuery.fn.extend( {
+
+	bind: function( types, data, fn ) {
+		migrateWarn( "jQuery.fn.bind() is deprecated" );
+		return this.on( types, null, data, fn );
+	},
+	unbind: function( types, fn ) {
+		migrateWarn( "jQuery.fn.unbind() is deprecated" );
+		return this.off( types, null, fn );
+	},
+	delegate: function( selector, types, data, fn ) {
+		migrateWarn( "jQuery.fn.delegate() is deprecated" );
+		return this.on( types, selector, data, fn );
+	},
+	undelegate: function( selector, types, fn ) {
+		migrateWarn( "jQuery.fn.undelegate() is deprecated" );
+		return arguments.length === 1 ?
+			this.off( selector, "**" ) :
+			this.off( types, selector || "**", fn );
+	},
+	hover: function( fnOver, fnOut ) {
+		migrateWarn( "jQuery.fn.hover() is deprecated" );
+		return this.on( "mouseenter", fnOver ).on( "mouseleave", fnOut || fnOver );
+	}
+} );
+
+
+var oldOffset = jQuery.fn.offset;
+
+jQuery.fn.offset = function() {
+	var docElem,
+		elem = this[ 0 ],
+		origin = { top: 0, left: 0 };
+
+	if ( !elem || !elem.nodeType ) {
+		migrateWarn( "jQuery.fn.offset() requires a valid DOM element" );
+		return origin;
+	}
+
+	docElem = ( elem.ownerDocument || window.document ).documentElement;
+	if ( !jQuery.contains( docElem, elem ) ) {
+		migrateWarn( "jQuery.fn.offset() requires an element connected to a document" );
+		return origin;
+	}
+
+	return oldOffset.apply( this, arguments );
+};
+
+
+var oldParam = jQuery.param;
+
+jQuery.param = function( data, traditional ) {
+	var ajaxTraditional = jQuery.ajaxSettings && jQuery.ajaxSettings.traditional;
+
+	if ( traditional === undefined && ajaxTraditional ) {
+
+		migrateWarn( "jQuery.param() no longer uses jQuery.ajaxSettings.traditional" );
+		traditional = ajaxTraditional;
+	}
+
+	return oldParam.call( this, data, traditional );
+};
+
+var oldSelf = jQuery.fn.andSelf || jQuery.fn.addBack;
+
+jQuery.fn.andSelf = function() {
+	migrateWarn( "jQuery.fn.andSelf() is deprecated and removed, use jQuery.fn.addBack()" );
+	return oldSelf.apply( this, arguments );
+};
+
+
+var oldDeferred = jQuery.Deferred,
+	tuples = [
+
+		// Action, add listener, callbacks, .then handlers, final state
+		[ "resolve", "done", jQuery.Callbacks( "once memory" ),
+			jQuery.Callbacks( "once memory" ), "resolved" ],
+		[ "reject", "fail", jQuery.Callbacks( "once memory" ),
+			jQuery.Callbacks( "once memory" ), "rejected" ],
+		[ "notify", "progress", jQuery.Callbacks( "memory" ),
+			jQuery.Callbacks( "memory" ) ]
+	];
+
+jQuery.Deferred = function( func ) {
+	var deferred = oldDeferred(),
+		promise = deferred.promise();
+
+	deferred.pipe = promise.pipe = function( /* fnDone, fnFail, fnProgress */ ) {
+		var fns = arguments;
+
+		migrateWarn( "deferred.pipe() is deprecated" );
+
+		return jQuery.Deferred( function( newDefer ) {
+			jQuery.each( tuples, function( i, tuple ) {
+				var fn = jQuery.isFunction( fns[ i ] ) && fns[ i ];
+
+				// Deferred.done(function() { bind to newDefer or newDefer.resolve })
+				// deferred.fail(function() { bind to newDefer or newDefer.reject })
+				// deferred.progress(function() { bind to newDefer or newDefer.notify })
+				deferred[ tuple[ 1 ] ]( function() {
+					var returned = fn && fn.apply( this, arguments );
+					if ( returned && jQuery.isFunction( returned.promise ) ) {
+						returned.promise()
+							.done( newDefer.resolve )
+							.fail( newDefer.reject )
+							.progress( newDefer.notify );
+					} else {
+						newDefer[ tuple[ 0 ] + "With" ](
+							this === promise ? newDefer.promise() : this,
+							fn ? [ returned ] : arguments
+						);
+					}
+				} );
+			} );
+			fns = null;
+		} ).promise();
+
+	};
+
+	if ( func ) {
+		func.call( deferred, deferred );
+	}
+
+	return deferred;
+};
+
+// Preserve handler of uncaught exceptions in promise chains
+jQuery.Deferred.exceptionHook = oldDeferred.exceptionHook;
+
+return jQuery;
+} );
 
 
 /***/ }),
@@ -33975,6 +34973,47 @@ return jQuery;
 
 /***/ }),
 
+/***/ "./node_modules/owl.carousel/dist/assets/owl.carousel.css":
+/*!****************************************************************!*\
+  !*** ./node_modules/owl.carousel/dist/assets/owl.carousel.css ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../css-loader??ref--6-1!../../../postcss-loader/src??ref--6-2!./owl.carousel.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/owl.carousel/dist/assets/owl.carousel.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/owl.carousel/dist/assets/owl.video.play.png":
+/*!******************************************************************!*\
+  !*** ./node_modules/owl.carousel/dist/assets/owl.video.play.png ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/vendor/owl.carousel/dist/owl.video.play.png?4a37f8008959c75f619bf0a3a4e2d7a2";
+
+/***/ }),
+
 /***/ "./node_modules/popper.js/dist/esm/popper.js":
 /*!***************************************************!*\
   !*** ./node_modules/popper.js/dist/esm/popper.js ***!
@@ -36986,6 +38025,928 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/lib/addStyles.js":
+/*!****************************************************!*\
+  !*** ./node_modules/style-loader/lib/addStyles.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+
+var stylesInDom = {};
+
+var	memoize = function (fn) {
+	var memo;
+
+	return function () {
+		if (typeof memo === "undefined") memo = fn.apply(this, arguments);
+		return memo;
+	};
+};
+
+var isOldIE = memoize(function () {
+	// Test for IE <= 9 as proposed by Browserhacks
+	// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
+	// Tests for existence of standard globals is to allow style-loader
+	// to operate correctly into non-standard environments
+	// @see https://github.com/webpack-contrib/style-loader/issues/177
+	return window && document && document.all && !window.atob;
+});
+
+var getTarget = function (target, parent) {
+  if (parent){
+    return parent.querySelector(target);
+  }
+  return document.querySelector(target);
+};
+
+var getElement = (function (fn) {
+	var memo = {};
+
+	return function(target, parent) {
+                // If passing function in options, then use it for resolve "head" element.
+                // Useful for Shadow Root style i.e
+                // {
+                //   insertInto: function () { return document.querySelector("#foo").shadowRoot }
+                // }
+                if (typeof target === 'function') {
+                        return target();
+                }
+                if (typeof memo[target] === "undefined") {
+			var styleTarget = getTarget.call(this, target, parent);
+			// Special case to return head of iframe instead of iframe itself
+			if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+				try {
+					// This will throw an exception if access to iframe is blocked
+					// due to cross-origin restrictions
+					styleTarget = styleTarget.contentDocument.head;
+				} catch(e) {
+					styleTarget = null;
+				}
+			}
+			memo[target] = styleTarget;
+		}
+		return memo[target]
+	};
+})();
+
+var singleton = null;
+var	singletonCounter = 0;
+var	stylesInsertedAtTop = [];
+
+var	fixUrls = __webpack_require__(/*! ./urls */ "./node_modules/style-loader/lib/urls.js");
+
+module.exports = function(list, options) {
+	if (typeof DEBUG !== "undefined" && DEBUG) {
+		if (typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
+	}
+
+	options = options || {};
+
+	options.attrs = typeof options.attrs === "object" ? options.attrs : {};
+
+	// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+	// tags it will allow on a page
+	if (!options.singleton && typeof options.singleton !== "boolean") options.singleton = isOldIE();
+
+	// By default, add <style> tags to the <head> element
+        if (!options.insertInto) options.insertInto = "head";
+
+	// By default, add <style> tags to the bottom of the target
+	if (!options.insertAt) options.insertAt = "bottom";
+
+	var styles = listToStyles(list, options);
+
+	addStylesToDom(styles, options);
+
+	return function update (newList) {
+		var mayRemove = [];
+
+		for (var i = 0; i < styles.length; i++) {
+			var item = styles[i];
+			var domStyle = stylesInDom[item.id];
+
+			domStyle.refs--;
+			mayRemove.push(domStyle);
+		}
+
+		if(newList) {
+			var newStyles = listToStyles(newList, options);
+			addStylesToDom(newStyles, options);
+		}
+
+		for (var i = 0; i < mayRemove.length; i++) {
+			var domStyle = mayRemove[i];
+
+			if(domStyle.refs === 0) {
+				for (var j = 0; j < domStyle.parts.length; j++) domStyle.parts[j]();
+
+				delete stylesInDom[domStyle.id];
+			}
+		}
+	};
+};
+
+function addStylesToDom (styles, options) {
+	for (var i = 0; i < styles.length; i++) {
+		var item = styles[i];
+		var domStyle = stylesInDom[item.id];
+
+		if(domStyle) {
+			domStyle.refs++;
+
+			for(var j = 0; j < domStyle.parts.length; j++) {
+				domStyle.parts[j](item.parts[j]);
+			}
+
+			for(; j < item.parts.length; j++) {
+				domStyle.parts.push(addStyle(item.parts[j], options));
+			}
+		} else {
+			var parts = [];
+
+			for(var j = 0; j < item.parts.length; j++) {
+				parts.push(addStyle(item.parts[j], options));
+			}
+
+			stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
+		}
+	}
+}
+
+function listToStyles (list, options) {
+	var styles = [];
+	var newStyles = {};
+
+	for (var i = 0; i < list.length; i++) {
+		var item = list[i];
+		var id = options.base ? item[0] + options.base : item[0];
+		var css = item[1];
+		var media = item[2];
+		var sourceMap = item[3];
+		var part = {css: css, media: media, sourceMap: sourceMap};
+
+		if(!newStyles[id]) styles.push(newStyles[id] = {id: id, parts: [part]});
+		else newStyles[id].parts.push(part);
+	}
+
+	return styles;
+}
+
+function insertStyleElement (options, style) {
+	var target = getElement(options.insertInto)
+
+	if (!target) {
+		throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");
+	}
+
+	var lastStyleElementInsertedAtTop = stylesInsertedAtTop[stylesInsertedAtTop.length - 1];
+
+	if (options.insertAt === "top") {
+		if (!lastStyleElementInsertedAtTop) {
+			target.insertBefore(style, target.firstChild);
+		} else if (lastStyleElementInsertedAtTop.nextSibling) {
+			target.insertBefore(style, lastStyleElementInsertedAtTop.nextSibling);
+		} else {
+			target.appendChild(style);
+		}
+		stylesInsertedAtTop.push(style);
+	} else if (options.insertAt === "bottom") {
+		target.appendChild(style);
+	} else if (typeof options.insertAt === "object" && options.insertAt.before) {
+		var nextSibling = getElement(options.insertAt.before, target);
+		target.insertBefore(style, nextSibling);
+	} else {
+		throw new Error("[Style Loader]\n\n Invalid value for parameter 'insertAt' ('options.insertAt') found.\n Must be 'top', 'bottom', or Object.\n (https://github.com/webpack-contrib/style-loader#insertat)\n");
+	}
+}
+
+function removeStyleElement (style) {
+	if (style.parentNode === null) return false;
+	style.parentNode.removeChild(style);
+
+	var idx = stylesInsertedAtTop.indexOf(style);
+	if(idx >= 0) {
+		stylesInsertedAtTop.splice(idx, 1);
+	}
+}
+
+function createStyleElement (options) {
+	var style = document.createElement("style");
+
+	if(options.attrs.type === undefined) {
+		options.attrs.type = "text/css";
+	}
+
+	if(options.attrs.nonce === undefined) {
+		var nonce = getNonce();
+		if (nonce) {
+			options.attrs.nonce = nonce;
+		}
+	}
+
+	addAttrs(style, options.attrs);
+	insertStyleElement(options, style);
+
+	return style;
+}
+
+function createLinkElement (options) {
+	var link = document.createElement("link");
+
+	if(options.attrs.type === undefined) {
+		options.attrs.type = "text/css";
+	}
+	options.attrs.rel = "stylesheet";
+
+	addAttrs(link, options.attrs);
+	insertStyleElement(options, link);
+
+	return link;
+}
+
+function addAttrs (el, attrs) {
+	Object.keys(attrs).forEach(function (key) {
+		el.setAttribute(key, attrs[key]);
+	});
+}
+
+function getNonce() {
+	if (false) {}
+
+	return __webpack_require__.nc;
+}
+
+function addStyle (obj, options) {
+	var style, update, remove, result;
+
+	// If a transform function was defined, run it on the css
+	if (options.transform && obj.css) {
+	    result = typeof options.transform === 'function'
+		 ? options.transform(obj.css) 
+		 : options.transform.default(obj.css);
+
+	    if (result) {
+	    	// If transform returns a value, use that instead of the original css.
+	    	// This allows running runtime transformations on the css.
+	    	obj.css = result;
+	    } else {
+	    	// If the transform function returns a falsy value, don't add this css.
+	    	// This allows conditional loading of css
+	    	return function() {
+	    		// noop
+	    	};
+	    }
+	}
+
+	if (options.singleton) {
+		var styleIndex = singletonCounter++;
+
+		style = singleton || (singleton = createStyleElement(options));
+
+		update = applyToSingletonTag.bind(null, style, styleIndex, false);
+		remove = applyToSingletonTag.bind(null, style, styleIndex, true);
+
+	} else if (
+		obj.sourceMap &&
+		typeof URL === "function" &&
+		typeof URL.createObjectURL === "function" &&
+		typeof URL.revokeObjectURL === "function" &&
+		typeof Blob === "function" &&
+		typeof btoa === "function"
+	) {
+		style = createLinkElement(options);
+		update = updateLink.bind(null, style, options);
+		remove = function () {
+			removeStyleElement(style);
+
+			if(style.href) URL.revokeObjectURL(style.href);
+		};
+	} else {
+		style = createStyleElement(options);
+		update = applyToTag.bind(null, style);
+		remove = function () {
+			removeStyleElement(style);
+		};
+	}
+
+	update(obj);
+
+	return function updateStyle (newObj) {
+		if (newObj) {
+			if (
+				newObj.css === obj.css &&
+				newObj.media === obj.media &&
+				newObj.sourceMap === obj.sourceMap
+			) {
+				return;
+			}
+
+			update(obj = newObj);
+		} else {
+			remove();
+		}
+	};
+}
+
+var replaceText = (function () {
+	var textStore = [];
+
+	return function (index, replacement) {
+		textStore[index] = replacement;
+
+		return textStore.filter(Boolean).join('\n');
+	};
+})();
+
+function applyToSingletonTag (style, index, remove, obj) {
+	var css = remove ? "" : obj.css;
+
+	if (style.styleSheet) {
+		style.styleSheet.cssText = replaceText(index, css);
+	} else {
+		var cssNode = document.createTextNode(css);
+		var childNodes = style.childNodes;
+
+		if (childNodes[index]) style.removeChild(childNodes[index]);
+
+		if (childNodes.length) {
+			style.insertBefore(cssNode, childNodes[index]);
+		} else {
+			style.appendChild(cssNode);
+		}
+	}
+}
+
+function applyToTag (style, obj) {
+	var css = obj.css;
+	var media = obj.media;
+
+	if(media) {
+		style.setAttribute("media", media)
+	}
+
+	if(style.styleSheet) {
+		style.styleSheet.cssText = css;
+	} else {
+		while(style.firstChild) {
+			style.removeChild(style.firstChild);
+		}
+
+		style.appendChild(document.createTextNode(css));
+	}
+}
+
+function updateLink (link, options, obj) {
+	var css = obj.css;
+	var sourceMap = obj.sourceMap;
+
+	/*
+		If convertToAbsoluteUrls isn't defined, but sourcemaps are enabled
+		and there is no publicPath defined then lets turn convertToAbsoluteUrls
+		on by default.  Otherwise default to the convertToAbsoluteUrls option
+		directly
+	*/
+	var autoFixUrls = options.convertToAbsoluteUrls === undefined && sourceMap;
+
+	if (options.convertToAbsoluteUrls || autoFixUrls) {
+		css = fixUrls(css);
+	}
+
+	if (sourceMap) {
+		// http://stackoverflow.com/a/26603875
+		css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
+	}
+
+	var blob = new Blob([css], { type: "text/css" });
+
+	var oldSrc = link.href;
+
+	link.href = URL.createObjectURL(blob);
+
+	if(oldSrc) URL.revokeObjectURL(oldSrc);
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/lib/urls.js":
+/*!***********************************************!*\
+  !*** ./node_modules/style-loader/lib/urls.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+/**
+ * When source maps are enabled, `style-loader` uses a link element with a data-uri to
+ * embed the css on the page. This breaks all relative urls because now they are relative to a
+ * bundle instead of the current page.
+ *
+ * One solution is to only use full urls, but that may be impossible.
+ *
+ * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
+ *
+ * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
+ *
+ */
+
+module.exports = function (css) {
+  // get current location
+  var location = typeof window !== "undefined" && window.location;
+
+  if (!location) {
+    throw new Error("fixUrls requires window.location");
+  }
+
+	// blank or null?
+	if (!css || typeof css !== "string") {
+	  return css;
+  }
+
+  var baseUrl = location.protocol + "//" + location.host;
+  var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
+
+	// convert each url(...)
+	/*
+	This regular expression is just a way to recursively match brackets within
+	a string.
+
+	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
+	   (  = Start a capturing group
+	     (?:  = Start a non-capturing group
+	         [^)(]  = Match anything that isn't a parentheses
+	         |  = OR
+	         \(  = Match a start parentheses
+	             (?:  = Start another non-capturing groups
+	                 [^)(]+  = Match anything that isn't a parentheses
+	                 |  = OR
+	                 \(  = Match a start parentheses
+	                     [^)(]*  = Match anything that isn't a parentheses
+	                 \)  = Match a end parentheses
+	             )  = End Group
+              *\) = Match anything and then a close parens
+          )  = Close non-capturing group
+          *  = Match anything
+       )  = Close capturing group
+	 \)  = Match a close parens
+
+	 /gi  = Get all matches, not the first.  Be case insensitive.
+	 */
+	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(fullMatch, origUrl) {
+		// strip quotes (if they exist)
+		var unquotedOrigUrl = origUrl
+			.trim()
+			.replace(/^"(.*)"$/, function(o, $1){ return $1; })
+			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
+
+		// already a full url? no change
+		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/|\s*$)/i.test(unquotedOrigUrl)) {
+		  return fullMatch;
+		}
+
+		// convert the url to a full url
+		var newUrl;
+
+		if (unquotedOrigUrl.indexOf("//") === 0) {
+		  	//TODO: should we add protocol?
+			newUrl = unquotedOrigUrl;
+		} else if (unquotedOrigUrl.indexOf("/") === 0) {
+			// path should be relative to the base url
+			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
+		} else {
+			// path should be relative to current directory
+			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
+		}
+
+		// send back the fixed url(...)
+		return "url(" + JSON.stringify(newUrl) + ")";
+	});
+
+	// send back the fixed css
+	return fixedCss;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/superfish/dist/js/hoverIntent.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/superfish/dist/js/hoverIntent.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * hoverIntent is similar to jQuery's built-in "hover" method except that
+ * instead of firing the handlerIn function immediately, hoverIntent checks
+ * to see if the user's mouse has slowed down (beneath the sensitivity
+ * threshold) before firing the event. The handlerOut function is only
+ * called after a matching handlerIn.
+ *
+ * hoverIntent r7 // 2013.03.11 // jQuery 1.9.1+
+ * http://cherne.net/brian/resources/jquery.hoverIntent.html
+ *
+ * You may use hoverIntent under the terms of the MIT license. Basically that
+ * means you are free to use hoverIntent as long as this header is left intact.
+ * Copyright 2007, 2013 Brian Cherne
+ *
+ * // basic usage ... just like .hover()
+ * .hoverIntent( handlerIn, handlerOut )
+ * .hoverIntent( handlerInOut )
+ *
+ * // basic usage ... with event delegation!
+ * .hoverIntent( handlerIn, handlerOut, selector )
+ * .hoverIntent( handlerInOut, selector )
+ *
+ * // using a basic configuration object
+ * .hoverIntent( config )
+ *
+ * @param  handlerIn   function OR configuration object
+ * @param  handlerOut  function OR selector for delegation OR undefined
+ * @param  selector    selector OR undefined
+ * @author Brian Cherne <brian(at)cherne(dot)net>
+ **/
+(function($) {
+    $.fn.hoverIntent = function(handlerIn,handlerOut,selector) {
+
+        // default configuration values
+        var cfg = {
+            interval: 100,
+            sensitivity: 7,
+            timeout: 0
+        };
+
+        if ( typeof handlerIn === "object" ) {
+            cfg = $.extend(cfg, handlerIn );
+        } else if ($.isFunction(handlerOut)) {
+            cfg = $.extend(cfg, { over: handlerIn, out: handlerOut, selector: selector } );
+        } else {
+            cfg = $.extend(cfg, { over: handlerIn, out: handlerIn, selector: handlerOut } );
+        }
+
+        // instantiate variables
+        // cX, cY = current X and Y position of mouse, updated by mousemove event
+        // pX, pY = previous X and Y position of mouse, set by mouseover and polling interval
+        var cX, cY, pX, pY;
+
+        // A private function for getting mouse position
+        var track = function(ev) {
+            cX = ev.pageX;
+            cY = ev.pageY;
+        };
+
+        // A private function for comparing current and previous mouse position
+        var compare = function(ev,ob) {
+            ob.hoverIntent_t = clearTimeout(ob.hoverIntent_t);
+            // compare mouse positions to see if they've crossed the threshold
+            if ( ( Math.abs(pX-cX) + Math.abs(pY-cY) ) < cfg.sensitivity ) {
+                $(ob).off("mousemove.hoverIntent",track);
+                // set hoverIntent state to true (so mouseOut can be called)
+                ob.hoverIntent_s = 1;
+                return cfg.over.apply(ob,[ev]);
+            } else {
+                // set previous coordinates for next time
+                pX = cX; pY = cY;
+                // use self-calling timeout, guarantees intervals are spaced out properly (avoids JavaScript timer bugs)
+                ob.hoverIntent_t = setTimeout( function(){compare(ev, ob);} , cfg.interval );
+            }
+        };
+
+        // A private function for delaying the mouseOut function
+        var delay = function(ev,ob) {
+            ob.hoverIntent_t = clearTimeout(ob.hoverIntent_t);
+            ob.hoverIntent_s = 0;
+            return cfg.out.apply(ob,[ev]);
+        };
+
+        // A private function for handling mouse 'hovering'
+        var handleHover = function(e) {
+            // copy objects to be passed into t (required for event object to be passed in IE)
+            var ev = jQuery.extend({},e);
+            var ob = this;
+
+            // cancel hoverIntent timer if it exists
+            if (ob.hoverIntent_t) { ob.hoverIntent_t = clearTimeout(ob.hoverIntent_t); }
+
+            // if e.type == "mouseenter"
+            if (e.type == "mouseenter") {
+                // set "previous" X and Y position based on initial entry point
+                pX = ev.pageX; pY = ev.pageY;
+                // update "current" X and Y position based on mousemove
+                $(ob).on("mousemove.hoverIntent",track);
+                // start polling interval (self-calling timeout) to compare mouse coordinates over time
+                if (ob.hoverIntent_s != 1) { ob.hoverIntent_t = setTimeout( function(){compare(ev,ob);} , cfg.interval );}
+
+                // else e.type == "mouseleave"
+            } else {
+                // unbind expensive mousemove event
+                $(ob).off("mousemove.hoverIntent",track);
+                // if hoverIntent state is true, then call the mouseOut function after the specified delay
+                if (ob.hoverIntent_s == 1) { ob.hoverIntent_t = setTimeout( function(){delay(ev,ob);} , cfg.timeout );}
+            }
+        };
+
+        // listen for mouseenter and mouseleave
+        return this.on({'mouseenter.hoverIntent':handleHover,'mouseleave.hoverIntent':handleHover}, cfg.selector);
+    };
+})(jQuery);
+
+/***/ }),
+
+/***/ "./node_modules/superfish/dist/js/superfish.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/superfish/dist/js/superfish.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*
+ * jQuery Superfish Menu Plugin - v1.7.10
+ * Copyright (c) 2018 Joel Birch
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ *	http://www.opensource.org/licenses/mit-license.php
+ *	http://www.gnu.org/licenses/gpl.html
+ */
+
+;(function ($, w) {
+	"use strict";
+
+	var methods = (function () {
+		// private properties and methods go here
+		var c = {
+				bcClass: 'sf-breadcrumb',
+				menuClass: 'sf-js-enabled',
+				anchorClass: 'sf-with-ul',
+				menuArrowClass: 'sf-arrows'
+			},
+			ios = (function () {
+				var ios = /^(?![\w\W]*Windows Phone)[\w\W]*(iPhone|iPad|iPod)/i.test(navigator.userAgent);
+				if (ios) {
+					// tap anywhere on iOS to unfocus a submenu
+					$('html').css('cursor', 'pointer').on('click', $.noop);
+				}
+				return ios;
+			})(),
+			wp7 = (function () {
+				var style = document.documentElement.style;
+				return ('behavior' in style && 'fill' in style && /iemobile/i.test(navigator.userAgent));
+			})(),
+			unprefixedPointerEvents = (function () {
+				return (!!w.PointerEvent);
+			})(),
+			toggleMenuClasses = function ($menu, o, add) {
+				var classes = c.menuClass,
+					method;
+				if (o.cssArrows) {
+					classes += ' ' + c.menuArrowClass;
+				}
+				method = (add) ? 'addClass' : 'removeClass';
+				$menu[method](classes);
+			},
+			setPathToCurrent = function ($menu, o) {
+				return $menu.find('li.' + o.pathClass).slice(0, o.pathLevels)
+					.addClass(o.hoverClass + ' ' + c.bcClass)
+						.filter(function () {
+							return ($(this).children(o.popUpSelector).hide().show().length);
+						}).removeClass(o.pathClass);
+			},
+			toggleAnchorClass = function ($li, add) {
+				var method = (add) ? 'addClass' : 'removeClass';
+				$li.children('a')[method](c.anchorClass);
+			},
+			toggleTouchAction = function ($menu) {
+				var msTouchAction = $menu.css('ms-touch-action');
+				var touchAction = $menu.css('touch-action');
+				touchAction = touchAction || msTouchAction;
+				touchAction = (touchAction === 'pan-y') ? 'auto' : 'pan-y';
+				$menu.css({
+					'ms-touch-action': touchAction,
+					'touch-action': touchAction
+				});
+			},
+			getMenu = function ($el) {
+				return $el.closest('.' + c.menuClass);
+			},
+			getOptions = function ($el) {
+				return getMenu($el).data('sfOptions');
+			},
+			over = function () {
+				var $this = $(this),
+					o = getOptions($this);
+				clearTimeout(o.sfTimer);
+				$this.siblings().superfish('hide').end().superfish('show');
+			},
+			close = function (o) {
+				o.retainPath = ($.inArray(this[0], o.$path) > -1);
+				this.superfish('hide');
+
+				if (!this.parents('.' + o.hoverClass).length) {
+					o.onIdle.call(getMenu(this));
+					if (o.$path.length) {
+						$.proxy(over, o.$path)();
+					}
+				}
+			},
+			out = function () {
+				var $this = $(this),
+					o = getOptions($this);
+				if (ios) {
+					$.proxy(close, $this, o)();
+				}
+				else {
+					clearTimeout(o.sfTimer);
+					o.sfTimer = setTimeout($.proxy(close, $this, o), o.delay);
+				}
+			},
+			touchHandler = function (e) {
+				var $this = $(this),
+					o = getOptions($this),
+					$ul = $this.siblings(e.data.popUpSelector);
+
+				if (o.onHandleTouch.call($ul) === false) {
+					return this;
+				}
+
+				if ($ul.length > 0 && $ul.is(':hidden')) {
+					$this.one('click.superfish', false);
+					if (e.type === 'MSPointerDown' || e.type === 'pointerdown') {
+						$this.trigger('focus');
+					} else {
+						$.proxy(over, $this.parent('li'))();
+					}
+				}
+			},
+			applyHandlers = function ($menu, o) {
+				var targets = 'li:has(' + o.popUpSelector + ')';
+				if ($.fn.hoverIntent && !o.disableHI) {
+					$menu.hoverIntent(over, out, targets);
+				}
+				else {
+					$menu
+						.on('mouseenter.superfish', targets, over)
+						.on('mouseleave.superfish', targets, out);
+				}
+				var touchevent = 'MSPointerDown.superfish';
+				if (unprefixedPointerEvents) {
+					touchevent = 'pointerdown.superfish';
+				}
+				if (!ios) {
+					touchevent += ' touchend.superfish';
+				}
+				if (wp7) {
+					touchevent += ' mousedown.superfish';
+				}
+				$menu
+					.on('focusin.superfish', 'li', over)
+					.on('focusout.superfish', 'li', out)
+					.on(touchevent, 'a', o, touchHandler);
+			};
+
+		return {
+			// public methods
+			hide: function (instant) {
+				if (this.length) {
+					var $this = this,
+						o = getOptions($this);
+					if (!o) {
+						return this;
+					}
+					var not = (o.retainPath === true) ? o.$path : '',
+						$ul = $this.find('li.' + o.hoverClass).add(this).not(not).removeClass(o.hoverClass).children(o.popUpSelector),
+						speed = o.speedOut;
+
+					if (instant) {
+						$ul.show();
+						speed = 0;
+					}
+					o.retainPath = false;
+
+					if (o.onBeforeHide.call($ul) === false) {
+						return this;
+					}
+
+					$ul.stop(true, true).animate(o.animationOut, speed, function () {
+						var $this = $(this);
+						o.onHide.call($this);
+					});
+				}
+				return this;
+			},
+			show: function () {
+				var o = getOptions(this);
+				if (!o) {
+					return this;
+				}
+				var $this = this.addClass(o.hoverClass),
+					$ul = $this.children(o.popUpSelector);
+
+				if (o.onBeforeShow.call($ul) === false) {
+					return this;
+				}
+
+				$ul.stop(true, true).animate(o.animation, o.speed, function () {
+					o.onShow.call($ul);
+				});
+				return this;
+			},
+			destroy: function () {
+				return this.each(function () {
+					var $this = $(this),
+						o = $this.data('sfOptions'),
+						$hasPopUp;
+					if (!o) {
+						return false;
+					}
+					$hasPopUp = $this.find(o.popUpSelector).parent('li');
+					clearTimeout(o.sfTimer);
+					toggleMenuClasses($this, o);
+					toggleAnchorClass($hasPopUp);
+					toggleTouchAction($this);
+					// remove event handlers
+					$this.off('.superfish').off('.hoverIntent');
+					// clear animation's inline display style
+					$hasPopUp.children(o.popUpSelector).attr('style', function (i, style) {
+						if (typeof style !== 'undefined') {
+							return style.replace(/display[^;]+;?/g, '');
+						}
+					});
+					// reset 'current' path classes
+					o.$path.removeClass(o.hoverClass + ' ' + c.bcClass).addClass(o.pathClass);
+					$this.find('.' + o.hoverClass).removeClass(o.hoverClass);
+					o.onDestroy.call($this);
+					$this.removeData('sfOptions');
+				});
+			},
+			init: function (op) {
+				return this.each(function () {
+					var $this = $(this);
+					if ($this.data('sfOptions')) {
+						return false;
+					}
+					var o = $.extend({}, $.fn.superfish.defaults, op),
+						$hasPopUp = $this.find(o.popUpSelector).parent('li');
+					o.$path = setPathToCurrent($this, o);
+
+					$this.data('sfOptions', o);
+
+					toggleMenuClasses($this, o, true);
+					toggleAnchorClass($hasPopUp, true);
+					toggleTouchAction($this);
+					applyHandlers($this, o);
+
+					$hasPopUp.not('.' + c.bcClass).superfish('hide', true);
+
+					o.onInit.call(this);
+				});
+			}
+		};
+	})();
+
+	$.fn.superfish = function (method, args) {
+		if (methods[method]) {
+			return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
+		}
+		else if (typeof method === 'object' || ! method) {
+			return methods.init.apply(this, arguments);
+		}
+		else {
+			return $.error('Method ' +  method + ' does not exist on jQuery.fn.superfish');
+		}
+	};
+
+	$.fn.superfish.defaults = {
+		popUpSelector: 'ul,.sf-mega', // within menu context
+		hoverClass: 'sfHover',
+		pathClass: 'overrideThisToUse',
+		pathLevels: 1,
+		delay: 800,
+		animation: {opacity: 'show'},
+		animationOut: {opacity: 'hide'},
+		speed: 'normal',
+		speedOut: 'fast',
+		cssArrows: true,
+		disableHI: false,
+		onInit: $.noop,
+		onBeforeShow: $.noop,
+		onShow: $.noop,
+		onBeforeHide: $.noop,
+		onHide: $.noop,
+		onIdle: $.noop,
+		onDestroy: $.noop,
+		onHandleTouch: $.noop
+	};
+
+})(jQuery, window);
+
+
+/***/ }),
+
 /***/ "./node_modules/timers-browserify/main.js":
 /*!************************************************!*\
   !*** ./node_modules/timers-browserify/main.js ***!
@@ -37058,6 +39019,780 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
                          (this && this.clearImmediate);
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "./node_modules/venobox/venobox/venobox.js":
+/*!*************************************************!*\
+  !*** ./node_modules/venobox/venobox/venobox.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*
+ * VenoBox - jQuery Plugin
+ * version: 1.8.5
+ * @requires jQuery >= 1.7.0
+ *
+ * Examples at http://veno.es/venobox/
+ * License: MIT License
+ * License URI: https://github.com/nicolafranchini/VenoBox/blob/master/LICENSE
+ * Copyright 2013-2017 Nicola Franchini - @nicolafranchini
+ *
+ */
+
+/* global jQuery */
+
+(function($){
+    "use strict";
+    var autoplay, bgcolor, blocknum, blocktitle, border, core, container, content, dest, extraCss,
+        framewidth, frameheight, gallItems, infinigall, items, keyNavigationDisabled, margine, numeratio,
+        overlayColor, overlay, title, thisgall, thenext, theprev, nextok, prevok, preloader, $preloader, navigation,
+        obj, gallIndex, startouch, vbheader, images, startY, startX, endY, endX, diff, diffX, diffY, threshold;
+
+    $.fn.extend({
+        //plugin name - venobox
+        venobox: function(options) {
+            var plugin = this;
+            // default options
+            var defaults = {
+                arrowsColor : '#B6B6B6',
+                autoplay : false, // same as data-autoplay - thanks @codibit
+                bgcolor: '#fff',
+                border: '0',
+                closeBackground : '#161617',
+                closeColor : "#d2d2d2",
+                framewidth: '',
+                frameheight: '',
+                gallItems: false,
+                infinigall: false,
+                htmlClose : '&times;',
+                htmlNext : '<span>Next</span>',
+                htmlPrev : '<span>Prev</span>',
+                numeratio: false,
+                numerationBackground : '#161617',
+                numerationColor : '#d2d2d2',
+                numerationPosition : 'top', // 'top' || 'bottom'
+                overlayClose: true, // disable overlay click-close - thanx @martybalandis
+                overlayColor : 'rgba(23,23,23,0.85)',
+                spinner : 'double-bounce', // available: 'rotating-plane' | 'double-bounce' | 'wave' | 'wandering-cubes' | 'spinner-pulse' | 'chasing-dots' | 'three-bounce' | 'circle' | 'cube-grid' | 'fading-circle' | 'folding-cube'
+                spinColor : '#d2d2d2',
+                titleattr: 'title', // specific attribute to get a title (e.g. [data-title]) - thanx @mendezcode
+                titleBackground: '#161617',
+                titleColor: '#d2d2d2',
+                titlePosition : 'top', // 'top' || 'bottom'
+                cb_pre_open: function(){ return true; }, // Callbacks - thanx @garyee
+                cb_post_open: function(){},
+                cb_pre_close: function(){ return true; },
+                cb_post_close: function(){},
+                cb_post_resize: function(){},
+                cb_after_nav: function(){},
+                cb_content_loaded: function(){},
+                cb_init: function(){}
+            };
+
+            var option = $.extend(defaults, options);
+
+            // callback plugin initialization
+            option.cb_init(plugin);
+
+            return this.each(function() {
+
+                obj = $(this);
+
+                // Prevent double initialization - thanx @matthistuff
+                if (obj.data('venobox')) {
+                  return true;
+                }
+
+                // method to be used outside the plugin
+                plugin.VBclose = function() {
+                    closeVbox();
+                };
+                obj.addClass('vbox-item');
+                obj.data('framewidth', option.framewidth);
+                obj.data('frameheight', option.frameheight);
+                obj.data('border', option.border);
+                obj.data('bgcolor', option.bgcolor);
+                obj.data('numeratio', option.numeratio);
+                obj.data('gallItems', option.gallItems);
+                obj.data('infinigall', option.infinigall);
+                obj.data('overlaycolor', option.overlayColor);
+                obj.data('titleattr', option.titleattr);
+
+                obj.data('venobox', true);
+
+                obj.on('click', function(e){
+
+                    e.preventDefault();
+                    obj = $(this);
+
+                    // callback plugin initialization
+                    var cb_pre_open = option.cb_pre_open(obj);
+
+                    if (cb_pre_open === false) {
+                      return false;
+                    }
+
+                    // methods to be used outside the plugin
+                    plugin.VBnext = function() {
+                        navigateGall(thenext);
+                    };
+                    plugin.VBprev = function() {
+                        navigateGall(theprev);
+                    };
+
+                    overlayColor = obj.data('overlay') || obj.data('overlaycolor');
+
+                    framewidth = obj.data('framewidth');
+                    frameheight = obj.data('frameheight');
+                    // set data-autoplay="true" for vimeo and youtube videos - thanx @zehfernandes
+                    autoplay = obj.data('autoplay') || option.autoplay;
+                    border = obj.data('border');
+                    bgcolor = obj.data('bgcolor');
+                    nextok = false;
+                    prevok = false;
+                    keyNavigationDisabled = false;
+
+                    // set a different url to be loaded using data-href="" - thanx @pixeline
+                    dest = obj.data('href') || obj.attr('href');
+                    extraCss = obj.data( 'css' ) || '';
+                    title = obj.attr(obj.data('titleattr')) || '';
+
+                    preloader = '<div class="vbox-preloader">';
+
+                    switch (option.spinner) {
+
+                        case 'rotating-plane':
+                            preloader += '<div class="sk-rotating-plane"></div>';
+                            break;
+                        case 'double-bounce':
+                            preloader += '<div class="sk-double-bounce">'+
+                            '<div class="sk-child sk-double-bounce1"></div>'+
+                            '<div class="sk-child sk-double-bounce2"></div>'+
+                            '</div>';
+                            break;
+                        case 'wave':
+                            preloader += '<div class="sk-wave">'+
+                            '<div class="sk-rect sk-rect1"></div>'+
+                            '<div class="sk-rect sk-rect2"></div>'+
+                            '<div class="sk-rect sk-rect3"></div>'+
+                            '<div class="sk-rect sk-rect4"></div>'+
+                            '<div class="sk-rect sk-rect5"></div>'+
+                            '</div>';
+                            break;
+                        case 'wandering-cubes':
+                            preloader += '<div class="sk-wandering-cubes">'+
+                            '<div class="sk-cube sk-cube1"></div>'+
+                            '<div class="sk-cube sk-cube2"></div>'+
+                            '</div>';
+                            break;
+                          case 'spinner-pulse':
+                            preloader += '<div class="sk-spinner sk-spinner-pulse"></div>';
+                            break;
+                        case 'chasing-dots':
+                            preloader += '<div class="sk-chasing-dots">'+
+                            '<div class="sk-child sk-dot1"></div>'+
+                            '<div class="sk-child sk-dot2"></div>'+
+                            '</div>';
+                            break;
+                        case 'three-bounce':
+                            preloader += '<div class="sk-three-bounce">'+
+                            '<div class="sk-child sk-bounce1"></div>'+
+                            '<div class="sk-child sk-bounce2"></div>'+
+                            '<div class="sk-child sk-bounce3"></div>'+
+                            '</div>';
+                            break;
+                        case 'circle':
+                            preloader += '<div class="sk-circle">'+
+                            '<div class="sk-circle1 sk-child"></div>'+
+                            '<div class="sk-circle2 sk-child"></div>'+
+                            '<div class="sk-circle3 sk-child"></div>'+
+                            '<div class="sk-circle4 sk-child"></div>'+
+                            '<div class="sk-circle5 sk-child"></div>'+
+                            '<div class="sk-circle6 sk-child"></div>'+
+                            '<div class="sk-circle7 sk-child"></div>'+
+                            '<div class="sk-circle8 sk-child"></div>'+
+                            '<div class="sk-circle9 sk-child"></div>'+
+                            '<div class="sk-circle10 sk-child"></div>'+
+                            '<div class="sk-circle11 sk-child"></div>'+
+                            '<div class="sk-circle12 sk-child"></div>'+
+                            '</div>';
+                            break;
+                        case 'cube-grid':
+                            preloader += '<div class="sk-cube-grid">'+
+                            '<div class="sk-cube sk-cube1"></div>'+
+                            '<div class="sk-cube sk-cube2"></div>'+
+                            '<div class="sk-cube sk-cube3"></div>'+
+                            '<div class="sk-cube sk-cube4"></div>'+
+                            '<div class="sk-cube sk-cube5"></div>'+
+                            '<div class="sk-cube sk-cube6"></div>'+
+                            '<div class="sk-cube sk-cube7"></div>'+
+                            '<div class="sk-cube sk-cube8"></div>'+
+                            '<div class="sk-cube sk-cube9"></div>'+
+                            '</div>';
+                            break;
+                        case 'fading-circle':
+                            preloader += '<div class="sk-fading-circle">'+
+                            '<div class="sk-circle1 sk-circle"></div>'+
+                            '<div class="sk-circle2 sk-circle"></div>'+
+                            '<div class="sk-circle3 sk-circle"></div>'+
+                            '<div class="sk-circle4 sk-circle"></div>'+
+                            '<div class="sk-circle5 sk-circle"></div>'+
+                            '<div class="sk-circle6 sk-circle"></div>'+
+                            '<div class="sk-circle7 sk-circle"></div>'+
+                            '<div class="sk-circle8 sk-circle"></div>'+
+                            '<div class="sk-circle9 sk-circle"></div>'+
+                            '<div class="sk-circle10 sk-circle"></div>'+
+                            '<div class="sk-circle11 sk-circle"></div>'+
+                            '<div class="sk-circle12 sk-circle"></div>'+
+                            '</div>';
+                            break;
+                        case 'folding-cube':
+                            preloader += '<div class="sk-folding-cube">'+
+                            '<div class="sk-cube1 sk-cube"></div>'+
+                            '<div class="sk-cube2 sk-cube"></div>'+
+                            '<div class="sk-cube4 sk-cube"></div>'+
+                            '<div class="sk-cube3 sk-cube"></div>'+
+                            '</div>';
+                            break;
+                    }
+                    preloader += '</div>';
+
+                    navigation = '<a class="vbox-next">' + option.htmlNext + '</a><a class="vbox-prev">' + option.htmlPrev + '</a>';
+                    vbheader = '<div class="vbox-title"></div><div class="vbox-num">0/0</div><div class="vbox-close">' + option.htmlClose + '</div>';
+
+                    core = '<div class="vbox-overlay ' + extraCss + '" style="background:'+ overlayColor +'">'+
+                    preloader + '<div class="vbox-container"><div class="vbox-content"></div></div>' + vbheader + navigation + '</div>';
+
+                    $('body').append(core).addClass('vbox-open');
+
+                    $('.vbox-preloader div:not(.sk-circle) .sk-child, .vbox-preloader .sk-rotating-plane, .vbox-preloader .sk-rect, .vbox-preloader div:not(.sk-folding-cube) .sk-cube, .vbox-preloader .sk-spinner-pulse').css('background-color', option.spinColor);
+
+                    overlay = $('.vbox-overlay');
+                    container = $('.vbox-container');
+                    content = $('.vbox-content');
+                    blocknum = $('.vbox-num');
+                    blocktitle = $('.vbox-title');
+                    $preloader = $('.vbox-preloader');
+
+                    $preloader.show();
+
+                    blocktitle.css(option.titlePosition, '-1px');
+                    blocktitle.css({
+                      'color' : option.titleColor,
+                      'background-color' : option.titleBackground
+                    });
+
+                    $('.vbox-close').css({
+                      'color' : option.closeColor,
+                      'background-color' : option.closeBackground
+                    });
+
+                    $('.vbox-num').css(option.numerationPosition, '-1px');
+                    $('.vbox-num').css({
+                      'color' : option.numerationColor,
+                      'background-color' : option.numerationBackground
+                    });
+
+                    $('.vbox-next span, .vbox-prev span').css({
+                      'border-top-color' : option.arrowsColor,
+                      'border-right-color' : option.arrowsColor
+                    });
+
+                    content.html('');
+                    content.css('opacity', '0');
+                    overlay.css('opacity', '0');
+
+                    checknav();
+
+                    // fade in overlay
+                    overlay.animate({opacity:1}, 250, function(){
+
+                        if (obj.data('vbtype') == 'iframe') {
+                          loadIframe();
+                        } else if (obj.data('vbtype') == 'inline') {
+                          loadInline();
+                        } else if (obj.data('vbtype') == 'ajax') {
+                          loadAjax();
+                        } else if (obj.data('vbtype') == 'video') {
+                          loadVid(autoplay);
+                        } else {
+                          content.html('<img src="'+dest+'">');
+                          preloadFirst();
+                        }
+                        option.cb_post_open(obj, gallIndex, thenext, theprev);
+                    });
+
+                    /* -------- KEYBOARD ACTIONS -------- */
+                    $('body').keydown(keyboardHandler);
+
+                    /* -------- PREVGALL -------- */
+                    $('.vbox-prev').on('click', function(){
+                        navigateGall(theprev);
+                    });
+                    /* -------- NEXTGALL -------- */
+                    $('.vbox-next').on('click', function(){
+                        navigateGall(thenext);
+                    });
+
+                    return false;
+
+                }); // click
+
+                /* -------- CHECK NEXT / PREV -------- */
+                function checknav(){
+
+                    thisgall = obj.data('gall');
+                    numeratio = obj.data('numeratio');
+                    gallItems = obj.data('gallItems');
+                    infinigall = obj.data('infinigall');
+
+                    if (gallItems) {
+                        items = gallItems;
+                    } else {
+                        items = $('.vbox-item[data-gall="' + thisgall + '"]');
+                    }
+
+                    thenext = items.eq( items.index(obj) + 1 );
+                    theprev = items.eq( items.index(obj) - 1 );
+
+                    if (!thenext.length && infinigall === true) {
+                      thenext = items.eq(0);
+                    }
+
+                    // update gall numeration
+                    if (items.length > 1) {
+                      gallIndex = items.index(obj)+1;
+                      blocknum.html(gallIndex + ' / ' + items.length);
+                    } else {
+                      gallIndex = 1;
+                    }
+                    if (numeratio === true) {
+                      blocknum.show();
+                    } else {
+                      blocknum.hide();
+                    }
+
+                    // update title
+                    if (title !== '') {
+                      blocktitle.show();
+                    } else {
+                      blocktitle.hide();
+                    }
+
+                    // update navigation arrows
+                    if (!thenext.length && infinigall !== true) {
+                      $('.vbox-next').css('display', 'none');
+                      nextok = false;
+                    } else {
+                      $('.vbox-next').css('display', 'block');
+                      nextok = true;
+                    }
+
+                    if (items.index(obj) > 0 || infinigall === true) {
+                      $('.vbox-prev').css('display', 'block');
+                      prevok = true;
+                    } else {
+                      $('.vbox-prev').css('display', 'none');
+                      prevok = false;
+                    }
+                    // activate swipe
+                    if (prevok === true || nextok === true) {
+                      content.on(TouchMouseEvent.DOWN, onDownEvent);
+                      content.on(TouchMouseEvent.MOVE, onMoveEvent);
+                      content.on(TouchMouseEvent.UP, onUpEvent);
+                    }
+                }
+
+                /* -------- gallery navigation -------- */
+                function navigateGall(destination) {
+
+                    if (destination.length < 1) {
+                      return false;
+                    }
+                    if (keyNavigationDisabled) {
+                      return false;
+                    }
+                    keyNavigationDisabled = true;
+
+                    overlayColor = destination.data('overlay') || destination.data('overlaycolor');
+
+                    framewidth = destination.data('framewidth');
+                    frameheight = destination.data('frameheight');
+                    border = destination.data('border');
+                    bgcolor = destination.data('bgcolor');
+                    dest = destination.data('href') || destination.attr('href');
+
+                    autoplay = destination.data('autoplay');
+
+                    title = destination.attr(destination.data('titleattr')) || '';
+
+                    // swipe out item
+                    if (destination === theprev) {
+                      content.addClass('animated').addClass('swipe-right');
+                    }
+                    if (destination === thenext) {
+                      content.addClass('animated').addClass('swipe-left');
+                    }
+
+                    $preloader.show();
+
+                    content.animate({
+                      opacity : 0,
+                    }, 500, function(){
+
+                      overlay.css('background',overlayColor);
+
+                      content
+                      .removeClass('animated')
+                      .removeClass('swipe-left')
+                      .removeClass('swipe-right')
+                      .css({'margin-left': 0,'margin-right': 0});
+
+                      if (destination.data('vbtype') == 'iframe') {
+                        loadIframe();
+                      } else if (destination.data('vbtype') == 'inline') {
+                        loadInline();
+                      } else if (destination.data('vbtype') == 'ajax') {
+                        loadAjax();
+                      } else if (destination.data('vbtype') == 'video') {
+                        loadVid(autoplay);
+                      } else {
+                        content.html('<img src="'+dest+'">');
+                        preloadFirst();
+                      }
+                      obj = destination;
+                      checknav();
+                      keyNavigationDisabled = false;
+                      option.cb_after_nav(obj, gallIndex, thenext, theprev);
+                    });
+                }
+
+                /* -------- KEYBOARD HANDLER -------- */
+                function keyboardHandler(e) {
+                    if (e.keyCode === 27) { // esc
+                      closeVbox();
+                    }
+
+                    if (e.keyCode == 37 && prevok === true) { // left
+                      navigateGall(theprev);
+                    }
+
+                    if (e.keyCode == 39 && nextok === true) { // right
+                      navigateGall(thenext);
+                    }
+                }
+
+                /* -------- CLOSE VBOX -------- */
+                function closeVbox(){
+
+                    var cb_pre_close = option.cb_pre_close(obj, gallIndex, thenext, theprev);
+
+                    if (cb_pre_close === false) {
+                      return false;
+                    }
+
+                    $('body').off('keydown', keyboardHandler).removeClass('vbox-open');
+
+                    obj.focus();
+
+                    overlay.animate({opacity:0}, 500, function(){
+                      overlay.remove();
+                      keyNavigationDisabled = false;
+                      option.cb_post_close();
+                    });
+                }
+
+                /* -------- CLOSE CLICK -------- */
+                var closeclickclass = '.vbox-overlay';
+                if(!option.overlayClose){
+                    closeclickclass = '.vbox-close'; // close only on X
+                }
+
+                $('body').on('click touchstart', closeclickclass, function(e){
+                    if ($(e.target).is('.vbox-overlay') ||
+						$(e.target).is('.vbox-content') ||
+						$(e.target).is('.vbox-close') ||
+						$(e.target).is('.vbox-preloader') ||
+						$(e.target).is('.vbox-container')
+                    ) {
+                        closeVbox();
+                    }
+                });
+
+                startX = 0;
+                endX = 0;
+
+                diff = 0;
+                threshold = 50;
+                startouch = false;
+
+                function onDownEvent(e){
+                    content.addClass('animated');
+                    startY = endY = e.pageY;
+                    startX = endX = e.pageX;
+                    startouch = true;
+                }
+
+                function onMoveEvent(e){
+                    if (startouch === true) {
+                        endX = e.pageX;
+                        endY = e.pageY;
+
+                        diffX = endX - startX;
+                        diffY = endY - startY;
+
+                        var absdiffX = Math.abs(diffX);
+                        var absdiffY = Math.abs(diffY);
+
+                        if ((absdiffX > absdiffY) && (absdiffX <= 100)) {
+                            e.preventDefault();
+                            content.css('margin-left', diffX);
+                        }
+                    }
+                }
+
+                function onUpEvent(e){
+                    if (startouch === true) {
+                        startouch = false;
+                        var subject = obj;
+                        var change = false;
+                        diff = endX - startX;
+
+                        if (diff < 0 && nextok === true) {
+                            subject = thenext;
+                            change = true;
+                        }
+                        if (diff > 0 && prevok === true) {
+                            subject = theprev;
+                            change = true;
+                        }
+
+                        if (Math.abs(diff) >= threshold && change === true) {
+                            navigateGall(subject);
+                        } else {
+                            content.css({'margin-left': 0,'margin-right': 0});
+                        }
+                    }
+                }
+
+                /* == GLOBAL DECLERATIONS == */
+                var TouchMouseEvent = {
+                    DOWN: "touchmousedown",
+                    UP: "touchmouseup",
+                    MOVE: "touchmousemove"
+                };
+
+                /* == EVENT LISTENERS == */
+                var onMouseEvent = function(event) {
+                    var type;
+                    switch (event.type) {
+                        case "mousedown": type = TouchMouseEvent.DOWN; break;
+                        case "mouseup":   type = TouchMouseEvent.UP;   break;
+                        case "mouseout":   type = TouchMouseEvent.UP;   break;
+                        case "mousemove": type = TouchMouseEvent.MOVE; break;
+                        default:
+                            return;
+                    }
+                    var touchMouseEvent = normalizeEvent(type, event, event.pageX, event.pageY);
+                    $(event.target).trigger(touchMouseEvent);
+                };
+
+                var onTouchEvent = function(event) {
+                    var type;
+                    switch (event.type) {
+                        case "touchstart": type = TouchMouseEvent.DOWN; break;
+                        case "touchend":   type = TouchMouseEvent.UP;   break;
+                        case "touchmove":  type = TouchMouseEvent.MOVE; break;
+                        default:
+                            return;
+                    }
+
+                    var touch = event.originalEvent.touches[0];
+                    var touchMouseEvent;
+
+                    if (type == TouchMouseEvent.UP) {
+                         touchMouseEvent = normalizeEvent(type, event, null, null);
+                    } else {
+                        touchMouseEvent = normalizeEvent(type, event, touch.pageX, touch.pageY);
+                    }
+                    $(event.target).trigger(touchMouseEvent);
+                };
+
+                /* == NORMALIZE == */
+                var normalizeEvent = function(type, original, x, y) {
+                    return $.Event(type, {
+                        pageX: x,
+                        pageY: y,
+                        originalEvent: original
+                    });
+                };
+
+                /* == LISTEN TO ORIGINAL EVENT == */
+                if ("ontouchstart" in window) {
+                    $(document).on("touchstart", onTouchEvent);
+                    $(document).on("touchmove", onTouchEvent);
+                    $(document).on("touchend", onTouchEvent);
+                } else {
+                    $(document).on("mousedown", onMouseEvent);
+                    $(document).on("mouseup", onMouseEvent);
+                    $(document).on("mouseout", onMouseEvent);
+                    $(document).on("mousemove", onMouseEvent);
+                }
+
+                /* -------- LOAD AJAX -------- */
+                function loadAjax(){
+                  $.ajax({
+                  url: dest,
+                  cache: false
+                  }).done(function( msg ) {
+                      content.html('<div class="vbox-inline">'+ msg +'</div>');
+                      preloadFirst();
+
+                  }).fail(function() {
+                      content.html('<div class="vbox-inline"><p>Error retrieving contents, please retry</div>');
+                      updateoverlay();
+                  });
+                }
+
+                /* -------- LOAD IFRAME -------- */
+                function loadIframe(){
+                    content.html('<iframe class="venoframe" src="'+dest+'"></iframe>');
+                  //  $('.venoframe').load(function(){ // valid only for iFrames in same domain
+                    updateoverlay();
+                  //  });
+                }
+
+                /* -------- LOAD VIDEOs -------- */
+                function loadVid(autoplay){
+
+                    var player;
+                    var videoObj = parseVideo(dest);
+
+                    // set rel=0 to hide related videos at the end of YT + optional autoplay
+                    var stringAutoplay = autoplay ? "?rel=0&autoplay=1" : "?rel=0";
+                    var queryvars = stringAutoplay + getUrlParameter(dest);
+
+                    if (videoObj.type == 'vimeo') {
+                      player = 'https://player.vimeo.com/video/';
+                    } else if (videoObj.type == 'youtube') {
+                      player = 'https://www.youtube.com/embed/';
+                    }
+                    content.html('<iframe class="venoframe vbvid" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay" frameborder="0" src="'+player+videoObj.id+queryvars+'"></iframe>');
+                    updateoverlay();
+                }
+
+                /**
+                * Parse Youtube or Vimeo videos and get host & ID
+                */
+                function parseVideo (url) {
+                    url.match(/(http:|https:|)\/\/(player.|www.)?(vimeo\.com|youtu(be\.com|\.be|be\.googleapis\.com))\/(video\/|embed\/|watch\?v=|v\/)?([A-Za-z0-9._%-]*)(\&\S+)?/);
+                    var type;
+                    if (RegExp.$3.indexOf('youtu') > -1) {
+                        type = 'youtube';
+                    } else if (RegExp.$3.indexOf('vimeo') > -1) {
+                        type = 'vimeo';
+                    }
+                    return {
+                        type: type,
+                        id: RegExp.$6
+                    };
+                }
+
+                /**
+                * get additional video url parameters
+                */
+                function getUrlParameter(name) {
+                  var result = '';
+                  var sPageURL = decodeURIComponent(name);
+                  var firstsplit = sPageURL.split('?');
+
+                  if (firstsplit[1] !== undefined) {
+                      var sURLVariables = firstsplit[1].split('&');
+                      var sParameterName;
+                      var i;
+                      for (i = 0; i < sURLVariables.length; i++) {
+                          sParameterName = sURLVariables[i].split('=');
+                          result = result + '&'+ sParameterName[0]+'='+ sParameterName[1];
+                      }
+                  }
+                  return encodeURI(result);
+                }
+
+                /* -------- LOAD INLINE -------- */
+                function loadInline(){
+                    content.html('<div class="vbox-inline">'+$(dest).html()+'</div>');
+                    updateoverlay();
+                }
+
+                /* -------- PRELOAD IMAGE -------- */
+                function preloadFirst(){
+                    images = content.find('img');
+
+                    if (images.length) {
+                        images.each(function(){
+                            $(this).one('load', function() {
+                                updateoverlay();
+                            });
+                        });
+                    } else {
+                        updateoverlay();
+                    }
+                }
+
+                /* -------- FADE-IN THE NEW CONTENT -------- */
+                function updateoverlay(){
+
+                    blocktitle.html(title);
+
+                    content.find(">:first-child").addClass('figlio').css({
+                        'width': framewidth,
+                        'height': frameheight,
+                        'padding': border,
+                        'background': bgcolor
+                    });
+
+                    $('img.figlio').on('dragstart', function(event) {
+                        event.preventDefault();
+                    });
+
+                    updateOL();
+
+                    content.animate({
+                        'opacity': '1'
+                    },'slow', function(){
+                        $preloader.hide();
+                    });
+                    option.cb_content_loaded(obj, gallIndex, thenext, theprev);
+                }
+
+                /* -------- CENTER FRAME -------- */
+                function updateOL(){
+
+                    var sonH = content.outerHeight();
+                    var finH = $(window).height();
+
+                    if (sonH + 60 < finH) {
+                        margine = (finH - sonH)/2;
+                    } else {
+                        margine = '30px';
+                    }
+                    content.css('margin-top', margine);
+                    content.css('margin-bottom', margine);
+                    option.cb_post_resize();
+                }
+
+                $(window).resize(function(){
+                    if($('.vbox-content').length){
+                        setTimeout(updateOL(), 800);
+                    }
+                });
+            }); // each
+        } // venobox
+    }); // extend
+})(jQuery);
+
 
 /***/ }),
 
@@ -49180,6 +51915,20 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/webpack/buildin/amd-define.js":
+/*!***************************************!*\
+  !*** (webpack)/buildin/amd-define.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function() {
+	throw new Error("define cannot be used indirect");
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/webpack/buildin/global.js":
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
@@ -49244,6 +51993,530 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./node_modules/wowjs/dist/wow.js":
+/*!****************************************!*\
+  !*** ./node_modules/wowjs/dist/wow.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+(function() {
+  var MutationObserver, Util, WeakMap, getComputedStyle, getComputedStyleRX,
+    bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
+
+  Util = (function() {
+    function Util() {}
+
+    Util.prototype.extend = function(custom, defaults) {
+      var key, value;
+      for (key in defaults) {
+        value = defaults[key];
+        if (custom[key] == null) {
+          custom[key] = value;
+        }
+      }
+      return custom;
+    };
+
+    Util.prototype.isMobile = function(agent) {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(agent);
+    };
+
+    Util.prototype.createEvent = function(event, bubble, cancel, detail) {
+      var customEvent;
+      if (bubble == null) {
+        bubble = false;
+      }
+      if (cancel == null) {
+        cancel = false;
+      }
+      if (detail == null) {
+        detail = null;
+      }
+      if (document.createEvent != null) {
+        customEvent = document.createEvent('CustomEvent');
+        customEvent.initCustomEvent(event, bubble, cancel, detail);
+      } else if (document.createEventObject != null) {
+        customEvent = document.createEventObject();
+        customEvent.eventType = event;
+      } else {
+        customEvent.eventName = event;
+      }
+      return customEvent;
+    };
+
+    Util.prototype.emitEvent = function(elem, event) {
+      if (elem.dispatchEvent != null) {
+        return elem.dispatchEvent(event);
+      } else if (event in (elem != null)) {
+        return elem[event]();
+      } else if (("on" + event) in (elem != null)) {
+        return elem["on" + event]();
+      }
+    };
+
+    Util.prototype.addEvent = function(elem, event, fn) {
+      if (elem.addEventListener != null) {
+        return elem.addEventListener(event, fn, false);
+      } else if (elem.attachEvent != null) {
+        return elem.attachEvent("on" + event, fn);
+      } else {
+        return elem[event] = fn;
+      }
+    };
+
+    Util.prototype.removeEvent = function(elem, event, fn) {
+      if (elem.removeEventListener != null) {
+        return elem.removeEventListener(event, fn, false);
+      } else if (elem.detachEvent != null) {
+        return elem.detachEvent("on" + event, fn);
+      } else {
+        return delete elem[event];
+      }
+    };
+
+    Util.prototype.innerHeight = function() {
+      if ('innerHeight' in window) {
+        return window.innerHeight;
+      } else {
+        return document.documentElement.clientHeight;
+      }
+    };
+
+    return Util;
+
+  })();
+
+  WeakMap = this.WeakMap || this.MozWeakMap || (WeakMap = (function() {
+    function WeakMap() {
+      this.keys = [];
+      this.values = [];
+    }
+
+    WeakMap.prototype.get = function(key) {
+      var i, item, j, len, ref;
+      ref = this.keys;
+      for (i = j = 0, len = ref.length; j < len; i = ++j) {
+        item = ref[i];
+        if (item === key) {
+          return this.values[i];
+        }
+      }
+    };
+
+    WeakMap.prototype.set = function(key, value) {
+      var i, item, j, len, ref;
+      ref = this.keys;
+      for (i = j = 0, len = ref.length; j < len; i = ++j) {
+        item = ref[i];
+        if (item === key) {
+          this.values[i] = value;
+          return;
+        }
+      }
+      this.keys.push(key);
+      return this.values.push(value);
+    };
+
+    return WeakMap;
+
+  })());
+
+  MutationObserver = this.MutationObserver || this.WebkitMutationObserver || this.MozMutationObserver || (MutationObserver = (function() {
+    function MutationObserver() {
+      if (typeof console !== "undefined" && console !== null) {
+        console.warn('MutationObserver is not supported by your browser.');
+      }
+      if (typeof console !== "undefined" && console !== null) {
+        console.warn('WOW.js cannot detect dom mutations, please call .sync() after loading new content.');
+      }
+    }
+
+    MutationObserver.notSupported = true;
+
+    MutationObserver.prototype.observe = function() {};
+
+    return MutationObserver;
+
+  })());
+
+  getComputedStyle = this.getComputedStyle || function(el, pseudo) {
+    this.getPropertyValue = function(prop) {
+      var ref;
+      if (prop === 'float') {
+        prop = 'styleFloat';
+      }
+      if (getComputedStyleRX.test(prop)) {
+        prop.replace(getComputedStyleRX, function(_, _char) {
+          return _char.toUpperCase();
+        });
+      }
+      return ((ref = el.currentStyle) != null ? ref[prop] : void 0) || null;
+    };
+    return this;
+  };
+
+  getComputedStyleRX = /(\-([a-z]){1})/g;
+
+  this.WOW = (function() {
+    WOW.prototype.defaults = {
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 0,
+      mobile: true,
+      live: true,
+      callback: null,
+      scrollContainer: null
+    };
+
+    function WOW(options) {
+      if (options == null) {
+        options = {};
+      }
+      this.scrollCallback = bind(this.scrollCallback, this);
+      this.scrollHandler = bind(this.scrollHandler, this);
+      this.resetAnimation = bind(this.resetAnimation, this);
+      this.start = bind(this.start, this);
+      this.scrolled = true;
+      this.config = this.util().extend(options, this.defaults);
+      if (options.scrollContainer != null) {
+        this.config.scrollContainer = document.querySelector(options.scrollContainer);
+      }
+      this.animationNameCache = new WeakMap();
+      this.wowEvent = this.util().createEvent(this.config.boxClass);
+    }
+
+    WOW.prototype.init = function() {
+      var ref;
+      this.element = window.document.documentElement;
+      if ((ref = document.readyState) === "interactive" || ref === "complete") {
+        this.start();
+      } else {
+        this.util().addEvent(document, 'DOMContentLoaded', this.start);
+      }
+      return this.finished = [];
+    };
+
+    WOW.prototype.start = function() {
+      var box, j, len, ref;
+      this.stopped = false;
+      this.boxes = (function() {
+        var j, len, ref, results;
+        ref = this.element.querySelectorAll("." + this.config.boxClass);
+        results = [];
+        for (j = 0, len = ref.length; j < len; j++) {
+          box = ref[j];
+          results.push(box);
+        }
+        return results;
+      }).call(this);
+      this.all = (function() {
+        var j, len, ref, results;
+        ref = this.boxes;
+        results = [];
+        for (j = 0, len = ref.length; j < len; j++) {
+          box = ref[j];
+          results.push(box);
+        }
+        return results;
+      }).call(this);
+      if (this.boxes.length) {
+        if (this.disabled()) {
+          this.resetStyle();
+        } else {
+          ref = this.boxes;
+          for (j = 0, len = ref.length; j < len; j++) {
+            box = ref[j];
+            this.applyStyle(box, true);
+          }
+        }
+      }
+      if (!this.disabled()) {
+        this.util().addEvent(this.config.scrollContainer || window, 'scroll', this.scrollHandler);
+        this.util().addEvent(window, 'resize', this.scrollHandler);
+        this.interval = setInterval(this.scrollCallback, 50);
+      }
+      if (this.config.live) {
+        return new MutationObserver((function(_this) {
+          return function(records) {
+            var k, len1, node, record, results;
+            results = [];
+            for (k = 0, len1 = records.length; k < len1; k++) {
+              record = records[k];
+              results.push((function() {
+                var l, len2, ref1, results1;
+                ref1 = record.addedNodes || [];
+                results1 = [];
+                for (l = 0, len2 = ref1.length; l < len2; l++) {
+                  node = ref1[l];
+                  results1.push(this.doSync(node));
+                }
+                return results1;
+              }).call(_this));
+            }
+            return results;
+          };
+        })(this)).observe(document.body, {
+          childList: true,
+          subtree: true
+        });
+      }
+    };
+
+    WOW.prototype.stop = function() {
+      this.stopped = true;
+      this.util().removeEvent(this.config.scrollContainer || window, 'scroll', this.scrollHandler);
+      this.util().removeEvent(window, 'resize', this.scrollHandler);
+      if (this.interval != null) {
+        return clearInterval(this.interval);
+      }
+    };
+
+    WOW.prototype.sync = function(element) {
+      if (MutationObserver.notSupported) {
+        return this.doSync(this.element);
+      }
+    };
+
+    WOW.prototype.doSync = function(element) {
+      var box, j, len, ref, results;
+      if (element == null) {
+        element = this.element;
+      }
+      if (element.nodeType !== 1) {
+        return;
+      }
+      element = element.parentNode || element;
+      ref = element.querySelectorAll("." + this.config.boxClass);
+      results = [];
+      for (j = 0, len = ref.length; j < len; j++) {
+        box = ref[j];
+        if (indexOf.call(this.all, box) < 0) {
+          this.boxes.push(box);
+          this.all.push(box);
+          if (this.stopped || this.disabled()) {
+            this.resetStyle();
+          } else {
+            this.applyStyle(box, true);
+          }
+          results.push(this.scrolled = true);
+        } else {
+          results.push(void 0);
+        }
+      }
+      return results;
+    };
+
+    WOW.prototype.show = function(box) {
+      this.applyStyle(box);
+      box.className = box.className + " " + this.config.animateClass;
+      if (this.config.callback != null) {
+        this.config.callback(box);
+      }
+      this.util().emitEvent(box, this.wowEvent);
+      this.util().addEvent(box, 'animationend', this.resetAnimation);
+      this.util().addEvent(box, 'oanimationend', this.resetAnimation);
+      this.util().addEvent(box, 'webkitAnimationEnd', this.resetAnimation);
+      this.util().addEvent(box, 'MSAnimationEnd', this.resetAnimation);
+      return box;
+    };
+
+    WOW.prototype.applyStyle = function(box, hidden) {
+      var delay, duration, iteration;
+      duration = box.getAttribute('data-wow-duration');
+      delay = box.getAttribute('data-wow-delay');
+      iteration = box.getAttribute('data-wow-iteration');
+      return this.animate((function(_this) {
+        return function() {
+          return _this.customStyle(box, hidden, duration, delay, iteration);
+        };
+      })(this));
+    };
+
+    WOW.prototype.animate = (function() {
+      if ('requestAnimationFrame' in window) {
+        return function(callback) {
+          return window.requestAnimationFrame(callback);
+        };
+      } else {
+        return function(callback) {
+          return callback();
+        };
+      }
+    })();
+
+    WOW.prototype.resetStyle = function() {
+      var box, j, len, ref, results;
+      ref = this.boxes;
+      results = [];
+      for (j = 0, len = ref.length; j < len; j++) {
+        box = ref[j];
+        results.push(box.style.visibility = 'visible');
+      }
+      return results;
+    };
+
+    WOW.prototype.resetAnimation = function(event) {
+      var target;
+      if (event.type.toLowerCase().indexOf('animationend') >= 0) {
+        target = event.target || event.srcElement;
+        return target.className = target.className.replace(this.config.animateClass, '').trim();
+      }
+    };
+
+    WOW.prototype.customStyle = function(box, hidden, duration, delay, iteration) {
+      if (hidden) {
+        this.cacheAnimationName(box);
+      }
+      box.style.visibility = hidden ? 'hidden' : 'visible';
+      if (duration) {
+        this.vendorSet(box.style, {
+          animationDuration: duration
+        });
+      }
+      if (delay) {
+        this.vendorSet(box.style, {
+          animationDelay: delay
+        });
+      }
+      if (iteration) {
+        this.vendorSet(box.style, {
+          animationIterationCount: iteration
+        });
+      }
+      this.vendorSet(box.style, {
+        animationName: hidden ? 'none' : this.cachedAnimationName(box)
+      });
+      return box;
+    };
+
+    WOW.prototype.vendors = ["moz", "webkit"];
+
+    WOW.prototype.vendorSet = function(elem, properties) {
+      var name, results, value, vendor;
+      results = [];
+      for (name in properties) {
+        value = properties[name];
+        elem["" + name] = value;
+        results.push((function() {
+          var j, len, ref, results1;
+          ref = this.vendors;
+          results1 = [];
+          for (j = 0, len = ref.length; j < len; j++) {
+            vendor = ref[j];
+            results1.push(elem["" + vendor + (name.charAt(0).toUpperCase()) + (name.substr(1))] = value);
+          }
+          return results1;
+        }).call(this));
+      }
+      return results;
+    };
+
+    WOW.prototype.vendorCSS = function(elem, property) {
+      var j, len, ref, result, style, vendor;
+      style = getComputedStyle(elem);
+      result = style.getPropertyCSSValue(property);
+      ref = this.vendors;
+      for (j = 0, len = ref.length; j < len; j++) {
+        vendor = ref[j];
+        result = result || style.getPropertyCSSValue("-" + vendor + "-" + property);
+      }
+      return result;
+    };
+
+    WOW.prototype.animationName = function(box) {
+      var animationName, error;
+      try {
+        animationName = this.vendorCSS(box, 'animation-name').cssText;
+      } catch (error) {
+        animationName = getComputedStyle(box).getPropertyValue('animation-name');
+      }
+      if (animationName === 'none') {
+        return '';
+      } else {
+        return animationName;
+      }
+    };
+
+    WOW.prototype.cacheAnimationName = function(box) {
+      return this.animationNameCache.set(box, this.animationName(box));
+    };
+
+    WOW.prototype.cachedAnimationName = function(box) {
+      return this.animationNameCache.get(box);
+    };
+
+    WOW.prototype.scrollHandler = function() {
+      return this.scrolled = true;
+    };
+
+    WOW.prototype.scrollCallback = function() {
+      var box;
+      if (this.scrolled) {
+        this.scrolled = false;
+        this.boxes = (function() {
+          var j, len, ref, results;
+          ref = this.boxes;
+          results = [];
+          for (j = 0, len = ref.length; j < len; j++) {
+            box = ref[j];
+            if (!(box)) {
+              continue;
+            }
+            if (this.isVisible(box)) {
+              this.show(box);
+              continue;
+            }
+            results.push(box);
+          }
+          return results;
+        }).call(this);
+        if (!(this.boxes.length || this.config.live)) {
+          return this.stop();
+        }
+      }
+    };
+
+    WOW.prototype.offsetTop = function(element) {
+      var top;
+      while (element.offsetTop === void 0) {
+        element = element.parentNode;
+      }
+      top = element.offsetTop;
+      while (element = element.offsetParent) {
+        top += element.offsetTop;
+      }
+      return top;
+    };
+
+    WOW.prototype.isVisible = function(box) {
+      var bottom, offset, top, viewBottom, viewTop;
+      offset = box.getAttribute('data-wow-offset') || this.config.offset;
+      viewTop = (this.config.scrollContainer && this.config.scrollContainer.scrollTop) || window.pageYOffset;
+      viewBottom = viewTop + Math.min(this.element.clientHeight, this.util().innerHeight()) - offset;
+      top = this.offsetTop(box);
+      bottom = top + box.clientHeight;
+      return top <= viewBottom && bottom >= viewTop;
+    };
+
+    WOW.prototype.util = function() {
+      return this._util != null ? this._util : this._util = new Util();
+    };
+
+    WOW.prototype.disabled = function() {
+      return !this.config.mobile && this.util().isMobile(navigator.userAgent);
+    };
+
+    return WOW;
+
+  })();
+
+}).call(this);
+
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -49258,21 +52531,17 @@ module.exports = function(module) {
  */
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-__webpack_require__(/*! ./easing */ "./resources/js/easing.js");
-
-__webpack_require__(/*! ./owl.carousel */ "./resources/js/owl.carousel.js");
-
-__webpack_require__(/*! ./hoverIntent */ "./resources/js/hoverIntent.js");
-
-__webpack_require__(/*! ./superfish */ "./resources/js/superfish.js");
-
-__webpack_require__(/*! ./venobox */ "./resources/js/venobox.js");
-
-__webpack_require__(/*! ./wow */ "./resources/js/wow.js");
-
 __webpack_require__(/*! ./main */ "./resources/js/main.js");
 
+window.Easing = __webpack_require__(/*! easing-js */ "./node_modules/easing-js/easing.js");
+window.Jquery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+window.Jquerymigrate = __webpack_require__(/*! jquery-migrate/dist/jquery-migrate */ "./node_modules/jquery-migrate/dist/jquery-migrate.js");
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+window.owl.carousel = __webpack_require__(/*! owl.carousel/dist/assets/owl.carousel.css */ "./node_modules/owl.carousel/dist/assets/owl.carousel.css");
+window.Superfish = __webpack_require__(/*! superfish/dist/js/superfish */ "./node_modules/superfish/dist/js/superfish.js");
+window.HoverIntent = __webpack_require__(/*! superfish/dist/js/hoverIntent */ "./node_modules/superfish/dist/js/hoverIntent.js");
+window.VenoBox = __webpack_require__(/*! venobox/venobox/venobox */ "./node_modules/venobox/venobox/venobox.js");
+window.WOW = __webpack_require__(/*! wowjs/dist/wow */ "./node_modules/wowjs/dist/wow.js");
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -49424,361 +52693,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/easing.js":
-/*!********************************!*\
-  !*** ./resources/js/easing.js ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-/*
- * jQuery Easing v1.4.1 - http://gsgd.co.uk/sandbox/jquery/easing/
- * Open source under the BSD License.
- * Copyright © 2008 George McGinley Smith
- * All rights reserved.
- * https://raw.github.com/gdsmith/jquery-easing/master/LICENSE
-*/
-(function (factory) {
-  if (true) {
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")], __WEBPACK_AMD_DEFINE_RESULT__ = (function ($) {
-      return factory($);
-    }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-  } else {}
-})(function ($) {
-  // Preserve the original jQuery "swing" easing as "jswing"
-  if (typeof $.easing !== 'undefined') {
-    $.easing['jswing'] = $.easing['swing'];
-  }
-
-  var pow = Math.pow,
-      sqrt = Math.sqrt,
-      sin = Math.sin,
-      cos = Math.cos,
-      PI = Math.PI,
-      c1 = 1.70158,
-      c2 = c1 * 1.525,
-      c3 = c1 + 1,
-      c4 = 2 * PI / 3,
-      c5 = 2 * PI / 4.5; // x is the fraction of animation progress, in the range 0..1
-
-  function bounceOut(x) {
-    var n1 = 7.5625,
-        d1 = 2.75;
-
-    if (x < 1 / d1) {
-      return n1 * x * x;
-    } else if (x < 2 / d1) {
-      return n1 * (x -= 1.5 / d1) * x + .75;
-    } else if (x < 2.5 / d1) {
-      return n1 * (x -= 2.25 / d1) * x + .9375;
-    } else {
-      return n1 * (x -= 2.625 / d1) * x + .984375;
-    }
-  }
-
-  $.extend($.easing, {
-    def: 'easeOutQuad',
-    swing: function swing(x) {
-      return $.easing[$.easing.def](x);
-    },
-    easeInQuad: function easeInQuad(x) {
-      return x * x;
-    },
-    easeOutQuad: function easeOutQuad(x) {
-      return 1 - (1 - x) * (1 - x);
-    },
-    easeInOutQuad: function easeInOutQuad(x) {
-      return x < 0.5 ? 2 * x * x : 1 - pow(-2 * x + 2, 2) / 2;
-    },
-    easeInCubic: function easeInCubic(x) {
-      return x * x * x;
-    },
-    easeOutCubic: function easeOutCubic(x) {
-      return 1 - pow(1 - x, 3);
-    },
-    easeInOutCubic: function easeInOutCubic(x) {
-      return x < 0.5 ? 4 * x * x * x : 1 - pow(-2 * x + 2, 3) / 2;
-    },
-    easeInQuart: function easeInQuart(x) {
-      return x * x * x * x;
-    },
-    easeOutQuart: function easeOutQuart(x) {
-      return 1 - pow(1 - x, 4);
-    },
-    easeInOutQuart: function easeInOutQuart(x) {
-      return x < 0.5 ? 8 * x * x * x * x : 1 - pow(-2 * x + 2, 4) / 2;
-    },
-    easeInQuint: function easeInQuint(x) {
-      return x * x * x * x * x;
-    },
-    easeOutQuint: function easeOutQuint(x) {
-      return 1 - pow(1 - x, 5);
-    },
-    easeInOutQuint: function easeInOutQuint(x) {
-      return x < 0.5 ? 16 * x * x * x * x * x : 1 - pow(-2 * x + 2, 5) / 2;
-    },
-    easeInSine: function easeInSine(x) {
-      return 1 - cos(x * PI / 2);
-    },
-    easeOutSine: function easeOutSine(x) {
-      return sin(x * PI / 2);
-    },
-    easeInOutSine: function easeInOutSine(x) {
-      return -(cos(PI * x) - 1) / 2;
-    },
-    easeInExpo: function easeInExpo(x) {
-      return x === 0 ? 0 : pow(2, 10 * x - 10);
-    },
-    easeOutExpo: function easeOutExpo(x) {
-      return x === 1 ? 1 : 1 - pow(2, -10 * x);
-    },
-    easeInOutExpo: function easeInOutExpo(x) {
-      return x === 0 ? 0 : x === 1 ? 1 : x < 0.5 ? pow(2, 20 * x - 10) / 2 : (2 - pow(2, -20 * x + 10)) / 2;
-    },
-    easeInCirc: function easeInCirc(x) {
-      return 1 - sqrt(1 - pow(x, 2));
-    },
-    easeOutCirc: function easeOutCirc(x) {
-      return sqrt(1 - pow(x - 1, 2));
-    },
-    easeInOutCirc: function easeInOutCirc(x) {
-      return x < 0.5 ? (1 - sqrt(1 - pow(2 * x, 2))) / 2 : (sqrt(1 - pow(-2 * x + 2, 2)) + 1) / 2;
-    },
-    easeInElastic: function easeInElastic(x) {
-      return x === 0 ? 0 : x === 1 ? 1 : -pow(2, 10 * x - 10) * sin((x * 10 - 10.75) * c4);
-    },
-    easeOutElastic: function easeOutElastic(x) {
-      return x === 0 ? 0 : x === 1 ? 1 : pow(2, -10 * x) * sin((x * 10 - 0.75) * c4) + 1;
-    },
-    easeInOutElastic: function easeInOutElastic(x) {
-      return x === 0 ? 0 : x === 1 ? 1 : x < 0.5 ? -(pow(2, 20 * x - 10) * sin((20 * x - 11.125) * c5)) / 2 : pow(2, -20 * x + 10) * sin((20 * x - 11.125) * c5) / 2 + 1;
-    },
-    easeInBack: function easeInBack(x) {
-      return c3 * x * x * x - c1 * x * x;
-    },
-    easeOutBack: function easeOutBack(x) {
-      return 1 + c3 * pow(x - 1, 3) + c1 * pow(x - 1, 2);
-    },
-    easeInOutBack: function easeInOutBack(x) {
-      return x < 0.5 ? pow(2 * x, 2) * ((c2 + 1) * 2 * x - c2) / 2 : (pow(2 * x - 2, 2) * ((c2 + 1) * (x * 2 - 2) + c2) + 2) / 2;
-    },
-    easeInBounce: function easeInBounce(x) {
-      return 1 - bounceOut(1 - x);
-    },
-    easeOutBounce: bounceOut,
-    easeInOutBounce: function easeInOutBounce(x) {
-      return x < 0.5 ? (1 - bounceOut(1 - 2 * x)) / 2 : (1 + bounceOut(2 * x - 1)) / 2;
-    }
-  });
-});
-
-/***/ }),
-
-/***/ "./resources/js/hoverIntent.js":
-/*!*************************************!*\
-  !*** ./resources/js/hoverIntent.js ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
- * hoverIntent v1.8.1 // 2014.08.11 // jQuery v1.9.1+
- * http://briancherne.github.io/jquery-hoverIntent/
- *
- * You may use hoverIntent under the terms of the MIT license. Basically that
- * means you are free to use hoverIntent as long as this header is left intact.
- * Copyright 2007, 2014 Brian Cherne
- */
-
-/* hoverIntent is similar to jQuery's built-in "hover" method except that
- * instead of firing the handlerIn function immediately, hoverIntent checks
- * to see if the user's mouse has slowed down (beneath the sensitivity
- * threshold) before firing the event. The handlerOut function is only
- * called after a matching handlerIn.
- *
- * // basic usage ... just like .hover()
- * .hoverIntent( handlerIn, handlerOut )
- * .hoverIntent( handlerInOut )
- *
- * // basic usage ... with event delegation!
- * .hoverIntent( handlerIn, handlerOut, selector )
- * .hoverIntent( handlerInOut, selector )
- *
- * // using a basic configuration object
- * .hoverIntent( config )
- *
- * @param  handlerIn   function OR configuration object
- * @param  handlerOut  function OR selector for delegation OR undefined
- * @param  selector    selector OR undefined
- * @author Brian Cherne <brian(at)cherne(dot)net>
- */
-;
-
-(function (factory) {
-  'use strict';
-
-  if (true) {
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-  } else {}
-})(function ($) {
-  'use strict'; // default configuration values
-
-  var _cfg = {
-    interval: 100,
-    sensitivity: 6,
-    timeout: 0
-  }; // counter used to generate an ID for each instance
-
-  var INSTANCE_COUNT = 0; // current X and Y position of mouse, updated during mousemove tracking (shared across instances)
-
-  var cX, cY; // saves the current pointer position coordinates based on the given mousemove event
-
-  var track = function track(ev) {
-    cX = ev.pageX;
-    cY = ev.pageY;
-  }; // compares current and previous mouse positions
-
-
-  var compare = function compare(ev, $el, s, cfg) {
-    // compare mouse positions to see if pointer has slowed enough to trigger `over` function
-    if (Math.sqrt((s.pX - cX) * (s.pX - cX) + (s.pY - cY) * (s.pY - cY)) < cfg.sensitivity) {
-      $el.off(s.event, track);
-      delete s.timeoutId; // set hoverIntent state as active for this element (permits `out` handler to trigger)
-
-      s.isActive = true; // overwrite old mouseenter event coordinates with most recent pointer position
-
-      ev.pageX = cX;
-      ev.pageY = cY; // clear coordinate data from state object
-
-      delete s.pX;
-      delete s.pY;
-      return cfg.over.apply($el[0], [ev]);
-    } else {
-      // set previous coordinates for next comparison
-      s.pX = cX;
-      s.pY = cY; // use self-calling timeout, guarantees intervals are spaced out properly (avoids JavaScript timer bugs)
-
-      s.timeoutId = setTimeout(function () {
-        compare(ev, $el, s, cfg);
-      }, cfg.interval);
-    }
-  }; // triggers given `out` function at configured `timeout` after a mouseleave and clears state
-
-
-  var delay = function delay(ev, $el, s, out) {
-    delete $el.data('hoverIntent')[s.id];
-    return out.apply($el[0], [ev]);
-  };
-
-  $.fn.hoverIntent = function (handlerIn, handlerOut, selector) {
-    // instance ID, used as a key to store and retrieve state information on an element
-    var instanceId = INSTANCE_COUNT++; // extend the default configuration and parse parameters
-
-    var cfg = $.extend({}, _cfg);
-
-    if ($.isPlainObject(handlerIn)) {
-      cfg = $.extend(cfg, handlerIn);
-
-      if (!$.isFunction(cfg.out)) {
-        cfg.out = cfg.over;
-      }
-    } else if ($.isFunction(handlerOut)) {
-      cfg = $.extend(cfg, {
-        over: handlerIn,
-        out: handlerOut,
-        selector: selector
-      });
-    } else {
-      cfg = $.extend(cfg, {
-        over: handlerIn,
-        out: handlerIn,
-        selector: handlerOut
-      });
-    } // A private function for handling mouse 'hovering'
-
-
-    var handleHover = function handleHover(e) {
-      // cloned event to pass to handlers (copy required for event object to be passed in IE)
-      var ev = $.extend({}, e); // the current target of the mouse event, wrapped in a jQuery object
-
-      var $el = $(this); // read hoverIntent data from element (or initialize if not present)
-
-      var hoverIntentData = $el.data('hoverIntent');
-
-      if (!hoverIntentData) {
-        $el.data('hoverIntent', hoverIntentData = {});
-      } // read per-instance state from element (or initialize if not present)
-
-
-      var state = hoverIntentData[instanceId];
-
-      if (!state) {
-        hoverIntentData[instanceId] = state = {
-          id: instanceId
-        };
-      } // state properties:
-      // id = instance ID, used to clean up data
-      // timeoutId = timeout ID, reused for tracking mouse position and delaying "out" handler
-      // isActive = plugin state, true after `over` is called just until `out` is called
-      // pX, pY = previously-measured pointer coordinates, updated at each polling interval
-      // event = string representing the namespaced event used for mouse tracking
-      // clear any existing timeout
-
-
-      if (state.timeoutId) {
-        state.timeoutId = clearTimeout(state.timeoutId);
-      } // namespaced event used to register and unregister mousemove tracking
-
-
-      var mousemove = state.event = 'mousemove.hoverIntent.hoverIntent' + instanceId; // handle the event, based on its type
-
-      if (e.type === 'mouseenter') {
-        // do nothing if already active
-        if (state.isActive) {
-          return;
-        } // set "previous" X and Y position based on initial entry point
-
-
-        state.pX = ev.pageX;
-        state.pY = ev.pageY; // update "current" X and Y position based on mousemove
-
-        $el.off(mousemove, track).on(mousemove, track); // start polling interval (self-calling timeout) to compare mouse coordinates over time
-
-        state.timeoutId = setTimeout(function () {
-          compare(ev, $el, state, cfg);
-        }, cfg.interval);
-      } else {
-        // "mouseleave"
-        // do nothing if not already active
-        if (!state.isActive) {
-          return;
-        } // unbind expensive mousemove event
-
-
-        $el.off(mousemove, track); // if hoverIntent state is true, then call the mouseOut function after the specified delay
-
-        state.timeoutId = setTimeout(function () {
-          delay(ev, $el, state, cfg.out);
-        }, cfg.timeout);
-      }
-    }; // listen for mouseenter and mouseleave
-
-
-    return this.on({
-      'mouseenter.hoverIntent': handleHover,
-      'mouseleave.hoverIntent': handleHover
-    }, cfg.selector);
-  };
-});
-
-/***/ }),
-
 /***/ "./resources/js/main.js":
 /*!******************************!*\
   !*** ./resources/js/main.js ***!
@@ -49922,7 +52836,10 @@ jQuery(document).ready(function ($) {
   }
 
   password.onchange = validatePassword;
-  confirm_password.onkeyup = validatePassword; // Gallery carousel (uses the Owl Carousel library)
+  confirm_password.onkeyup = validatePassword;
+  $(document).ready(function () {
+    $(".owl-carousel").owlCarousel();
+  }); // Gallery carousel (uses the Owl Carousel library)
 
   $(".gallery-carousel").owlCarousel({
     autoplay: true,
@@ -49948,4997 +52865,6 @@ jQuery(document).ready(function ($) {
 
 /***/ }),
 
-/***/ "./resources/js/owl.carousel.js":
-/*!**************************************!*\
-  !*** ./resources/js/owl.carousel.js ***!
-  \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-/**
- * Owl Carousel v2.2.1
- * Copyright 2013-2017 David Deutsch
- * Licensed under  ()
- */
-
-/**
- * Owl carousel
- * @version 2.1.6
- * @author Bartosz Wojciechowski
- * @author David Deutsch
- * @license The MIT License (MIT)
- * @todo Lazy Load Icon
- * @todo prevent animationend bubling
- * @todo itemsScaleUp
- * @todo Test Zepto
- * @todo stagePadding calculate wrong active classes
- */
-;
-
-(function ($, window, document, undefined) {
-  /**
-   * Creates a carousel.
-   * @class The Owl Carousel.
-   * @public
-   * @param {HTMLElement|jQuery} element - The element to create the carousel for.
-   * @param {Object} [options] - The options
-   */
-  function Owl(element, options) {
-    /**
-     * Current settings for the carousel.
-     * @public
-     */
-    this.settings = null;
-    /**
-     * Current options set by the caller including defaults.
-     * @public
-     */
-
-    this.options = $.extend({}, Owl.Defaults, options);
-    /**
-     * Plugin element.
-     * @public
-     */
-
-    this.$element = $(element);
-    /**
-     * Proxied event handlers.
-     * @protected
-     */
-
-    this._handlers = {};
-    /**
-     * References to the running plugins of this carousel.
-     * @protected
-     */
-
-    this._plugins = {};
-    /**
-     * Currently suppressed events to prevent them from beeing retriggered.
-     * @protected
-     */
-
-    this._supress = {};
-    /**
-     * Absolute current position.
-     * @protected
-     */
-
-    this._current = null;
-    /**
-     * Animation speed in milliseconds.
-     * @protected
-     */
-
-    this._speed = null;
-    /**
-     * Coordinates of all items in pixel.
-     * @todo The name of this member is missleading.
-     * @protected
-     */
-
-    this._coordinates = [];
-    /**
-     * Current breakpoint.
-     * @todo Real media queries would be nice.
-     * @protected
-     */
-
-    this._breakpoint = null;
-    /**
-     * Current width of the plugin element.
-     */
-
-    this._width = null;
-    /**
-     * All real items.
-     * @protected
-     */
-
-    this._items = [];
-    /**
-     * All cloned items.
-     * @protected
-     */
-
-    this._clones = [];
-    /**
-     * Merge values of all items.
-     * @todo Maybe this could be part of a plugin.
-     * @protected
-     */
-
-    this._mergers = [];
-    /**
-     * Widths of all items.
-     */
-
-    this._widths = [];
-    /**
-     * Invalidated parts within the update process.
-     * @protected
-     */
-
-    this._invalidated = {};
-    /**
-     * Ordered list of workers for the update process.
-     * @protected
-     */
-
-    this._pipe = [];
-    /**
-     * Current state information for the drag operation.
-     * @todo #261
-     * @protected
-     */
-
-    this._drag = {
-      time: null,
-      target: null,
-      pointer: null,
-      stage: {
-        start: null,
-        current: null
-      },
-      direction: null
-    };
-    /**
-     * Current state information and their tags.
-     * @type {Object}
-     * @protected
-     */
-
-    this._states = {
-      current: {},
-      tags: {
-        'initializing': ['busy'],
-        'animating': ['busy'],
-        'dragging': ['interacting']
-      }
-    };
-    $.each(['onResize', 'onThrottledResize'], $.proxy(function (i, handler) {
-      this._handlers[handler] = $.proxy(this[handler], this);
-    }, this));
-    $.each(Owl.Plugins, $.proxy(function (key, plugin) {
-      this._plugins[key.charAt(0).toLowerCase() + key.slice(1)] = new plugin(this);
-    }, this));
-    $.each(Owl.Workers, $.proxy(function (priority, worker) {
-      this._pipe.push({
-        'filter': worker.filter,
-        'run': $.proxy(worker.run, this)
-      });
-    }, this));
-    this.setup();
-    this.initialize();
-  }
-  /**
-   * Default options for the carousel.
-   * @public
-   */
-
-
-  Owl.Defaults = {
-    items: 3,
-    loop: false,
-    center: false,
-    rewind: false,
-    mouseDrag: true,
-    touchDrag: true,
-    pullDrag: true,
-    freeDrag: false,
-    margin: 0,
-    stagePadding: 0,
-    merge: false,
-    mergeFit: true,
-    autoWidth: false,
-    startPosition: 0,
-    rtl: false,
-    smartSpeed: 250,
-    fluidSpeed: false,
-    dragEndSpeed: false,
-    responsive: {},
-    responsiveRefreshRate: 200,
-    responsiveBaseElement: window,
-    fallbackEasing: 'swing',
-    info: false,
-    nestedItemSelector: false,
-    itemElement: 'div',
-    stageElement: 'div',
-    refreshClass: 'owl-refresh',
-    loadedClass: 'owl-loaded',
-    loadingClass: 'owl-loading',
-    rtlClass: 'owl-rtl',
-    responsiveClass: 'owl-responsive',
-    dragClass: 'owl-drag',
-    itemClass: 'owl-item',
-    stageClass: 'owl-stage',
-    stageOuterClass: 'owl-stage-outer',
-    grabClass: 'owl-grab'
-  };
-  /**
-   * Enumeration for width.
-   * @public
-   * @readonly
-   * @enum {String}
-   */
-
-  Owl.Width = {
-    Default: 'default',
-    Inner: 'inner',
-    Outer: 'outer'
-  };
-  /**
-   * Enumeration for types.
-   * @public
-   * @readonly
-   * @enum {String}
-   */
-
-  Owl.Type = {
-    Event: 'event',
-    State: 'state'
-  };
-  /**
-   * Contains all registered plugins.
-   * @public
-   */
-
-  Owl.Plugins = {};
-  /**
-   * List of workers involved in the update process.
-   */
-
-  Owl.Workers = [{
-    filter: ['width', 'settings'],
-    run: function run() {
-      this._width = this.$element.width();
-    }
-  }, {
-    filter: ['width', 'items', 'settings'],
-    run: function run(cache) {
-      cache.current = this._items && this._items[this.relative(this._current)];
-    }
-  }, {
-    filter: ['items', 'settings'],
-    run: function run() {
-      this.$stage.children('.cloned').remove();
-    }
-  }, {
-    filter: ['width', 'items', 'settings'],
-    run: function run(cache) {
-      var margin = this.settings.margin || '',
-          grid = !this.settings.autoWidth,
-          rtl = this.settings.rtl,
-          css = {
-        'width': 'auto',
-        'margin-left': rtl ? margin : '',
-        'margin-right': rtl ? '' : margin
-      };
-      !grid && this.$stage.children().css(css);
-      cache.css = css;
-    }
-  }, {
-    filter: ['width', 'items', 'settings'],
-    run: function run(cache) {
-      var width = (this.width() / this.settings.items).toFixed(3) - this.settings.margin,
-          merge = null,
-          iterator = this._items.length,
-          grid = !this.settings.autoWidth,
-          widths = [];
-      cache.items = {
-        merge: false,
-        width: width
-      };
-
-      while (iterator--) {
-        merge = this._mergers[iterator];
-        merge = this.settings.mergeFit && Math.min(merge, this.settings.items) || merge;
-        cache.items.merge = merge > 1 || cache.items.merge;
-        widths[iterator] = !grid ? this._items[iterator].width() : width * merge;
-      }
-
-      this._widths = widths;
-    }
-  }, {
-    filter: ['items', 'settings'],
-    run: function run() {
-      var clones = [],
-          items = this._items,
-          settings = this.settings,
-          // TODO: Should be computed from number of min width items in stage
-      view = Math.max(settings.items * 2, 4),
-          size = Math.ceil(items.length / 2) * 2,
-          repeat = settings.loop && items.length ? settings.rewind ? view : Math.max(view, size) : 0,
-          append = '',
-          prepend = '';
-      repeat /= 2;
-
-      while (repeat--) {
-        // Switch to only using appended clones
-        clones.push(this.normalize(clones.length / 2, true));
-        append = append + items[clones[clones.length - 1]][0].outerHTML;
-        clones.push(this.normalize(items.length - 1 - (clones.length - 1) / 2, true));
-        prepend = items[clones[clones.length - 1]][0].outerHTML + prepend;
-      }
-
-      this._clones = clones;
-      $(append).addClass('cloned').appendTo(this.$stage);
-      $(prepend).addClass('cloned').prependTo(this.$stage);
-    }
-  }, {
-    filter: ['width', 'items', 'settings'],
-    run: function run() {
-      var rtl = this.settings.rtl ? 1 : -1,
-          size = this._clones.length + this._items.length,
-          iterator = -1,
-          previous = 0,
-          current = 0,
-          coordinates = [];
-
-      while (++iterator < size) {
-        previous = coordinates[iterator - 1] || 0;
-        current = this._widths[this.relative(iterator)] + this.settings.margin;
-        coordinates.push(previous + current * rtl);
-      }
-
-      this._coordinates = coordinates;
-    }
-  }, {
-    filter: ['width', 'items', 'settings'],
-    run: function run() {
-      var padding = this.settings.stagePadding,
-          coordinates = this._coordinates,
-          css = {
-        'width': Math.ceil(Math.abs(coordinates[coordinates.length - 1])) + padding * 2,
-        'padding-left': padding || '',
-        'padding-right': padding || ''
-      };
-      this.$stage.css(css);
-    }
-  }, {
-    filter: ['width', 'items', 'settings'],
-    run: function run(cache) {
-      var iterator = this._coordinates.length,
-          grid = !this.settings.autoWidth,
-          items = this.$stage.children();
-
-      if (grid && cache.items.merge) {
-        while (iterator--) {
-          cache.css.width = this._widths[this.relative(iterator)];
-          items.eq(iterator).css(cache.css);
-        }
-      } else if (grid) {
-        cache.css.width = cache.items.width;
-        items.css(cache.css);
-      }
-    }
-  }, {
-    filter: ['items'],
-    run: function run() {
-      this._coordinates.length < 1 && this.$stage.removeAttr('style');
-    }
-  }, {
-    filter: ['width', 'items', 'settings'],
-    run: function run(cache) {
-      cache.current = cache.current ? this.$stage.children().index(cache.current) : 0;
-      cache.current = Math.max(this.minimum(), Math.min(this.maximum(), cache.current));
-      this.reset(cache.current);
-    }
-  }, {
-    filter: ['position'],
-    run: function run() {
-      this.animate(this.coordinates(this._current));
-    }
-  }, {
-    filter: ['width', 'position', 'items', 'settings'],
-    run: function run() {
-      var rtl = this.settings.rtl ? 1 : -1,
-          padding = this.settings.stagePadding * 2,
-          begin = this.coordinates(this.current()) + padding,
-          end = begin + this.width() * rtl,
-          inner,
-          outer,
-          matches = [],
-          i,
-          n;
-
-      for (i = 0, n = this._coordinates.length; i < n; i++) {
-        inner = this._coordinates[i - 1] || 0;
-        outer = Math.abs(this._coordinates[i]) + padding * rtl;
-
-        if (this.op(inner, '<=', begin) && this.op(inner, '>', end) || this.op(outer, '<', begin) && this.op(outer, '>', end)) {
-          matches.push(i);
-        }
-      }
-
-      this.$stage.children('.active').removeClass('active');
-      this.$stage.children(':eq(' + matches.join('), :eq(') + ')').addClass('active');
-
-      if (this.settings.center) {
-        this.$stage.children('.center').removeClass('center');
-        this.$stage.children().eq(this.current()).addClass('center');
-      }
-    }
-  }];
-  /**
-   * Initializes the carousel.
-   * @protected
-   */
-
-  Owl.prototype.initialize = function () {
-    this.enter('initializing');
-    this.trigger('initialize');
-    this.$element.toggleClass(this.settings.rtlClass, this.settings.rtl);
-
-    if (this.settings.autoWidth && !this.is('pre-loading')) {
-      var imgs, nestedSelector, width;
-      imgs = this.$element.find('img');
-      nestedSelector = this.settings.nestedItemSelector ? '.' + this.settings.nestedItemSelector : undefined;
-      width = this.$element.children(nestedSelector).width();
-
-      if (imgs.length && width <= 0) {
-        this.preloadAutoWidthImages(imgs);
-      }
-    }
-
-    this.$element.addClass(this.options.loadingClass); // create stage
-
-    this.$stage = $('<' + this.settings.stageElement + ' class="' + this.settings.stageClass + '"/>').wrap('<div class="' + this.settings.stageOuterClass + '"/>'); // append stage
-
-    this.$element.append(this.$stage.parent()); // append content
-
-    this.replace(this.$element.children().not(this.$stage.parent())); // check visibility
-
-    if (this.$element.is(':visible')) {
-      // update view
-      this.refresh();
-    } else {
-      // invalidate width
-      this.invalidate('width');
-    }
-
-    this.$element.removeClass(this.options.loadingClass).addClass(this.options.loadedClass); // register event handlers
-
-    this.registerEventHandlers();
-    this.leave('initializing');
-    this.trigger('initialized');
-  };
-  /**
-   * Setups the current settings.
-   * @todo Remove responsive classes. Why should adaptive designs be brought into IE8?
-   * @todo Support for media queries by using `matchMedia` would be nice.
-   * @public
-   */
-
-
-  Owl.prototype.setup = function () {
-    var viewport = this.viewport(),
-        overwrites = this.options.responsive,
-        match = -1,
-        settings = null;
-
-    if (!overwrites) {
-      settings = $.extend({}, this.options);
-    } else {
-      $.each(overwrites, function (breakpoint) {
-        if (breakpoint <= viewport && breakpoint > match) {
-          match = Number(breakpoint);
-        }
-      });
-      settings = $.extend({}, this.options, overwrites[match]);
-
-      if (typeof settings.stagePadding === 'function') {
-        settings.stagePadding = settings.stagePadding();
-      }
-
-      delete settings.responsive; // responsive class
-
-      if (settings.responsiveClass) {
-        this.$element.attr('class', this.$element.attr('class').replace(new RegExp('(' + this.options.responsiveClass + '-)\\S+\\s', 'g'), '$1' + match));
-      }
-    }
-
-    this.trigger('change', {
-      property: {
-        name: 'settings',
-        value: settings
-      }
-    });
-    this._breakpoint = match;
-    this.settings = settings;
-    this.invalidate('settings');
-    this.trigger('changed', {
-      property: {
-        name: 'settings',
-        value: this.settings
-      }
-    });
-  };
-  /**
-   * Updates option logic if necessery.
-   * @protected
-   */
-
-
-  Owl.prototype.optionsLogic = function () {
-    if (this.settings.autoWidth) {
-      this.settings.stagePadding = false;
-      this.settings.merge = false;
-    }
-  };
-  /**
-   * Prepares an item before add.
-   * @todo Rename event parameter `content` to `item`.
-   * @protected
-   * @returns {jQuery|HTMLElement} - The item container.
-   */
-
-
-  Owl.prototype.prepare = function (item) {
-    var event = this.trigger('prepare', {
-      content: item
-    });
-
-    if (!event.data) {
-      event.data = $('<' + this.settings.itemElement + '/>').addClass(this.options.itemClass).append(item);
-    }
-
-    this.trigger('prepared', {
-      content: event.data
-    });
-    return event.data;
-  };
-  /**
-   * Updates the view.
-   * @public
-   */
-
-
-  Owl.prototype.update = function () {
-    var i = 0,
-        n = this._pipe.length,
-        filter = $.proxy(function (p) {
-      return this[p];
-    }, this._invalidated),
-        cache = {};
-
-    while (i < n) {
-      if (this._invalidated.all || $.grep(this._pipe[i].filter, filter).length > 0) {
-        this._pipe[i].run(cache);
-      }
-
-      i++;
-    }
-
-    this._invalidated = {};
-    !this.is('valid') && this.enter('valid');
-  };
-  /**
-   * Gets the width of the view.
-   * @public
-   * @param {Owl.Width} [dimension=Owl.Width.Default] - The dimension to return.
-   * @returns {Number} - The width of the view in pixel.
-   */
-
-
-  Owl.prototype.width = function (dimension) {
-    dimension = dimension || Owl.Width.Default;
-
-    switch (dimension) {
-      case Owl.Width.Inner:
-      case Owl.Width.Outer:
-        return this._width;
-
-      default:
-        return this._width - this.settings.stagePadding * 2 + this.settings.margin;
-    }
-  };
-  /**
-   * Refreshes the carousel primarily for adaptive purposes.
-   * @public
-   */
-
-
-  Owl.prototype.refresh = function () {
-    this.enter('refreshing');
-    this.trigger('refresh');
-    this.setup();
-    this.optionsLogic();
-    this.$element.addClass(this.options.refreshClass);
-    this.update();
-    this.$element.removeClass(this.options.refreshClass);
-    this.leave('refreshing');
-    this.trigger('refreshed');
-  };
-  /**
-   * Checks window `resize` event.
-   * @protected
-   */
-
-
-  Owl.prototype.onThrottledResize = function () {
-    window.clearTimeout(this.resizeTimer);
-    this.resizeTimer = window.setTimeout(this._handlers.onResize, this.settings.responsiveRefreshRate);
-  };
-  /**
-   * Checks window `resize` event.
-   * @protected
-   */
-
-
-  Owl.prototype.onResize = function () {
-    if (!this._items.length) {
-      return false;
-    }
-
-    if (this._width === this.$element.width()) {
-      return false;
-    }
-
-    if (!this.$element.is(':visible')) {
-      return false;
-    }
-
-    this.enter('resizing');
-
-    if (this.trigger('resize').isDefaultPrevented()) {
-      this.leave('resizing');
-      return false;
-    }
-
-    this.invalidate('width');
-    this.refresh();
-    this.leave('resizing');
-    this.trigger('resized');
-  };
-  /**
-   * Registers event handlers.
-   * @todo Check `msPointerEnabled`
-   * @todo #261
-   * @protected
-   */
-
-
-  Owl.prototype.registerEventHandlers = function () {
-    if ($.support.transition) {
-      this.$stage.on($.support.transition.end + '.owl.core', $.proxy(this.onTransitionEnd, this));
-    }
-
-    if (this.settings.responsive !== false) {
-      this.on(window, 'resize', this._handlers.onThrottledResize);
-    }
-
-    if (this.settings.mouseDrag) {
-      this.$element.addClass(this.options.dragClass);
-      this.$stage.on('mousedown.owl.core', $.proxy(this.onDragStart, this));
-      this.$stage.on('dragstart.owl.core selectstart.owl.core', function () {
-        return false;
-      });
-    }
-
-    if (this.settings.touchDrag) {
-      this.$stage.on('touchstart.owl.core', $.proxy(this.onDragStart, this));
-      this.$stage.on('touchcancel.owl.core', $.proxy(this.onDragEnd, this));
-    }
-  };
-  /**
-   * Handles `touchstart` and `mousedown` events.
-   * @todo Horizontal swipe threshold as option
-   * @todo #261
-   * @protected
-   * @param {Event} event - The event arguments.
-   */
-
-
-  Owl.prototype.onDragStart = function (event) {
-    var stage = null;
-
-    if (event.which === 3) {
-      return;
-    }
-
-    if ($.support.transform) {
-      stage = this.$stage.css('transform').replace(/.*\(|\)| /g, '').split(',');
-      stage = {
-        x: stage[stage.length === 16 ? 12 : 4],
-        y: stage[stage.length === 16 ? 13 : 5]
-      };
-    } else {
-      stage = this.$stage.position();
-      stage = {
-        x: this.settings.rtl ? stage.left + this.$stage.width() - this.width() + this.settings.margin : stage.left,
-        y: stage.top
-      };
-    }
-
-    if (this.is('animating')) {
-      $.support.transform ? this.animate(stage.x) : this.$stage.stop();
-      this.invalidate('position');
-    }
-
-    this.$element.toggleClass(this.options.grabClass, event.type === 'mousedown');
-    this.speed(0);
-    this._drag.time = new Date().getTime();
-    this._drag.target = $(event.target);
-    this._drag.stage.start = stage;
-    this._drag.stage.current = stage;
-    this._drag.pointer = this.pointer(event);
-    $(document).on('mouseup.owl.core touchend.owl.core', $.proxy(this.onDragEnd, this));
-    $(document).one('mousemove.owl.core touchmove.owl.core', $.proxy(function (event) {
-      var delta = this.difference(this._drag.pointer, this.pointer(event));
-      $(document).on('mousemove.owl.core touchmove.owl.core', $.proxy(this.onDragMove, this));
-
-      if (Math.abs(delta.x) < Math.abs(delta.y) && this.is('valid')) {
-        return;
-      }
-
-      event.preventDefault();
-      this.enter('dragging');
-      this.trigger('drag');
-    }, this));
-  };
-  /**
-   * Handles the `touchmove` and `mousemove` events.
-   * @todo #261
-   * @protected
-   * @param {Event} event - The event arguments.
-   */
-
-
-  Owl.prototype.onDragMove = function (event) {
-    var minimum = null,
-        maximum = null,
-        pull = null,
-        delta = this.difference(this._drag.pointer, this.pointer(event)),
-        stage = this.difference(this._drag.stage.start, delta);
-
-    if (!this.is('dragging')) {
-      return;
-    }
-
-    event.preventDefault();
-
-    if (this.settings.loop) {
-      minimum = this.coordinates(this.minimum());
-      maximum = this.coordinates(this.maximum() + 1) - minimum;
-      stage.x = ((stage.x - minimum) % maximum + maximum) % maximum + minimum;
-    } else {
-      minimum = this.settings.rtl ? this.coordinates(this.maximum()) : this.coordinates(this.minimum());
-      maximum = this.settings.rtl ? this.coordinates(this.minimum()) : this.coordinates(this.maximum());
-      pull = this.settings.pullDrag ? -1 * delta.x / 5 : 0;
-      stage.x = Math.max(Math.min(stage.x, minimum + pull), maximum + pull);
-    }
-
-    this._drag.stage.current = stage;
-    this.animate(stage.x);
-  };
-  /**
-   * Handles the `touchend` and `mouseup` events.
-   * @todo #261
-   * @todo Threshold for click event
-   * @protected
-   * @param {Event} event - The event arguments.
-   */
-
-
-  Owl.prototype.onDragEnd = function (event) {
-    var delta = this.difference(this._drag.pointer, this.pointer(event)),
-        stage = this._drag.stage.current,
-        direction = delta.x > 0 ^ this.settings.rtl ? 'left' : 'right';
-    $(document).off('.owl.core');
-    this.$element.removeClass(this.options.grabClass);
-
-    if (delta.x !== 0 && this.is('dragging') || !this.is('valid')) {
-      this.speed(this.settings.dragEndSpeed || this.settings.smartSpeed);
-      this.current(this.closest(stage.x, delta.x !== 0 ? direction : this._drag.direction));
-      this.invalidate('position');
-      this.update();
-      this._drag.direction = direction;
-
-      if (Math.abs(delta.x) > 3 || new Date().getTime() - this._drag.time > 300) {
-        this._drag.target.one('click.owl.core', function () {
-          return false;
-        });
-      }
-    }
-
-    if (!this.is('dragging')) {
-      return;
-    }
-
-    this.leave('dragging');
-    this.trigger('dragged');
-  };
-  /**
-   * Gets absolute position of the closest item for a coordinate.
-   * @todo Setting `freeDrag` makes `closest` not reusable. See #165.
-   * @protected
-   * @param {Number} coordinate - The coordinate in pixel.
-   * @param {String} direction - The direction to check for the closest item. Ether `left` or `right`.
-   * @return {Number} - The absolute position of the closest item.
-   */
-
-
-  Owl.prototype.closest = function (coordinate, direction) {
-    var position = -1,
-        pull = 30,
-        width = this.width(),
-        coordinates = this.coordinates();
-
-    if (!this.settings.freeDrag) {
-      // check closest item
-      $.each(coordinates, $.proxy(function (index, value) {
-        // on a left pull, check on current index
-        if (direction === 'left' && coordinate > value - pull && coordinate < value + pull) {
-          position = index; // on a right pull, check on previous index
-          // to do so, subtract width from value and set position = index + 1
-        } else if (direction === 'right' && coordinate > value - width - pull && coordinate < value - width + pull) {
-          position = index + 1;
-        } else if (this.op(coordinate, '<', value) && this.op(coordinate, '>', coordinates[index + 1] || value - width)) {
-          position = direction === 'left' ? index + 1 : index;
-        }
-
-        return position === -1;
-      }, this));
-    }
-
-    if (!this.settings.loop) {
-      // non loop boundries
-      if (this.op(coordinate, '>', coordinates[this.minimum()])) {
-        position = coordinate = this.minimum();
-      } else if (this.op(coordinate, '<', coordinates[this.maximum()])) {
-        position = coordinate = this.maximum();
-      }
-    }
-
-    return position;
-  };
-  /**
-   * Animates the stage.
-   * @todo #270
-   * @public
-   * @param {Number} coordinate - The coordinate in pixels.
-   */
-
-
-  Owl.prototype.animate = function (coordinate) {
-    var animate = this.speed() > 0;
-    this.is('animating') && this.onTransitionEnd();
-
-    if (animate) {
-      this.enter('animating');
-      this.trigger('translate');
-    }
-
-    if ($.support.transform3d && $.support.transition) {
-      this.$stage.css({
-        transform: 'translate3d(' + coordinate + 'px,0px,0px)',
-        transition: this.speed() / 1000 + 's'
-      });
-    } else if (animate) {
-      this.$stage.animate({
-        left: coordinate + 'px'
-      }, this.speed(), this.settings.fallbackEasing, $.proxy(this.onTransitionEnd, this));
-    } else {
-      this.$stage.css({
-        left: coordinate + 'px'
-      });
-    }
-  };
-  /**
-   * Checks whether the carousel is in a specific state or not.
-   * @param {String} state - The state to check.
-   * @returns {Boolean} - The flag which indicates if the carousel is busy.
-   */
-
-
-  Owl.prototype.is = function (state) {
-    return this._states.current[state] && this._states.current[state] > 0;
-  };
-  /**
-   * Sets the absolute position of the current item.
-   * @public
-   * @param {Number} [position] - The new absolute position or nothing to leave it unchanged.
-   * @returns {Number} - The absolute position of the current item.
-   */
-
-
-  Owl.prototype.current = function (position) {
-    if (position === undefined) {
-      return this._current;
-    }
-
-    if (this._items.length === 0) {
-      return undefined;
-    }
-
-    position = this.normalize(position);
-
-    if (this._current !== position) {
-      var event = this.trigger('change', {
-        property: {
-          name: 'position',
-          value: position
-        }
-      });
-
-      if (event.data !== undefined) {
-        position = this.normalize(event.data);
-      }
-
-      this._current = position;
-      this.invalidate('position');
-      this.trigger('changed', {
-        property: {
-          name: 'position',
-          value: this._current
-        }
-      });
-    }
-
-    return this._current;
-  };
-  /**
-   * Invalidates the given part of the update routine.
-   * @param {String} [part] - The part to invalidate.
-   * @returns {Array.<String>} - The invalidated parts.
-   */
-
-
-  Owl.prototype.invalidate = function (part) {
-    if ($.type(part) === 'string') {
-      this._invalidated[part] = true;
-      this.is('valid') && this.leave('valid');
-    }
-
-    return $.map(this._invalidated, function (v, i) {
-      return i;
-    });
-  };
-  /**
-   * Resets the absolute position of the current item.
-   * @public
-   * @param {Number} position - The absolute position of the new item.
-   */
-
-
-  Owl.prototype.reset = function (position) {
-    position = this.normalize(position);
-
-    if (position === undefined) {
-      return;
-    }
-
-    this._speed = 0;
-    this._current = position;
-    this.suppress(['translate', 'translated']);
-    this.animate(this.coordinates(position));
-    this.release(['translate', 'translated']);
-  };
-  /**
-   * Normalizes an absolute or a relative position of an item.
-   * @public
-   * @param {Number} position - The absolute or relative position to normalize.
-   * @param {Boolean} [relative=false] - Whether the given position is relative or not.
-   * @returns {Number} - The normalized position.
-   */
-
-
-  Owl.prototype.normalize = function (position, relative) {
-    var n = this._items.length,
-        m = relative ? 0 : this._clones.length;
-
-    if (!this.isNumeric(position) || n < 1) {
-      position = undefined;
-    } else if (position < 0 || position >= n + m) {
-      position = ((position - m / 2) % n + n) % n + m / 2;
-    }
-
-    return position;
-  };
-  /**
-   * Converts an absolute position of an item into a relative one.
-   * @public
-   * @param {Number} position - The absolute position to convert.
-   * @returns {Number} - The converted position.
-   */
-
-
-  Owl.prototype.relative = function (position) {
-    position -= this._clones.length / 2;
-    return this.normalize(position, true);
-  };
-  /**
-   * Gets the maximum position for the current item.
-   * @public
-   * @param {Boolean} [relative=false] - Whether to return an absolute position or a relative position.
-   * @returns {Number}
-   */
-
-
-  Owl.prototype.maximum = function (relative) {
-    var settings = this.settings,
-        maximum = this._coordinates.length,
-        iterator,
-        reciprocalItemsWidth,
-        elementWidth;
-
-    if (settings.loop) {
-      maximum = this._clones.length / 2 + this._items.length - 1;
-    } else if (settings.autoWidth || settings.merge) {
-      iterator = this._items.length;
-      reciprocalItemsWidth = this._items[--iterator].width();
-      elementWidth = this.$element.width();
-
-      while (iterator--) {
-        reciprocalItemsWidth += this._items[iterator].width() + this.settings.margin;
-
-        if (reciprocalItemsWidth > elementWidth) {
-          break;
-        }
-      }
-
-      maximum = iterator + 1;
-    } else if (settings.center) {
-      maximum = this._items.length - 1;
-    } else {
-      maximum = this._items.length - settings.items;
-    }
-
-    if (relative) {
-      maximum -= this._clones.length / 2;
-    }
-
-    return Math.max(maximum, 0);
-  };
-  /**
-   * Gets the minimum position for the current item.
-   * @public
-   * @param {Boolean} [relative=false] - Whether to return an absolute position or a relative position.
-   * @returns {Number}
-   */
-
-
-  Owl.prototype.minimum = function (relative) {
-    return relative ? 0 : this._clones.length / 2;
-  };
-  /**
-   * Gets an item at the specified relative position.
-   * @public
-   * @param {Number} [position] - The relative position of the item.
-   * @return {jQuery|Array.<jQuery>} - The item at the given position or all items if no position was given.
-   */
-
-
-  Owl.prototype.items = function (position) {
-    if (position === undefined) {
-      return this._items.slice();
-    }
-
-    position = this.normalize(position, true);
-    return this._items[position];
-  };
-  /**
-   * Gets an item at the specified relative position.
-   * @public
-   * @param {Number} [position] - The relative position of the item.
-   * @return {jQuery|Array.<jQuery>} - The item at the given position or all items if no position was given.
-   */
-
-
-  Owl.prototype.mergers = function (position) {
-    if (position === undefined) {
-      return this._mergers.slice();
-    }
-
-    position = this.normalize(position, true);
-    return this._mergers[position];
-  };
-  /**
-   * Gets the absolute positions of clones for an item.
-   * @public
-   * @param {Number} [position] - The relative position of the item.
-   * @returns {Array.<Number>} - The absolute positions of clones for the item or all if no position was given.
-   */
-
-
-  Owl.prototype.clones = function (position) {
-    var odd = this._clones.length / 2,
-        even = odd + this._items.length,
-        map = function map(index) {
-      return index % 2 === 0 ? even + index / 2 : odd - (index + 1) / 2;
-    };
-
-    if (position === undefined) {
-      return $.map(this._clones, function (v, i) {
-        return map(i);
-      });
-    }
-
-    return $.map(this._clones, function (v, i) {
-      return v === position ? map(i) : null;
-    });
-  };
-  /**
-   * Sets the current animation speed.
-   * @public
-   * @param {Number} [speed] - The animation speed in milliseconds or nothing to leave it unchanged.
-   * @returns {Number} - The current animation speed in milliseconds.
-   */
-
-
-  Owl.prototype.speed = function (speed) {
-    if (speed !== undefined) {
-      this._speed = speed;
-    }
-
-    return this._speed;
-  };
-  /**
-   * Gets the coordinate of an item.
-   * @todo The name of this method is missleanding.
-   * @public
-   * @param {Number} position - The absolute position of the item within `minimum()` and `maximum()`.
-   * @returns {Number|Array.<Number>} - The coordinate of the item in pixel or all coordinates.
-   */
-
-
-  Owl.prototype.coordinates = function (position) {
-    var multiplier = 1,
-        newPosition = position - 1,
-        coordinate;
-
-    if (position === undefined) {
-      return $.map(this._coordinates, $.proxy(function (coordinate, index) {
-        return this.coordinates(index);
-      }, this));
-    }
-
-    if (this.settings.center) {
-      if (this.settings.rtl) {
-        multiplier = -1;
-        newPosition = position + 1;
-      }
-
-      coordinate = this._coordinates[position];
-      coordinate += (this.width() - coordinate + (this._coordinates[newPosition] || 0)) / 2 * multiplier;
-    } else {
-      coordinate = this._coordinates[newPosition] || 0;
-    }
-
-    coordinate = Math.ceil(coordinate);
-    return coordinate;
-  };
-  /**
-   * Calculates the speed for a translation.
-   * @protected
-   * @param {Number} from - The absolute position of the start item.
-   * @param {Number} to - The absolute position of the target item.
-   * @param {Number} [factor=undefined] - The time factor in milliseconds.
-   * @returns {Number} - The time in milliseconds for the translation.
-   */
-
-
-  Owl.prototype.duration = function (from, to, factor) {
-    if (factor === 0) {
-      return 0;
-    }
-
-    return Math.min(Math.max(Math.abs(to - from), 1), 6) * Math.abs(factor || this.settings.smartSpeed);
-  };
-  /**
-   * Slides to the specified item.
-   * @public
-   * @param {Number} position - The position of the item.
-   * @param {Number} [speed] - The time in milliseconds for the transition.
-   */
-
-
-  Owl.prototype.to = function (position, speed) {
-    var current = this.current(),
-        revert = null,
-        distance = position - this.relative(current),
-        direction = (distance > 0) - (distance < 0),
-        items = this._items.length,
-        minimum = this.minimum(),
-        maximum = this.maximum();
-
-    if (this.settings.loop) {
-      if (!this.settings.rewind && Math.abs(distance) > items / 2) {
-        distance += direction * -1 * items;
-      }
-
-      position = current + distance;
-      revert = ((position - minimum) % items + items) % items + minimum;
-
-      if (revert !== position && revert - distance <= maximum && revert - distance > 0) {
-        current = revert - distance;
-        position = revert;
-        this.reset(current);
-      }
-    } else if (this.settings.rewind) {
-      maximum += 1;
-      position = (position % maximum + maximum) % maximum;
-    } else {
-      position = Math.max(minimum, Math.min(maximum, position));
-    }
-
-    this.speed(this.duration(current, position, speed));
-    this.current(position);
-
-    if (this.$element.is(':visible')) {
-      this.update();
-    }
-  };
-  /**
-   * Slides to the next item.
-   * @public
-   * @param {Number} [speed] - The time in milliseconds for the transition.
-   */
-
-
-  Owl.prototype.next = function (speed) {
-    speed = speed || false;
-    this.to(this.relative(this.current()) + 1, speed);
-  };
-  /**
-   * Slides to the previous item.
-   * @public
-   * @param {Number} [speed] - The time in milliseconds for the transition.
-   */
-
-
-  Owl.prototype.prev = function (speed) {
-    speed = speed || false;
-    this.to(this.relative(this.current()) - 1, speed);
-  };
-  /**
-   * Handles the end of an animation.
-   * @protected
-   * @param {Event} event - The event arguments.
-   */
-
-
-  Owl.prototype.onTransitionEnd = function (event) {
-    // if css2 animation then event object is undefined
-    if (event !== undefined) {
-      event.stopPropagation(); // Catch only owl-stage transitionEnd event
-
-      if ((event.target || event.srcElement || event.originalTarget) !== this.$stage.get(0)) {
-        return false;
-      }
-    }
-
-    this.leave('animating');
-    this.trigger('translated');
-  };
-  /**
-   * Gets viewport width.
-   * @protected
-   * @return {Number} - The width in pixel.
-   */
-
-
-  Owl.prototype.viewport = function () {
-    var width;
-
-    if (this.options.responsiveBaseElement !== window) {
-      width = $(this.options.responsiveBaseElement).width();
-    } else if (window.innerWidth) {
-      width = window.innerWidth;
-    } else if (document.documentElement && document.documentElement.clientWidth) {
-      width = document.documentElement.clientWidth;
-    } else {
-      console.warn('Can not detect viewport width.');
-    }
-
-    return width;
-  };
-  /**
-   * Replaces the current content.
-   * @public
-   * @param {HTMLElement|jQuery|String} content - The new content.
-   */
-
-
-  Owl.prototype.replace = function (content) {
-    this.$stage.empty();
-    this._items = [];
-
-    if (content) {
-      content = content instanceof jQuery ? content : $(content);
-    }
-
-    if (this.settings.nestedItemSelector) {
-      content = content.find('.' + this.settings.nestedItemSelector);
-    }
-
-    content.filter(function () {
-      return this.nodeType === 1;
-    }).each($.proxy(function (index, item) {
-      item = this.prepare(item);
-      this.$stage.append(item);
-
-      this._items.push(item);
-
-      this._mergers.push(item.find('[data-merge]').addBack('[data-merge]').attr('data-merge') * 1 || 1);
-    }, this));
-    this.reset(this.isNumeric(this.settings.startPosition) ? this.settings.startPosition : 0);
-    this.invalidate('items');
-  };
-  /**
-   * Adds an item.
-   * @todo Use `item` instead of `content` for the event arguments.
-   * @public
-   * @param {HTMLElement|jQuery|String} content - The item content to add.
-   * @param {Number} [position] - The relative position at which to insert the item otherwise the item will be added to the end.
-   */
-
-
-  Owl.prototype.add = function (content, position) {
-    var current = this.relative(this._current);
-    position = position === undefined ? this._items.length : this.normalize(position, true);
-    content = content instanceof jQuery ? content : $(content);
-    this.trigger('add', {
-      content: content,
-      position: position
-    });
-    content = this.prepare(content);
-
-    if (this._items.length === 0 || position === this._items.length) {
-      this._items.length === 0 && this.$stage.append(content);
-      this._items.length !== 0 && this._items[position - 1].after(content);
-
-      this._items.push(content);
-
-      this._mergers.push(content.find('[data-merge]').addBack('[data-merge]').attr('data-merge') * 1 || 1);
-    } else {
-      this._items[position].before(content);
-
-      this._items.splice(position, 0, content);
-
-      this._mergers.splice(position, 0, content.find('[data-merge]').addBack('[data-merge]').attr('data-merge') * 1 || 1);
-    }
-
-    this._items[current] && this.reset(this._items[current].index());
-    this.invalidate('items');
-    this.trigger('added', {
-      content: content,
-      position: position
-    });
-  };
-  /**
-   * Removes an item by its position.
-   * @todo Use `item` instead of `content` for the event arguments.
-   * @public
-   * @param {Number} position - The relative position of the item to remove.
-   */
-
-
-  Owl.prototype.remove = function (position) {
-    position = this.normalize(position, true);
-
-    if (position === undefined) {
-      return;
-    }
-
-    this.trigger('remove', {
-      content: this._items[position],
-      position: position
-    });
-
-    this._items[position].remove();
-
-    this._items.splice(position, 1);
-
-    this._mergers.splice(position, 1);
-
-    this.invalidate('items');
-    this.trigger('removed', {
-      content: null,
-      position: position
-    });
-  };
-  /**
-   * Preloads images with auto width.
-   * @todo Replace by a more generic approach
-   * @protected
-   */
-
-
-  Owl.prototype.preloadAutoWidthImages = function (images) {
-    images.each($.proxy(function (i, element) {
-      this.enter('pre-loading');
-      element = $(element);
-      $(new Image()).one('load', $.proxy(function (e) {
-        element.attr('src', e.target.src);
-        element.css('opacity', 1);
-        this.leave('pre-loading');
-        !this.is('pre-loading') && !this.is('initializing') && this.refresh();
-      }, this)).attr('src', element.attr('src') || element.attr('data-src') || element.attr('data-src-retina'));
-    }, this));
-  };
-  /**
-   * Destroys the carousel.
-   * @public
-   */
-
-
-  Owl.prototype.destroy = function () {
-    this.$element.off('.owl.core');
-    this.$stage.off('.owl.core');
-    $(document).off('.owl.core');
-
-    if (this.settings.responsive !== false) {
-      window.clearTimeout(this.resizeTimer);
-      this.off(window, 'resize', this._handlers.onThrottledResize);
-    }
-
-    for (var i in this._plugins) {
-      this._plugins[i].destroy();
-    }
-
-    this.$stage.children('.cloned').remove();
-    this.$stage.unwrap();
-    this.$stage.children().contents().unwrap();
-    this.$stage.children().unwrap();
-    this.$element.removeClass(this.options.refreshClass).removeClass(this.options.loadingClass).removeClass(this.options.loadedClass).removeClass(this.options.rtlClass).removeClass(this.options.dragClass).removeClass(this.options.grabClass).attr('class', this.$element.attr('class').replace(new RegExp(this.options.responsiveClass + '-\\S+\\s', 'g'), '')).removeData('owl.carousel');
-  };
-  /**
-   * Operators to calculate right-to-left and left-to-right.
-   * @protected
-   * @param {Number} [a] - The left side operand.
-   * @param {String} [o] - The operator.
-   * @param {Number} [b] - The right side operand.
-   */
-
-
-  Owl.prototype.op = function (a, o, b) {
-    var rtl = this.settings.rtl;
-
-    switch (o) {
-      case '<':
-        return rtl ? a > b : a < b;
-
-      case '>':
-        return rtl ? a < b : a > b;
-
-      case '>=':
-        return rtl ? a <= b : a >= b;
-
-      case '<=':
-        return rtl ? a >= b : a <= b;
-
-      default:
-        break;
-    }
-  };
-  /**
-   * Attaches to an internal event.
-   * @protected
-   * @param {HTMLElement} element - The event source.
-   * @param {String} event - The event name.
-   * @param {Function} listener - The event handler to attach.
-   * @param {Boolean} capture - Wether the event should be handled at the capturing phase or not.
-   */
-
-
-  Owl.prototype.on = function (element, event, listener, capture) {
-    if (element.addEventListener) {
-      element.addEventListener(event, listener, capture);
-    } else if (element.attachEvent) {
-      element.attachEvent('on' + event, listener);
-    }
-  };
-  /**
-   * Detaches from an internal event.
-   * @protected
-   * @param {HTMLElement} element - The event source.
-   * @param {String} event - The event name.
-   * @param {Function} listener - The attached event handler to detach.
-   * @param {Boolean} capture - Wether the attached event handler was registered as a capturing listener or not.
-   */
-
-
-  Owl.prototype.off = function (element, event, listener, capture) {
-    if (element.removeEventListener) {
-      element.removeEventListener(event, listener, capture);
-    } else if (element.detachEvent) {
-      element.detachEvent('on' + event, listener);
-    }
-  };
-  /**
-   * Triggers a public event.
-   * @todo Remove `status`, `relatedTarget` should be used instead.
-   * @protected
-   * @param {String} name - The event name.
-   * @param {*} [data=null] - The event data.
-   * @param {String} [namespace=carousel] - The event namespace.
-   * @param {String} [state] - The state which is associated with the event.
-   * @param {Boolean} [enter=false] - Indicates if the call enters the specified state or not.
-   * @returns {Event} - The event arguments.
-   */
-
-
-  Owl.prototype.trigger = function (name, data, namespace, state, enter) {
-    var status = {
-      item: {
-        count: this._items.length,
-        index: this.current()
-      }
-    },
-        handler = $.camelCase($.grep(['on', name, namespace], function (v) {
-      return v;
-    }).join('-').toLowerCase()),
-        event = $.Event([name, 'owl', namespace || 'carousel'].join('.').toLowerCase(), $.extend({
-      relatedTarget: this
-    }, status, data));
-
-    if (!this._supress[name]) {
-      $.each(this._plugins, function (name, plugin) {
-        if (plugin.onTrigger) {
-          plugin.onTrigger(event);
-        }
-      });
-      this.register({
-        type: Owl.Type.Event,
-        name: name
-      });
-      this.$element.trigger(event);
-
-      if (this.settings && typeof this.settings[handler] === 'function') {
-        this.settings[handler].call(this, event);
-      }
-    }
-
-    return event;
-  };
-  /**
-   * Enters a state.
-   * @param name - The state name.
-   */
-
-
-  Owl.prototype.enter = function (name) {
-    $.each([name].concat(this._states.tags[name] || []), $.proxy(function (i, name) {
-      if (this._states.current[name] === undefined) {
-        this._states.current[name] = 0;
-      }
-
-      this._states.current[name]++;
-    }, this));
-  };
-  /**
-   * Leaves a state.
-   * @param name - The state name.
-   */
-
-
-  Owl.prototype.leave = function (name) {
-    $.each([name].concat(this._states.tags[name] || []), $.proxy(function (i, name) {
-      this._states.current[name]--;
-    }, this));
-  };
-  /**
-   * Registers an event or state.
-   * @public
-   * @param {Object} object - The event or state to register.
-   */
-
-
-  Owl.prototype.register = function (object) {
-    if (object.type === Owl.Type.Event) {
-      if (!$.event.special[object.name]) {
-        $.event.special[object.name] = {};
-      }
-
-      if (!$.event.special[object.name].owl) {
-        var _default = $.event.special[object.name]._default;
-
-        $.event.special[object.name]._default = function (e) {
-          if (_default && _default.apply && (!e.namespace || e.namespace.indexOf('owl') === -1)) {
-            return _default.apply(this, arguments);
-          }
-
-          return e.namespace && e.namespace.indexOf('owl') > -1;
-        };
-
-        $.event.special[object.name].owl = true;
-      }
-    } else if (object.type === Owl.Type.State) {
-      if (!this._states.tags[object.name]) {
-        this._states.tags[object.name] = object.tags;
-      } else {
-        this._states.tags[object.name] = this._states.tags[object.name].concat(object.tags);
-      }
-
-      this._states.tags[object.name] = $.grep(this._states.tags[object.name], $.proxy(function (tag, i) {
-        return $.inArray(tag, this._states.tags[object.name]) === i;
-      }, this));
-    }
-  };
-  /**
-   * Suppresses events.
-   * @protected
-   * @param {Array.<String>} events - The events to suppress.
-   */
-
-
-  Owl.prototype.suppress = function (events) {
-    $.each(events, $.proxy(function (index, event) {
-      this._supress[event] = true;
-    }, this));
-  };
-  /**
-   * Releases suppressed events.
-   * @protected
-   * @param {Array.<String>} events - The events to release.
-   */
-
-
-  Owl.prototype.release = function (events) {
-    $.each(events, $.proxy(function (index, event) {
-      delete this._supress[event];
-    }, this));
-  };
-  /**
-   * Gets unified pointer coordinates from event.
-   * @todo #261
-   * @protected
-   * @param {Event} - The `mousedown` or `touchstart` event.
-   * @returns {Object} - Contains `x` and `y` coordinates of current pointer position.
-   */
-
-
-  Owl.prototype.pointer = function (event) {
-    var result = {
-      x: null,
-      y: null
-    };
-    event = event.originalEvent || event || window.event;
-    event = event.touches && event.touches.length ? event.touches[0] : event.changedTouches && event.changedTouches.length ? event.changedTouches[0] : event;
-
-    if (event.pageX) {
-      result.x = event.pageX;
-      result.y = event.pageY;
-    } else {
-      result.x = event.clientX;
-      result.y = event.clientY;
-    }
-
-    return result;
-  };
-  /**
-   * Determines if the input is a Number or something that can be coerced to a Number
-   * @protected
-   * @param {Number|String|Object|Array|Boolean|RegExp|Function|Symbol} - The input to be tested
-   * @returns {Boolean} - An indication if the input is a Number or can be coerced to a Number
-   */
-
-
-  Owl.prototype.isNumeric = function (number) {
-    return !isNaN(parseFloat(number));
-  };
-  /**
-   * Gets the difference of two vectors.
-   * @todo #261
-   * @protected
-   * @param {Object} - The first vector.
-   * @param {Object} - The second vector.
-   * @returns {Object} - The difference.
-   */
-
-
-  Owl.prototype.difference = function (first, second) {
-    return {
-      x: first.x - second.x,
-      y: first.y - second.y
-    };
-  };
-  /**
-   * The jQuery Plugin for the Owl Carousel
-   * @todo Navigation plugin `next` and `prev`
-   * @public
-   */
-
-
-  $.fn.owlCarousel = function (option) {
-    var args = Array.prototype.slice.call(arguments, 1);
-    return this.each(function () {
-      var $this = $(this),
-          data = $this.data('owl.carousel');
-
-      if (!data) {
-        data = new Owl(this, _typeof(option) == 'object' && option);
-        $this.data('owl.carousel', data);
-        $.each(['next', 'prev', 'to', 'destroy', 'refresh', 'replace', 'add', 'remove'], function (i, event) {
-          data.register({
-            type: Owl.Type.Event,
-            name: event
-          });
-          data.$element.on(event + '.owl.carousel.core', $.proxy(function (e) {
-            if (e.namespace && e.relatedTarget !== this) {
-              this.suppress([event]);
-              data[event].apply(this, [].slice.call(arguments, 1));
-              this.release([event]);
-            }
-          }, data));
-        });
-      }
-
-      if (typeof option == 'string' && option.charAt(0) !== '_') {
-        data[option].apply(data, args);
-      }
-    });
-  };
-  /**
-   * The constructor for the jQuery Plugin
-   * @public
-   */
-
-
-  $.fn.owlCarousel.Constructor = Owl;
-})(window.Zepto || window.jQuery, window, document);
-/**
- * AutoRefresh Plugin
- * @version 2.1.0
- * @author Artus Kolanowski
- * @author David Deutsch
- * @license The MIT License (MIT)
- */
-
-
-;
-
-(function ($, window, document, undefined) {
-  /**
-   * Creates the auto refresh plugin.
-   * @class The Auto Refresh Plugin
-   * @param {Owl} carousel - The Owl Carousel
-   */
-  var AutoRefresh = function AutoRefresh(carousel) {
-    /**
-     * Reference to the core.
-     * @protected
-     * @type {Owl}
-     */
-    this._core = carousel;
-    /**
-     * Refresh interval.
-     * @protected
-     * @type {number}
-     */
-
-    this._interval = null;
-    /**
-     * Whether the element is currently visible or not.
-     * @protected
-     * @type {Boolean}
-     */
-
-    this._visible = null;
-    /**
-     * All event handlers.
-     * @protected
-     * @type {Object}
-     */
-
-    this._handlers = {
-      'initialized.owl.carousel': $.proxy(function (e) {
-        if (e.namespace && this._core.settings.autoRefresh) {
-          this.watch();
-        }
-      }, this)
-    }; // set default options
-
-    this._core.options = $.extend({}, AutoRefresh.Defaults, this._core.options); // register event handlers
-
-    this._core.$element.on(this._handlers);
-  };
-  /**
-   * Default options.
-   * @public
-   */
-
-
-  AutoRefresh.Defaults = {
-    autoRefresh: true,
-    autoRefreshInterval: 500
-  };
-  /**
-   * Watches the element.
-   */
-
-  AutoRefresh.prototype.watch = function () {
-    if (this._interval) {
-      return;
-    }
-
-    this._visible = this._core.$element.is(':visible');
-    this._interval = window.setInterval($.proxy(this.refresh, this), this._core.settings.autoRefreshInterval);
-  };
-  /**
-   * Refreshes the element.
-   */
-
-
-  AutoRefresh.prototype.refresh = function () {
-    if (this._core.$element.is(':visible') === this._visible) {
-      return;
-    }
-
-    this._visible = !this._visible;
-
-    this._core.$element.toggleClass('owl-hidden', !this._visible);
-
-    this._visible && this._core.invalidate('width') && this._core.refresh();
-  };
-  /**
-   * Destroys the plugin.
-   */
-
-
-  AutoRefresh.prototype.destroy = function () {
-    var handler, property;
-    window.clearInterval(this._interval);
-
-    for (handler in this._handlers) {
-      this._core.$element.off(handler, this._handlers[handler]);
-    }
-
-    for (property in Object.getOwnPropertyNames(this)) {
-      typeof this[property] != 'function' && (this[property] = null);
-    }
-  };
-
-  $.fn.owlCarousel.Constructor.Plugins.AutoRefresh = AutoRefresh;
-})(window.Zepto || window.jQuery, window, document);
-/**
- * Lazy Plugin
- * @version 2.1.0
- * @author Bartosz Wojciechowski
- * @author David Deutsch
- * @license The MIT License (MIT)
- */
-
-
-;
-
-(function ($, window, document, undefined) {
-  /**
-   * Creates the lazy plugin.
-   * @class The Lazy Plugin
-   * @param {Owl} carousel - The Owl Carousel
-   */
-  var Lazy = function Lazy(carousel) {
-    /**
-     * Reference to the core.
-     * @protected
-     * @type {Owl}
-     */
-    this._core = carousel;
-    /**
-     * Already loaded items.
-     * @protected
-     * @type {Array.<jQuery>}
-     */
-
-    this._loaded = [];
-    /**
-     * Event handlers.
-     * @protected
-     * @type {Object}
-     */
-
-    this._handlers = {
-      'initialized.owl.carousel change.owl.carousel resized.owl.carousel': $.proxy(function (e) {
-        if (!e.namespace) {
-          return;
-        }
-
-        if (!this._core.settings || !this._core.settings.lazyLoad) {
-          return;
-        }
-
-        if (e.property && e.property.name == 'position' || e.type == 'initialized') {
-          var settings = this._core.settings,
-              n = settings.center && Math.ceil(settings.items / 2) || settings.items,
-              i = settings.center && n * -1 || 0,
-              position = (e.property && e.property.value !== undefined ? e.property.value : this._core.current()) + i,
-              clones = this._core.clones().length,
-              load = $.proxy(function (i, v) {
-            this.load(v);
-          }, this);
-
-          while (i++ < n) {
-            this.load(clones / 2 + this._core.relative(position));
-            clones && $.each(this._core.clones(this._core.relative(position)), load);
-            position++;
-          }
-        }
-      }, this)
-    }; // set the default options
-
-    this._core.options = $.extend({}, Lazy.Defaults, this._core.options); // register event handler
-
-    this._core.$element.on(this._handlers);
-  };
-  /**
-   * Default options.
-   * @public
-   */
-
-
-  Lazy.Defaults = {
-    lazyLoad: false
-  };
-  /**
-   * Loads all resources of an item at the specified position.
-   * @param {Number} position - The absolute position of the item.
-   * @protected
-   */
-
-  Lazy.prototype.load = function (position) {
-    var $item = this._core.$stage.children().eq(position),
-        $elements = $item && $item.find('.owl-lazy');
-
-    if (!$elements || $.inArray($item.get(0), this._loaded) > -1) {
-      return;
-    }
-
-    $elements.each($.proxy(function (index, element) {
-      var $element = $(element),
-          image,
-          url = window.devicePixelRatio > 1 && $element.attr('data-src-retina') || $element.attr('data-src');
-
-      this._core.trigger('load', {
-        element: $element,
-        url: url
-      }, 'lazy');
-
-      if ($element.is('img')) {
-        $element.one('load.owl.lazy', $.proxy(function () {
-          $element.css('opacity', 1);
-
-          this._core.trigger('loaded', {
-            element: $element,
-            url: url
-          }, 'lazy');
-        }, this)).attr('src', url);
-      } else {
-        image = new Image();
-        image.onload = $.proxy(function () {
-          $element.css({
-            'background-image': 'url("' + url + '")',
-            'opacity': '1'
-          });
-
-          this._core.trigger('loaded', {
-            element: $element,
-            url: url
-          }, 'lazy');
-        }, this);
-        image.src = url;
-      }
-    }, this));
-
-    this._loaded.push($item.get(0));
-  };
-  /**
-   * Destroys the plugin.
-   * @public
-   */
-
-
-  Lazy.prototype.destroy = function () {
-    var handler, property;
-
-    for (handler in this.handlers) {
-      this._core.$element.off(handler, this.handlers[handler]);
-    }
-
-    for (property in Object.getOwnPropertyNames(this)) {
-      typeof this[property] != 'function' && (this[property] = null);
-    }
-  };
-
-  $.fn.owlCarousel.Constructor.Plugins.Lazy = Lazy;
-})(window.Zepto || window.jQuery, window, document);
-/**
- * AutoHeight Plugin
- * @version 2.1.0
- * @author Bartosz Wojciechowski
- * @author David Deutsch
- * @license The MIT License (MIT)
- */
-
-
-;
-
-(function ($, window, document, undefined) {
-  /**
-   * Creates the auto height plugin.
-   * @class The Auto Height Plugin
-   * @param {Owl} carousel - The Owl Carousel
-   */
-  var AutoHeight = function AutoHeight(carousel) {
-    /**
-     * Reference to the core.
-     * @protected
-     * @type {Owl}
-     */
-    this._core = carousel;
-    /**
-     * All event handlers.
-     * @protected
-     * @type {Object}
-     */
-
-    this._handlers = {
-      'initialized.owl.carousel refreshed.owl.carousel': $.proxy(function (e) {
-        if (e.namespace && this._core.settings.autoHeight) {
-          this.update();
-        }
-      }, this),
-      'changed.owl.carousel': $.proxy(function (e) {
-        if (e.namespace && this._core.settings.autoHeight && e.property.name == 'position') {
-          this.update();
-        }
-      }, this),
-      'loaded.owl.lazy': $.proxy(function (e) {
-        if (e.namespace && this._core.settings.autoHeight && e.element.closest('.' + this._core.settings.itemClass).index() === this._core.current()) {
-          this.update();
-        }
-      }, this)
-    }; // set default options
-
-    this._core.options = $.extend({}, AutoHeight.Defaults, this._core.options); // register event handlers
-
-    this._core.$element.on(this._handlers);
-  };
-  /**
-   * Default options.
-   * @public
-   */
-
-
-  AutoHeight.Defaults = {
-    autoHeight: false,
-    autoHeightClass: 'owl-height'
-  };
-  /**
-   * Updates the view.
-   */
-
-  AutoHeight.prototype.update = function () {
-    var start = this._core._current,
-        end = start + this._core.settings.items,
-        visible = this._core.$stage.children().toArray().slice(start, end),
-        heights = [],
-        maxheight = 0;
-
-    $.each(visible, function (index, item) {
-      heights.push($(item).height());
-    });
-    maxheight = Math.max.apply(null, heights);
-
-    this._core.$stage.parent().height(maxheight).addClass(this._core.settings.autoHeightClass);
-  };
-
-  AutoHeight.prototype.destroy = function () {
-    var handler, property;
-
-    for (handler in this._handlers) {
-      this._core.$element.off(handler, this._handlers[handler]);
-    }
-
-    for (property in Object.getOwnPropertyNames(this)) {
-      typeof this[property] != 'function' && (this[property] = null);
-    }
-  };
-
-  $.fn.owlCarousel.Constructor.Plugins.AutoHeight = AutoHeight;
-})(window.Zepto || window.jQuery, window, document);
-/**
- * Video Plugin
- * @version 2.1.0
- * @author Bartosz Wojciechowski
- * @author David Deutsch
- * @license The MIT License (MIT)
- */
-
-
-;
-
-(function ($, window, document, undefined) {
-  /**
-   * Creates the video plugin.
-   * @class The Video Plugin
-   * @param {Owl} carousel - The Owl Carousel
-   */
-  var Video = function Video(carousel) {
-    /**
-     * Reference to the core.
-     * @protected
-     * @type {Owl}
-     */
-    this._core = carousel;
-    /**
-     * Cache all video URLs.
-     * @protected
-     * @type {Object}
-     */
-
-    this._videos = {};
-    /**
-     * Current playing item.
-     * @protected
-     * @type {jQuery}
-     */
-
-    this._playing = null;
-    /**
-     * All event handlers.
-     * @todo The cloned content removale is too late
-     * @protected
-     * @type {Object}
-     */
-
-    this._handlers = {
-      'initialized.owl.carousel': $.proxy(function (e) {
-        if (e.namespace) {
-          this._core.register({
-            type: 'state',
-            name: 'playing',
-            tags: ['interacting']
-          });
-        }
-      }, this),
-      'resize.owl.carousel': $.proxy(function (e) {
-        if (e.namespace && this._core.settings.video && this.isInFullScreen()) {
-          e.preventDefault();
-        }
-      }, this),
-      'refreshed.owl.carousel': $.proxy(function (e) {
-        if (e.namespace && this._core.is('resizing')) {
-          this._core.$stage.find('.cloned .owl-video-frame').remove();
-        }
-      }, this),
-      'changed.owl.carousel': $.proxy(function (e) {
-        if (e.namespace && e.property.name === 'position' && this._playing) {
-          this.stop();
-        }
-      }, this),
-      'prepared.owl.carousel': $.proxy(function (e) {
-        if (!e.namespace) {
-          return;
-        }
-
-        var $element = $(e.content).find('.owl-video');
-
-        if ($element.length) {
-          $element.css('display', 'none');
-          this.fetch($element, $(e.content));
-        }
-      }, this)
-    }; // set default options
-
-    this._core.options = $.extend({}, Video.Defaults, this._core.options); // register event handlers
-
-    this._core.$element.on(this._handlers);
-
-    this._core.$element.on('click.owl.video', '.owl-video-play-icon', $.proxy(function (e) {
-      this.play(e);
-    }, this));
-  };
-  /**
-   * Default options.
-   * @public
-   */
-
-
-  Video.Defaults = {
-    video: false,
-    videoHeight: false,
-    videoWidth: false
-  };
-  /**
-   * Gets the video ID and the type (YouTube/Vimeo/vzaar only).
-   * @protected
-   * @param {jQuery} target - The target containing the video data.
-   * @param {jQuery} item - The item containing the video.
-   */
-
-  Video.prototype.fetch = function (target, item) {
-    var type = function () {
-      if (target.attr('data-vimeo-id')) {
-        return 'vimeo';
-      } else if (target.attr('data-vzaar-id')) {
-        return 'vzaar';
-      } else {
-        return 'youtube';
-      }
-    }(),
-        id = target.attr('data-vimeo-id') || target.attr('data-youtube-id') || target.attr('data-vzaar-id'),
-        width = target.attr('data-width') || this._core.settings.videoWidth,
-        height = target.attr('data-height') || this._core.settings.videoHeight,
-        url = target.attr('href');
-
-    if (url) {
-      /*
-      		Parses the id's out of the following urls (and probably more):
-      		https://www.youtube.com/watch?v=:id
-      		https://youtu.be/:id
-      		https://vimeo.com/:id
-      		https://vimeo.com/channels/:channel/:id
-      		https://vimeo.com/groups/:group/videos/:id
-      		https://app.vzaar.com/videos/:id
-      			Visual example: https://regexper.com/#(http%3A%7Chttps%3A%7C)%5C%2F%5C%2F(player.%7Cwww.%7Capp.)%3F(vimeo%5C.com%7Cyoutu(be%5C.com%7C%5C.be%7Cbe%5C.googleapis%5C.com)%7Cvzaar%5C.com)%5C%2F(video%5C%2F%7Cvideos%5C%2F%7Cembed%5C%2F%7Cchannels%5C%2F.%2B%5C%2F%7Cgroups%5C%2F.%2B%5C%2F%7Cwatch%5C%3Fv%3D%7Cv%5C%2F)%3F(%5BA-Za-z0-9._%25-%5D*)(%5C%26%5CS%2B)%3F
-      */
-      id = url.match(/(http:|https:|)\/\/(player.|www.|app.)?(vimeo\.com|youtu(be\.com|\.be|be\.googleapis\.com)|vzaar\.com)\/(video\/|videos\/|embed\/|channels\/.+\/|groups\/.+\/|watch\?v=|v\/)?([A-Za-z0-9._%-]*)(\&\S+)?/);
-
-      if (id[3].indexOf('youtu') > -1) {
-        type = 'youtube';
-      } else if (id[3].indexOf('vimeo') > -1) {
-        type = 'vimeo';
-      } else if (id[3].indexOf('vzaar') > -1) {
-        type = 'vzaar';
-      } else {
-        throw new Error('Video URL not supported.');
-      }
-
-      id = id[6];
-    } else {
-      throw new Error('Missing video URL.');
-    }
-
-    this._videos[url] = {
-      type: type,
-      id: id,
-      width: width,
-      height: height
-    };
-    item.attr('data-video', url);
-    this.thumbnail(target, this._videos[url]);
-  };
-  /**
-   * Creates video thumbnail.
-   * @protected
-   * @param {jQuery} target - The target containing the video data.
-   * @param {Object} info - The video info object.
-   * @see `fetch`
-   */
-
-
-  Video.prototype.thumbnail = function (target, video) {
-    var tnLink,
-        icon,
-        path,
-        dimensions = video.width && video.height ? 'style="width:' + video.width + 'px;height:' + video.height + 'px;"' : '',
-        customTn = target.find('img'),
-        srcType = 'src',
-        lazyClass = '',
-        settings = this._core.settings,
-        create = function create(path) {
-      icon = '<div class="owl-video-play-icon"></div>';
-
-      if (settings.lazyLoad) {
-        tnLink = '<div class="owl-video-tn ' + lazyClass + '" ' + srcType + '="' + path + '"></div>';
-      } else {
-        tnLink = '<div class="owl-video-tn" style="opacity:1;background-image:url(' + path + ')"></div>';
-      }
-
-      target.after(tnLink);
-      target.after(icon);
-    }; // wrap video content into owl-video-wrapper div
-
-
-    target.wrap('<div class="owl-video-wrapper"' + dimensions + '></div>');
-
-    if (this._core.settings.lazyLoad) {
-      srcType = 'data-src';
-      lazyClass = 'owl-lazy';
-    } // custom thumbnail
-
-
-    if (customTn.length) {
-      create(customTn.attr(srcType));
-      customTn.remove();
-      return false;
-    }
-
-    if (video.type === 'youtube') {
-      path = "//image.youtube.com/vi/" + video.id + "/hqdefault.jpg";
-      create(path);
-    } else if (video.type === 'vimeo') {
-      $.ajax({
-        type: 'GET',
-        url: '//vimeo.com/api/v2/video/' + video.id + '.json',
-        jsonp: 'callback',
-        dataType: 'jsonp',
-        success: function success(data) {
-          path = data[0].thumbnail_large;
-          create(path);
-        }
-      });
-    } else if (video.type === 'vzaar') {
-      $.ajax({
-        type: 'GET',
-        url: '//vzaar.com/api/videos/' + video.id + '.json',
-        jsonp: 'callback',
-        dataType: 'jsonp',
-        success: function success(data) {
-          path = data.framegrab_url;
-          create(path);
-        }
-      });
-    }
-  };
-  /**
-   * Stops the current video.
-   * @public
-   */
-
-
-  Video.prototype.stop = function () {
-    this._core.trigger('stop', null, 'video');
-
-    this._playing.find('.owl-video-frame').remove();
-
-    this._playing.removeClass('owl-video-playing');
-
-    this._playing = null;
-
-    this._core.leave('playing');
-
-    this._core.trigger('stopped', null, 'video');
-  };
-  /**
-   * Starts the current video.
-   * @public
-   * @param {Event} event - The event arguments.
-   */
-
-
-  Video.prototype.play = function (event) {
-    var target = $(event.target),
-        item = target.closest('.' + this._core.settings.itemClass),
-        video = this._videos[item.attr('data-video')],
-        width = video.width || '100%',
-        height = video.height || this._core.$stage.height(),
-        html;
-
-    if (this._playing) {
-      return;
-    }
-
-    this._core.enter('playing');
-
-    this._core.trigger('play', null, 'video');
-
-    item = this._core.items(this._core.relative(item.index()));
-
-    this._core.reset(item.index());
-
-    if (video.type === 'youtube') {
-      html = '<iframe width="' + width + '" height="' + height + '" src="//www.youtube.com/embed/' + video.id + '?autoplay=1&rel=0&v=' + video.id + '" frameborder="0" allowfullscreen></iframe>';
-    } else if (video.type === 'vimeo') {
-      html = '<iframe src="//player.vimeo.com/video/' + video.id + '?autoplay=1" width="' + width + '" height="' + height + '" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
-    } else if (video.type === 'vzaar') {
-      html = '<iframe frameborder="0"' + 'height="' + height + '"' + 'width="' + width + '" allowfullscreen mozallowfullscreen webkitAllowFullScreen ' + 'src="//view.vzaar.com/' + video.id + '/player?autoplay=true"></iframe>';
-    }
-
-    $('<div class="owl-video-frame">' + html + '</div>').insertAfter(item.find('.owl-video'));
-    this._playing = item.addClass('owl-video-playing');
-  };
-  /**
-   * Checks whether an video is currently in full screen mode or not.
-   * @todo Bad style because looks like a readonly method but changes members.
-   * @protected
-   * @returns {Boolean}
-   */
-
-
-  Video.prototype.isInFullScreen = function () {
-    var element = document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement;
-    return element && $(element).parent().hasClass('owl-video-frame');
-  };
-  /**
-   * Destroys the plugin.
-   */
-
-
-  Video.prototype.destroy = function () {
-    var handler, property;
-
-    this._core.$element.off('click.owl.video');
-
-    for (handler in this._handlers) {
-      this._core.$element.off(handler, this._handlers[handler]);
-    }
-
-    for (property in Object.getOwnPropertyNames(this)) {
-      typeof this[property] != 'function' && (this[property] = null);
-    }
-  };
-
-  $.fn.owlCarousel.Constructor.Plugins.Video = Video;
-})(window.Zepto || window.jQuery, window, document);
-/**
- * Animate Plugin
- * @version 2.1.0
- * @author Bartosz Wojciechowski
- * @author David Deutsch
- * @license The MIT License (MIT)
- */
-
-
-;
-
-(function ($, window, document, undefined) {
-  /**
-   * Creates the animate plugin.
-   * @class The Navigation Plugin
-   * @param {Owl} scope - The Owl Carousel
-   */
-  var Animate = function Animate(scope) {
-    this.core = scope;
-    this.core.options = $.extend({}, Animate.Defaults, this.core.options);
-    this.swapping = true;
-    this.previous = undefined;
-    this.next = undefined;
-    this.handlers = {
-      'change.owl.carousel': $.proxy(function (e) {
-        if (e.namespace && e.property.name == 'position') {
-          this.previous = this.core.current();
-          this.next = e.property.value;
-        }
-      }, this),
-      'drag.owl.carousel dragged.owl.carousel translated.owl.carousel': $.proxy(function (e) {
-        if (e.namespace) {
-          this.swapping = e.type == 'translated';
-        }
-      }, this),
-      'translate.owl.carousel': $.proxy(function (e) {
-        if (e.namespace && this.swapping && (this.core.options.animateOut || this.core.options.animateIn)) {
-          this.swap();
-        }
-      }, this)
-    };
-    this.core.$element.on(this.handlers);
-  };
-  /**
-   * Default options.
-   * @public
-   */
-
-
-  Animate.Defaults = {
-    animateOut: false,
-    animateIn: false
-  };
-  /**
-   * Toggles the animation classes whenever an translations starts.
-   * @protected
-   * @returns {Boolean|undefined}
-   */
-
-  Animate.prototype.swap = function () {
-    if (this.core.settings.items !== 1) {
-      return;
-    }
-
-    if (!$.support.animation || !$.support.transition) {
-      return;
-    }
-
-    this.core.speed(0);
-    var left,
-        clear = $.proxy(this.clear, this),
-        previous = this.core.$stage.children().eq(this.previous),
-        next = this.core.$stage.children().eq(this.next),
-        incoming = this.core.settings.animateIn,
-        outgoing = this.core.settings.animateOut;
-
-    if (this.core.current() === this.previous) {
-      return;
-    }
-
-    if (outgoing) {
-      left = this.core.coordinates(this.previous) - this.core.coordinates(this.next);
-      previous.one($.support.animation.end, clear).css({
-        'left': left + 'px'
-      }).addClass('animated owl-animated-out').addClass(outgoing);
-    }
-
-    if (incoming) {
-      next.one($.support.animation.end, clear).addClass('animated owl-animated-in').addClass(incoming);
-    }
-  };
-
-  Animate.prototype.clear = function (e) {
-    $(e.target).css({
-      'left': ''
-    }).removeClass('animated owl-animated-out owl-animated-in').removeClass(this.core.settings.animateIn).removeClass(this.core.settings.animateOut);
-    this.core.onTransitionEnd();
-  };
-  /**
-   * Destroys the plugin.
-   * @public
-   */
-
-
-  Animate.prototype.destroy = function () {
-    var handler, property;
-
-    for (handler in this.handlers) {
-      this.core.$element.off(handler, this.handlers[handler]);
-    }
-
-    for (property in Object.getOwnPropertyNames(this)) {
-      typeof this[property] != 'function' && (this[property] = null);
-    }
-  };
-
-  $.fn.owlCarousel.Constructor.Plugins.Animate = Animate;
-})(window.Zepto || window.jQuery, window, document);
-/**
- * Autoplay Plugin
- * @version 2.1.0
- * @author Bartosz Wojciechowski
- * @author Artus Kolanowski
- * @author David Deutsch
- * @license The MIT License (MIT)
- */
-
-
-;
-
-(function ($, window, document, undefined) {
-  /**
-   * Creates the autoplay plugin.
-   * @class The Autoplay Plugin
-   * @param {Owl} scope - The Owl Carousel
-   */
-  var Autoplay = function Autoplay(carousel) {
-    /**
-     * Reference to the core.
-     * @protected
-     * @type {Owl}
-     */
-    this._core = carousel;
-    /**
-     * The autoplay timeout.
-     * @type {Timeout}
-     */
-
-    this._timeout = null;
-    /**
-     * Indicates whenever the autoplay is paused.
-     * @type {Boolean}
-     */
-
-    this._paused = false;
-    /**
-     * All event handlers.
-     * @protected
-     * @type {Object}
-     */
-
-    this._handlers = {
-      'changed.owl.carousel': $.proxy(function (e) {
-        if (e.namespace && e.property.name === 'settings') {
-          if (this._core.settings.autoplay) {
-            this.play();
-          } else {
-            this.stop();
-          }
-        } else if (e.namespace && e.property.name === 'position') {
-          //console.log('play?', e);
-          if (this._core.settings.autoplay) {
-            this._setAutoPlayInterval();
-          }
-        }
-      }, this),
-      'initialized.owl.carousel': $.proxy(function (e) {
-        if (e.namespace && this._core.settings.autoplay) {
-          this.play();
-        }
-      }, this),
-      'play.owl.autoplay': $.proxy(function (e, t, s) {
-        if (e.namespace) {
-          this.play(t, s);
-        }
-      }, this),
-      'stop.owl.autoplay': $.proxy(function (e) {
-        if (e.namespace) {
-          this.stop();
-        }
-      }, this),
-      'mouseover.owl.autoplay': $.proxy(function () {
-        if (this._core.settings.autoplayHoverPause && this._core.is('rotating')) {
-          this.pause();
-        }
-      }, this),
-      'mouseleave.owl.autoplay': $.proxy(function () {
-        if (this._core.settings.autoplayHoverPause && this._core.is('rotating')) {
-          this.play();
-        }
-      }, this),
-      'touchstart.owl.core': $.proxy(function () {
-        if (this._core.settings.autoplayHoverPause && this._core.is('rotating')) {
-          this.pause();
-        }
-      }, this),
-      'touchend.owl.core': $.proxy(function () {
-        if (this._core.settings.autoplayHoverPause) {
-          this.play();
-        }
-      }, this)
-    }; // register event handlers
-
-    this._core.$element.on(this._handlers); // set default options
-
-
-    this._core.options = $.extend({}, Autoplay.Defaults, this._core.options);
-  };
-  /**
-   * Default options.
-   * @public
-   */
-
-
-  Autoplay.Defaults = {
-    autoplay: false,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: false,
-    autoplaySpeed: false
-  };
-  /**
-   * Starts the autoplay.
-   * @public
-   * @param {Number} [timeout] - The interval before the next animation starts.
-   * @param {Number} [speed] - The animation speed for the animations.
-   */
-
-  Autoplay.prototype.play = function (timeout, speed) {
-    this._paused = false;
-
-    if (this._core.is('rotating')) {
-      return;
-    }
-
-    this._core.enter('rotating');
-
-    this._setAutoPlayInterval();
-  };
-  /**
-   * Gets a new timeout
-   * @private
-   * @param {Number} [timeout] - The interval before the next animation starts.
-   * @param {Number} [speed] - The animation speed for the animations.
-   * @return {Timeout}
-   */
-
-
-  Autoplay.prototype._getNextTimeout = function (timeout, speed) {
-    if (this._timeout) {
-      window.clearTimeout(this._timeout);
-    }
-
-    return window.setTimeout($.proxy(function () {
-      if (this._paused || this._core.is('busy') || this._core.is('interacting') || document.hidden) {
-        return;
-      }
-
-      this._core.next(speed || this._core.settings.autoplaySpeed);
-    }, this), timeout || this._core.settings.autoplayTimeout);
-  };
-  /**
-   * Sets autoplay in motion.
-   * @private
-   */
-
-
-  Autoplay.prototype._setAutoPlayInterval = function () {
-    this._timeout = this._getNextTimeout();
-  };
-  /**
-   * Stops the autoplay.
-   * @public
-   */
-
-
-  Autoplay.prototype.stop = function () {
-    if (!this._core.is('rotating')) {
-      return;
-    }
-
-    window.clearTimeout(this._timeout);
-
-    this._core.leave('rotating');
-  };
-  /**
-   * Stops the autoplay.
-   * @public
-   */
-
-
-  Autoplay.prototype.pause = function () {
-    if (!this._core.is('rotating')) {
-      return;
-    }
-
-    this._paused = true;
-  };
-  /**
-   * Destroys the plugin.
-   */
-
-
-  Autoplay.prototype.destroy = function () {
-    var handler, property;
-    this.stop();
-
-    for (handler in this._handlers) {
-      this._core.$element.off(handler, this._handlers[handler]);
-    }
-
-    for (property in Object.getOwnPropertyNames(this)) {
-      typeof this[property] != 'function' && (this[property] = null);
-    }
-  };
-
-  $.fn.owlCarousel.Constructor.Plugins.autoplay = Autoplay;
-})(window.Zepto || window.jQuery, window, document);
-/**
- * Navigation Plugin
- * @version 2.1.0
- * @author Artus Kolanowski
- * @author David Deutsch
- * @license The MIT License (MIT)
- */
-
-
-;
-
-(function ($, window, document, undefined) {
-  'use strict';
-  /**
-   * Creates the navigation plugin.
-   * @class The Navigation Plugin
-   * @param {Owl} carousel - The Owl Carousel.
-   */
-
-  var Navigation = function Navigation(carousel) {
-    /**
-     * Reference to the core.
-     * @protected
-     * @type {Owl}
-     */
-    this._core = carousel;
-    /**
-     * Indicates whether the plugin is initialized or not.
-     * @protected
-     * @type {Boolean}
-     */
-
-    this._initialized = false;
-    /**
-     * The current paging indexes.
-     * @protected
-     * @type {Array}
-     */
-
-    this._pages = [];
-    /**
-     * All DOM elements of the user interface.
-     * @protected
-     * @type {Object}
-     */
-
-    this._controls = {};
-    /**
-     * Markup for an indicator.
-     * @protected
-     * @type {Array.<String>}
-     */
-
-    this._templates = [];
-    /**
-     * The carousel element.
-     * @type {jQuery}
-     */
-
-    this.$element = this._core.$element;
-    /**
-     * Overridden methods of the carousel.
-     * @protected
-     * @type {Object}
-     */
-
-    this._overrides = {
-      next: this._core.next,
-      prev: this._core.prev,
-      to: this._core.to
-    };
-    /**
-     * All event handlers.
-     * @protected
-     * @type {Object}
-     */
-
-    this._handlers = {
-      'prepared.owl.carousel': $.proxy(function (e) {
-        if (e.namespace && this._core.settings.dotsData) {
-          this._templates.push('<div class="' + this._core.settings.dotClass + '">' + $(e.content).find('[data-dot]').addBack('[data-dot]').attr('data-dot') + '</div>');
-        }
-      }, this),
-      'added.owl.carousel': $.proxy(function (e) {
-        if (e.namespace && this._core.settings.dotsData) {
-          this._templates.splice(e.position, 0, this._templates.pop());
-        }
-      }, this),
-      'remove.owl.carousel': $.proxy(function (e) {
-        if (e.namespace && this._core.settings.dotsData) {
-          this._templates.splice(e.position, 1);
-        }
-      }, this),
-      'changed.owl.carousel': $.proxy(function (e) {
-        if (e.namespace && e.property.name == 'position') {
-          this.draw();
-        }
-      }, this),
-      'initialized.owl.carousel': $.proxy(function (e) {
-        if (e.namespace && !this._initialized) {
-          this._core.trigger('initialize', null, 'navigation');
-
-          this.initialize();
-          this.update();
-          this.draw();
-          this._initialized = true;
-
-          this._core.trigger('initialized', null, 'navigation');
-        }
-      }, this),
-      'refreshed.owl.carousel': $.proxy(function (e) {
-        if (e.namespace && this._initialized) {
-          this._core.trigger('refresh', null, 'navigation');
-
-          this.update();
-          this.draw();
-
-          this._core.trigger('refreshed', null, 'navigation');
-        }
-      }, this)
-    }; // set default options
-
-    this._core.options = $.extend({}, Navigation.Defaults, this._core.options); // register event handlers
-
-    this.$element.on(this._handlers);
-  };
-  /**
-   * Default options.
-   * @public
-   * @todo Rename `slideBy` to `navBy`
-   */
-
-
-  Navigation.Defaults = {
-    nav: false,
-    navText: ['prev', 'next'],
-    navSpeed: false,
-    navElement: 'div',
-    navContainer: false,
-    navContainerClass: 'owl-nav',
-    navClass: ['owl-prev', 'owl-next'],
-    slideBy: 1,
-    dotClass: 'owl-dot',
-    dotsClass: 'owl-dots',
-    dots: true,
-    dotsEach: false,
-    dotsData: false,
-    dotsSpeed: false,
-    dotsContainer: false
-  };
-  /**
-   * Initializes the layout of the plugin and extends the carousel.
-   * @protected
-   */
-
-  Navigation.prototype.initialize = function () {
-    var override,
-        settings = this._core.settings; // create DOM structure for relative navigation
-
-    this._controls.$relative = (settings.navContainer ? $(settings.navContainer) : $('<div>').addClass(settings.navContainerClass).appendTo(this.$element)).addClass('disabled');
-    this._controls.$previous = $('<' + settings.navElement + '>').addClass(settings.navClass[0]).html(settings.navText[0]).prependTo(this._controls.$relative).on('click', $.proxy(function (e) {
-      this.prev(settings.navSpeed);
-    }, this));
-    this._controls.$next = $('<' + settings.navElement + '>').addClass(settings.navClass[1]).html(settings.navText[1]).appendTo(this._controls.$relative).on('click', $.proxy(function (e) {
-      this.next(settings.navSpeed);
-    }, this)); // create DOM structure for absolute navigation
-
-    if (!settings.dotsData) {
-      this._templates = [$('<div>').addClass(settings.dotClass).append($('<span>')).prop('outerHTML')];
-    }
-
-    this._controls.$absolute = (settings.dotsContainer ? $(settings.dotsContainer) : $('<div>').addClass(settings.dotsClass).appendTo(this.$element)).addClass('disabled');
-
-    this._controls.$absolute.on('click', 'div', $.proxy(function (e) {
-      var index = $(e.target).parent().is(this._controls.$absolute) ? $(e.target).index() : $(e.target).parent().index();
-      e.preventDefault();
-      this.to(index, settings.dotsSpeed);
-    }, this)); // override public methods of the carousel
-
-
-    for (override in this._overrides) {
-      this._core[override] = $.proxy(this[override], this);
-    }
-  };
-  /**
-   * Destroys the plugin.
-   * @protected
-   */
-
-
-  Navigation.prototype.destroy = function () {
-    var handler, control, property, override;
-
-    for (handler in this._handlers) {
-      this.$element.off(handler, this._handlers[handler]);
-    }
-
-    for (control in this._controls) {
-      this._controls[control].remove();
-    }
-
-    for (override in this.overides) {
-      this._core[override] = this._overrides[override];
-    }
-
-    for (property in Object.getOwnPropertyNames(this)) {
-      typeof this[property] != 'function' && (this[property] = null);
-    }
-  };
-  /**
-   * Updates the internal state.
-   * @protected
-   */
-
-
-  Navigation.prototype.update = function () {
-    var i,
-        j,
-        k,
-        lower = this._core.clones().length / 2,
-        upper = lower + this._core.items().length,
-        maximum = this._core.maximum(true),
-        settings = this._core.settings,
-        size = settings.center || settings.autoWidth || settings.dotsData ? 1 : settings.dotsEach || settings.items;
-
-    if (settings.slideBy !== 'page') {
-      settings.slideBy = Math.min(settings.slideBy, settings.items);
-    }
-
-    if (settings.dots || settings.slideBy == 'page') {
-      this._pages = [];
-
-      for (i = lower, j = 0, k = 0; i < upper; i++) {
-        if (j >= size || j === 0) {
-          this._pages.push({
-            start: Math.min(maximum, i - lower),
-            end: i - lower + size - 1
-          });
-
-          if (Math.min(maximum, i - lower) === maximum) {
-            break;
-          }
-
-          j = 0, ++k;
-        }
-
-        j += this._core.mergers(this._core.relative(i));
-      }
-    }
-  };
-  /**
-   * Draws the user interface.
-   * @todo The option `dotsData` wont work.
-   * @protected
-   */
-
-
-  Navigation.prototype.draw = function () {
-    var difference,
-        settings = this._core.settings,
-        disabled = this._core.items().length <= settings.items,
-        index = this._core.relative(this._core.current()),
-        loop = settings.loop || settings.rewind;
-
-    this._controls.$relative.toggleClass('disabled', !settings.nav || disabled);
-
-    if (settings.nav) {
-      this._controls.$previous.toggleClass('disabled', !loop && index <= this._core.minimum(true));
-
-      this._controls.$next.toggleClass('disabled', !loop && index >= this._core.maximum(true));
-    }
-
-    this._controls.$absolute.toggleClass('disabled', !settings.dots || disabled);
-
-    if (settings.dots) {
-      difference = this._pages.length - this._controls.$absolute.children().length;
-
-      if (settings.dotsData && difference !== 0) {
-        this._controls.$absolute.html(this._templates.join(''));
-      } else if (difference > 0) {
-        this._controls.$absolute.append(new Array(difference + 1).join(this._templates[0]));
-      } else if (difference < 0) {
-        this._controls.$absolute.children().slice(difference).remove();
-      }
-
-      this._controls.$absolute.find('.active').removeClass('active');
-
-      this._controls.$absolute.children().eq($.inArray(this.current(), this._pages)).addClass('active');
-    }
-  };
-  /**
-   * Extends event data.
-   * @protected
-   * @param {Event} event - The event object which gets thrown.
-   */
-
-
-  Navigation.prototype.onTrigger = function (event) {
-    var settings = this._core.settings;
-    event.page = {
-      index: $.inArray(this.current(), this._pages),
-      count: this._pages.length,
-      size: settings && (settings.center || settings.autoWidth || settings.dotsData ? 1 : settings.dotsEach || settings.items)
-    };
-  };
-  /**
-   * Gets the current page position of the carousel.
-   * @protected
-   * @returns {Number}
-   */
-
-
-  Navigation.prototype.current = function () {
-    var current = this._core.relative(this._core.current());
-
-    return $.grep(this._pages, $.proxy(function (page, index) {
-      return page.start <= current && page.end >= current;
-    }, this)).pop();
-  };
-  /**
-   * Gets the current succesor/predecessor position.
-   * @protected
-   * @returns {Number}
-   */
-
-
-  Navigation.prototype.getPosition = function (successor) {
-    var position,
-        length,
-        settings = this._core.settings;
-
-    if (settings.slideBy == 'page') {
-      position = $.inArray(this.current(), this._pages);
-      length = this._pages.length;
-      successor ? ++position : --position;
-      position = this._pages[(position % length + length) % length].start;
-    } else {
-      position = this._core.relative(this._core.current());
-      length = this._core.items().length;
-      successor ? position += settings.slideBy : position -= settings.slideBy;
-    }
-
-    return position;
-  };
-  /**
-   * Slides to the next item or page.
-   * @public
-   * @param {Number} [speed=false] - The time in milliseconds for the transition.
-   */
-
-
-  Navigation.prototype.next = function (speed) {
-    $.proxy(this._overrides.to, this._core)(this.getPosition(true), speed);
-  };
-  /**
-   * Slides to the previous item or page.
-   * @public
-   * @param {Number} [speed=false] - The time in milliseconds for the transition.
-   */
-
-
-  Navigation.prototype.prev = function (speed) {
-    $.proxy(this._overrides.to, this._core)(this.getPosition(false), speed);
-  };
-  /**
-   * Slides to the specified item or page.
-   * @public
-   * @param {Number} position - The position of the item or page.
-   * @param {Number} [speed] - The time in milliseconds for the transition.
-   * @param {Boolean} [standard=false] - Whether to use the standard behaviour or not.
-   */
-
-
-  Navigation.prototype.to = function (position, speed, standard) {
-    var length;
-
-    if (!standard && this._pages.length) {
-      length = this._pages.length;
-      $.proxy(this._overrides.to, this._core)(this._pages[(position % length + length) % length].start, speed);
-    } else {
-      $.proxy(this._overrides.to, this._core)(position, speed);
-    }
-  };
-
-  $.fn.owlCarousel.Constructor.Plugins.Navigation = Navigation;
-})(window.Zepto || window.jQuery, window, document);
-/**
- * Hash Plugin
- * @version 2.1.0
- * @author Artus Kolanowski
- * @author David Deutsch
- * @license The MIT License (MIT)
- */
-
-
-;
-
-(function ($, window, document, undefined) {
-  'use strict';
-  /**
-   * Creates the hash plugin.
-   * @class The Hash Plugin
-   * @param {Owl} carousel - The Owl Carousel
-   */
-
-  var Hash = function Hash(carousel) {
-    /**
-     * Reference to the core.
-     * @protected
-     * @type {Owl}
-     */
-    this._core = carousel;
-    /**
-     * Hash index for the items.
-     * @protected
-     * @type {Object}
-     */
-
-    this._hashes = {};
-    /**
-     * The carousel element.
-     * @type {jQuery}
-     */
-
-    this.$element = this._core.$element;
-    /**
-     * All event handlers.
-     * @protected
-     * @type {Object}
-     */
-
-    this._handlers = {
-      'initialized.owl.carousel': $.proxy(function (e) {
-        if (e.namespace && this._core.settings.startPosition === 'URLHash') {
-          $(window).trigger('hashchange.owl.navigation');
-        }
-      }, this),
-      'prepared.owl.carousel': $.proxy(function (e) {
-        if (e.namespace) {
-          var hash = $(e.content).find('[data-hash]').addBack('[data-hash]').attr('data-hash');
-
-          if (!hash) {
-            return;
-          }
-
-          this._hashes[hash] = e.content;
-        }
-      }, this),
-      'changed.owl.carousel': $.proxy(function (e) {
-        if (e.namespace && e.property.name === 'position') {
-          var current = this._core.items(this._core.relative(this._core.current())),
-              hash = $.map(this._hashes, function (item, hash) {
-            return item === current ? hash : null;
-          }).join();
-
-          if (!hash || window.location.hash.slice(1) === hash) {
-            return;
-          }
-
-          window.location.hash = hash;
-        }
-      }, this)
-    }; // set default options
-
-    this._core.options = $.extend({}, Hash.Defaults, this._core.options); // register the event handlers
-
-    this.$element.on(this._handlers); // register event listener for hash navigation
-
-    $(window).on('hashchange.owl.navigation', $.proxy(function (e) {
-      var hash = window.location.hash.substring(1),
-          items = this._core.$stage.children(),
-          position = this._hashes[hash] && items.index(this._hashes[hash]);
-
-      if (position === undefined || position === this._core.current()) {
-        return;
-      }
-
-      this._core.to(this._core.relative(position), false, true);
-    }, this));
-  };
-  /**
-   * Default options.
-   * @public
-   */
-
-
-  Hash.Defaults = {
-    URLhashListener: false
-  };
-  /**
-   * Destroys the plugin.
-   * @public
-   */
-
-  Hash.prototype.destroy = function () {
-    var handler, property;
-    $(window).off('hashchange.owl.navigation');
-
-    for (handler in this._handlers) {
-      this._core.$element.off(handler, this._handlers[handler]);
-    }
-
-    for (property in Object.getOwnPropertyNames(this)) {
-      typeof this[property] != 'function' && (this[property] = null);
-    }
-  };
-
-  $.fn.owlCarousel.Constructor.Plugins.Hash = Hash;
-})(window.Zepto || window.jQuery, window, document);
-/**
- * Support Plugin
- *
- * @version 2.1.0
- * @author Vivid Planet Software GmbH
- * @author Artus Kolanowski
- * @author David Deutsch
- * @license The MIT License (MIT)
- */
-
-
-;
-
-(function ($, window, document, undefined) {
-  var style = $('<support>').get(0).style,
-      prefixes = 'Webkit Moz O ms'.split(' '),
-      events = {
-    transition: {
-      end: {
-        WebkitTransition: 'webkitTransitionEnd',
-        MozTransition: 'transitionend',
-        OTransition: 'oTransitionEnd',
-        transition: 'transitionend'
-      }
-    },
-    animation: {
-      end: {
-        WebkitAnimation: 'webkitAnimationEnd',
-        MozAnimation: 'animationend',
-        OAnimation: 'oAnimationEnd',
-        animation: 'animationend'
-      }
-    }
-  },
-      tests = {
-    csstransforms: function csstransforms() {
-      return !!test('transform');
-    },
-    csstransforms3d: function csstransforms3d() {
-      return !!test('perspective');
-    },
-    csstransitions: function csstransitions() {
-      return !!test('transition');
-    },
-    cssanimations: function cssanimations() {
-      return !!test('animation');
-    }
-  };
-
-  function test(property, prefixed) {
-    var result = false,
-        upper = property.charAt(0).toUpperCase() + property.slice(1);
-    $.each((property + ' ' + prefixes.join(upper + ' ') + upper).split(' '), function (i, property) {
-      if (style[property] !== undefined) {
-        result = prefixed ? property : true;
-        return false;
-      }
-    });
-    return result;
-  }
-
-  function prefixed(property) {
-    return test(property, true);
-  }
-
-  if (tests.csstransitions()) {
-    /* jshint -W053 */
-    $.support.transition = new String(prefixed('transition'));
-    $.support.transition.end = events.transition.end[$.support.transition];
-  }
-
-  if (tests.cssanimations()) {
-    /* jshint -W053 */
-    $.support.animation = new String(prefixed('animation'));
-    $.support.animation.end = events.animation.end[$.support.animation];
-  }
-
-  if (tests.csstransforms()) {
-    /* jshint -W053 */
-    $.support.transform = new String(prefixed('transform'));
-    $.support.transform3d = tests.csstransforms3d();
-  }
-})(window.Zepto || window.jQuery, window, document);
-
-/***/ }),
-
-/***/ "./resources/js/superfish.js":
-/*!***********************************!*\
-  !*** ./resources/js/superfish.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-/*
- * jQuery Superfish Menu Plugin - v1.7.9
- * Copyright (c) 2016 Joel Birch
- *
- * Dual licensed under the MIT and GPL licenses:
- *	http://www.opensource.org/licenses/mit-license.php
- *	http://www.gnu.org/licenses/gpl.html
- */
-;
-
-(function ($, w) {
-  "use strict";
-
-  var methods = function () {
-    // private properties and methods go here
-    var c = {
-      bcClass: 'sf-breadcrumb',
-      menuClass: 'sf-js-enabled',
-      anchorClass: 'sf-with-ul',
-      menuArrowClass: 'sf-arrows'
-    },
-        ios = function () {
-      var ios = /^(?![\w\W]*Windows Phone)[\w\W]*(iPhone|iPad|iPod)/i.test(navigator.userAgent);
-
-      if (ios) {
-        // tap anywhere on iOS to unfocus a submenu
-        $('html').css('cursor', 'pointer').on('click', $.noop);
-      }
-
-      return ios;
-    }(),
-        wp7 = function () {
-      var style = document.documentElement.style;
-      return 'behavior' in style && 'fill' in style && /iemobile/i.test(navigator.userAgent);
-    }(),
-        unprefixedPointerEvents = function () {
-      return !!w.PointerEvent;
-    }(),
-        toggleMenuClasses = function toggleMenuClasses($menu, o, add) {
-      var classes = c.menuClass,
-          method;
-
-      if (o.cssArrows) {
-        classes += ' ' + c.menuArrowClass;
-      }
-
-      method = add ? 'addClass' : 'removeClass';
-      $menu[method](classes);
-    },
-        setPathToCurrent = function setPathToCurrent($menu, o) {
-      return $menu.find('li.' + o.pathClass).slice(0, o.pathLevels).addClass(o.hoverClass + ' ' + c.bcClass).filter(function () {
-        return $(this).children(o.popUpSelector).hide().show().length;
-      }).removeClass(o.pathClass);
-    },
-        toggleAnchorClass = function toggleAnchorClass($li, add) {
-      var method = add ? 'addClass' : 'removeClass';
-      $li.children('a')[method](c.anchorClass);
-    },
-        toggleTouchAction = function toggleTouchAction($menu) {
-      var msTouchAction = $menu.css('ms-touch-action');
-      var touchAction = $menu.css('touch-action');
-      touchAction = touchAction || msTouchAction;
-      touchAction = touchAction === 'pan-y' ? 'auto' : 'pan-y';
-      $menu.css({
-        'ms-touch-action': touchAction,
-        'touch-action': touchAction
-      });
-    },
-        getMenu = function getMenu($el) {
-      return $el.closest('.' + c.menuClass);
-    },
-        getOptions = function getOptions($el) {
-      return getMenu($el).data('sfOptions');
-    },
-        over = function over() {
-      var $this = $(this),
-          o = getOptions($this);
-      clearTimeout(o.sfTimer);
-      $this.siblings().superfish('hide').end().superfish('show');
-    },
-        close = function close(o) {
-      o.retainPath = $.inArray(this[0], o.$path) > -1;
-      this.superfish('hide');
-
-      if (!this.parents('.' + o.hoverClass).length) {
-        o.onIdle.call(getMenu(this));
-
-        if (o.$path.length) {
-          $.proxy(over, o.$path)();
-        }
-      }
-    },
-        out = function out() {
-      var $this = $(this),
-          o = getOptions($this);
-
-      if (ios) {
-        $.proxy(close, $this, o)();
-      } else {
-        clearTimeout(o.sfTimer);
-        o.sfTimer = setTimeout($.proxy(close, $this, o), o.delay);
-      }
-    },
-        touchHandler = function touchHandler(e) {
-      var $this = $(this),
-          o = getOptions($this),
-          $ul = $this.siblings(e.data.popUpSelector);
-
-      if (o.onHandleTouch.call($ul) === false) {
-        return this;
-      }
-
-      if ($ul.length > 0 && $ul.is(':hidden')) {
-        $this.one('click.superfish', false);
-
-        if (e.type === 'MSPointerDown' || e.type === 'pointerdown') {
-          $this.trigger('focus');
-        } else {
-          $.proxy(over, $this.parent('li'))();
-        }
-      }
-    },
-        applyHandlers = function applyHandlers($menu, o) {
-      var targets = 'li:has(' + o.popUpSelector + ')';
-
-      if ($.fn.hoverIntent && !o.disableHI) {
-        $menu.hoverIntent(over, out, targets);
-      } else {
-        $menu.on('mouseenter.superfish', targets, over).on('mouseleave.superfish', targets, out);
-      }
-
-      var touchevent = 'MSPointerDown.superfish';
-
-      if (unprefixedPointerEvents) {
-        touchevent = 'pointerdown.superfish';
-      }
-
-      if (!ios) {
-        touchevent += ' touchend.superfish';
-      }
-
-      if (wp7) {
-        touchevent += ' mousedown.superfish';
-      }
-
-      $menu.on('focusin.superfish', 'li', over).on('focusout.superfish', 'li', out).on(touchevent, 'a', o, touchHandler);
-    };
-
-    return {
-      // public methods
-      hide: function hide(instant) {
-        if (this.length) {
-          var $this = this,
-              o = getOptions($this);
-
-          if (!o) {
-            return this;
-          }
-
-          var not = o.retainPath === true ? o.$path : '',
-              $ul = $this.find('li.' + o.hoverClass).add(this).not(not).removeClass(o.hoverClass).children(o.popUpSelector),
-              speed = o.speedOut;
-
-          if (instant) {
-            $ul.show();
-            speed = 0;
-          }
-
-          o.retainPath = false;
-
-          if (o.onBeforeHide.call($ul) === false) {
-            return this;
-          }
-
-          $ul.stop(true, true).animate(o.animationOut, speed, function () {
-            var $this = $(this);
-            o.onHide.call($this);
-          });
-        }
-
-        return this;
-      },
-      show: function show() {
-        var o = getOptions(this);
-
-        if (!o) {
-          return this;
-        }
-
-        var $this = this.addClass(o.hoverClass),
-            $ul = $this.children(o.popUpSelector);
-
-        if (o.onBeforeShow.call($ul) === false) {
-          return this;
-        }
-
-        $ul.stop(true, true).animate(o.animation, o.speed, function () {
-          o.onShow.call($ul);
-        });
-        return this;
-      },
-      destroy: function destroy() {
-        return this.each(function () {
-          var $this = $(this),
-              o = $this.data('sfOptions'),
-              $hasPopUp;
-
-          if (!o) {
-            return false;
-          }
-
-          $hasPopUp = $this.find(o.popUpSelector).parent('li');
-          clearTimeout(o.sfTimer);
-          toggleMenuClasses($this, o);
-          toggleAnchorClass($hasPopUp);
-          toggleTouchAction($this); // remove event handlers
-
-          $this.off('.superfish').off('.hoverIntent'); // clear animation's inline display style
-
-          $hasPopUp.children(o.popUpSelector).attr('style', function (i, style) {
-            return style.replace(/display[^;]+;?/g, '');
-          }); // reset 'current' path classes
-
-          o.$path.removeClass(o.hoverClass + ' ' + c.bcClass).addClass(o.pathClass);
-          $this.find('.' + o.hoverClass).removeClass(o.hoverClass);
-          o.onDestroy.call($this);
-          $this.removeData('sfOptions');
-        });
-      },
-      init: function init(op) {
-        return this.each(function () {
-          var $this = $(this);
-
-          if ($this.data('sfOptions')) {
-            return false;
-          }
-
-          var o = $.extend({}, $.fn.superfish.defaults, op),
-              $hasPopUp = $this.find(o.popUpSelector).parent('li');
-          o.$path = setPathToCurrent($this, o);
-          $this.data('sfOptions', o);
-          toggleMenuClasses($this, o, true);
-          toggleAnchorClass($hasPopUp, true);
-          toggleTouchAction($this);
-          applyHandlers($this, o);
-          $hasPopUp.not('.' + c.bcClass).superfish('hide', true);
-          o.onInit.call(this);
-        });
-      }
-    };
-  }();
-
-  $.fn.superfish = function (method, args) {
-    if (methods[method]) {
-      return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
-    } else if (_typeof(method) === 'object' || !method) {
-      return methods.init.apply(this, arguments);
-    } else {
-      return $.error('Method ' + method + ' does not exist on jQuery.fn.superfish');
-    }
-  };
-
-  $.fn.superfish.defaults = {
-    popUpSelector: 'ul,.sf-mega',
-    // within menu context
-    hoverClass: 'sfHover',
-    pathClass: 'overrideThisToUse',
-    pathLevels: 1,
-    delay: 800,
-    animation: {
-      opacity: 'show'
-    },
-    animationOut: {
-      opacity: 'hide'
-    },
-    speed: 'normal',
-    speedOut: 'fast',
-    cssArrows: true,
-    disableHI: false,
-    onInit: $.noop,
-    onBeforeShow: $.noop,
-    onShow: $.noop,
-    onBeforeHide: $.noop,
-    onHide: $.noop,
-    onIdle: $.noop,
-    onDestroy: $.noop,
-    onHandleTouch: $.noop
-  };
-})(jQuery, window);
-
-/***/ }),
-
-/***/ "./resources/js/venobox.js":
-/*!*********************************!*\
-  !*** ./resources/js/venobox.js ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/*
- * VenoBox - jQuery Plugin
- * version: 1.8.5
- * @requires jQuery >= 1.7.0
- *
- * Examples at http://veno.es/venobox/
- * License: MIT License
- * License URI: https://github.com/nicolafranchini/VenoBox/blob/master/LICENSE
- * Copyright 2013-2017 Nicola Franchini - @nicolafranchini
- *
- */
-
-/* global jQuery */
-(function ($) {
-  "use strict";
-
-  var autoplay, bgcolor, blocknum, blocktitle, border, core, container, content, dest, extraCss, framewidth, frameheight, gallItems, infinigall, items, keyNavigationDisabled, margine, numeratio, overlayColor, overlay, title, thisgall, thenext, theprev, nextok, prevok, preloader, $preloader, navigation, obj, gallIndex, startouch, vbheader, images, startY, startX, endY, endX, diff, diffX, diffY, threshold;
-  $.fn.extend({
-    //plugin name - venobox
-    venobox: function venobox(options) {
-      var plugin = this; // default options
-
-      var defaults = {
-        arrowsColor: '#B6B6B6',
-        autoplay: false,
-        // same as data-autoplay - thanks @codibit
-        bgcolor: '#fff',
-        border: '0',
-        closeBackground: '#161617',
-        closeColor: "#d2d2d2",
-        framewidth: '',
-        frameheight: '',
-        gallItems: false,
-        infinigall: false,
-        htmlClose: '&times;',
-        htmlNext: '<span>Next</span>',
-        htmlPrev: '<span>Prev</span>',
-        numeratio: false,
-        numerationBackground: '#161617',
-        numerationColor: '#d2d2d2',
-        numerationPosition: 'top',
-        // 'top' || 'bottom'
-        overlayClose: true,
-        // disable overlay click-close - thanx @martybalandis
-        overlayColor: 'rgba(23,23,23,0.85)',
-        spinner: 'double-bounce',
-        // available: 'rotating-plane' | 'double-bounce' | 'wave' | 'wandering-cubes' | 'spinner-pulse' | 'chasing-dots' | 'three-bounce' | 'circle' | 'cube-grid' | 'fading-circle' | 'folding-cube'
-        spinColor: '#d2d2d2',
-        titleattr: 'title',
-        // specific attribute to get a title (e.g. [data-title]) - thanx @mendezcode
-        titleBackground: '#161617',
-        titleColor: '#d2d2d2',
-        titlePosition: 'top',
-        // 'top' || 'bottom'
-        cb_pre_open: function cb_pre_open() {
-          return true;
-        },
-        // Callbacks - thanx @garyee
-        cb_post_open: function cb_post_open() {},
-        cb_pre_close: function cb_pre_close() {
-          return true;
-        },
-        cb_post_close: function cb_post_close() {},
-        cb_post_resize: function cb_post_resize() {},
-        cb_after_nav: function cb_after_nav() {},
-        cb_content_loaded: function cb_content_loaded() {},
-        cb_init: function cb_init() {}
-      };
-      var option = $.extend(defaults, options); // callback plugin initialization
-
-      option.cb_init(plugin);
-      return this.each(function () {
-        obj = $(this); // Prevent double initialization - thanx @matthistuff
-
-        if (obj.data('venobox')) {
-          return true;
-        } // method to be used outside the plugin
-
-
-        plugin.VBclose = function () {
-          closeVbox();
-        };
-
-        obj.addClass('vbox-item');
-        obj.data('framewidth', option.framewidth);
-        obj.data('frameheight', option.frameheight);
-        obj.data('border', option.border);
-        obj.data('bgcolor', option.bgcolor);
-        obj.data('numeratio', option.numeratio);
-        obj.data('gallItems', option.gallItems);
-        obj.data('infinigall', option.infinigall);
-        obj.data('overlaycolor', option.overlayColor);
-        obj.data('titleattr', option.titleattr);
-        obj.data('venobox', true);
-        obj.on('click', function (e) {
-          e.preventDefault();
-          obj = $(this); // callback plugin initialization
-
-          var cb_pre_open = option.cb_pre_open(obj);
-
-          if (cb_pre_open === false) {
-            return false;
-          } // methods to be used outside the plugin
-
-
-          plugin.VBnext = function () {
-            navigateGall(thenext);
-          };
-
-          plugin.VBprev = function () {
-            navigateGall(theprev);
-          };
-
-          overlayColor = obj.data('overlay') || obj.data('overlaycolor');
-          framewidth = obj.data('framewidth');
-          frameheight = obj.data('frameheight'); // set data-autoplay="true" for vimeo and youtube videos - thanx @zehfernandes
-
-          autoplay = obj.data('autoplay') || option.autoplay;
-          border = obj.data('border');
-          bgcolor = obj.data('bgcolor');
-          nextok = false;
-          prevok = false;
-          keyNavigationDisabled = false; // set a different url to be loaded using data-href="" - thanx @pixeline
-
-          dest = obj.data('href') || obj.attr('href');
-          extraCss = obj.data('css') || '';
-          title = obj.attr(obj.data('titleattr')) || '';
-          preloader = '<div class="vbox-preloader">';
-
-          switch (option.spinner) {
-            case 'rotating-plane':
-              preloader += '<div class="sk-rotating-plane"></div>';
-              break;
-
-            case 'double-bounce':
-              preloader += '<div class="sk-double-bounce">' + '<div class="sk-child sk-double-bounce1"></div>' + '<div class="sk-child sk-double-bounce2"></div>' + '</div>';
-              break;
-
-            case 'wave':
-              preloader += '<div class="sk-wave">' + '<div class="sk-rect sk-rect1"></div>' + '<div class="sk-rect sk-rect2"></div>' + '<div class="sk-rect sk-rect3"></div>' + '<div class="sk-rect sk-rect4"></div>' + '<div class="sk-rect sk-rect5"></div>' + '</div>';
-              break;
-
-            case 'wandering-cubes':
-              preloader += '<div class="sk-wandering-cubes">' + '<div class="sk-cube sk-cube1"></div>' + '<div class="sk-cube sk-cube2"></div>' + '</div>';
-              break;
-
-            case 'spinner-pulse':
-              preloader += '<div class="sk-spinner sk-spinner-pulse"></div>';
-              break;
-
-            case 'chasing-dots':
-              preloader += '<div class="sk-chasing-dots">' + '<div class="sk-child sk-dot1"></div>' + '<div class="sk-child sk-dot2"></div>' + '</div>';
-              break;
-
-            case 'three-bounce':
-              preloader += '<div class="sk-three-bounce">' + '<div class="sk-child sk-bounce1"></div>' + '<div class="sk-child sk-bounce2"></div>' + '<div class="sk-child sk-bounce3"></div>' + '</div>';
-              break;
-
-            case 'circle':
-              preloader += '<div class="sk-circle">' + '<div class="sk-circle1 sk-child"></div>' + '<div class="sk-circle2 sk-child"></div>' + '<div class="sk-circle3 sk-child"></div>' + '<div class="sk-circle4 sk-child"></div>' + '<div class="sk-circle5 sk-child"></div>' + '<div class="sk-circle6 sk-child"></div>' + '<div class="sk-circle7 sk-child"></div>' + '<div class="sk-circle8 sk-child"></div>' + '<div class="sk-circle9 sk-child"></div>' + '<div class="sk-circle10 sk-child"></div>' + '<div class="sk-circle11 sk-child"></div>' + '<div class="sk-circle12 sk-child"></div>' + '</div>';
-              break;
-
-            case 'cube-grid':
-              preloader += '<div class="sk-cube-grid">' + '<div class="sk-cube sk-cube1"></div>' + '<div class="sk-cube sk-cube2"></div>' + '<div class="sk-cube sk-cube3"></div>' + '<div class="sk-cube sk-cube4"></div>' + '<div class="sk-cube sk-cube5"></div>' + '<div class="sk-cube sk-cube6"></div>' + '<div class="sk-cube sk-cube7"></div>' + '<div class="sk-cube sk-cube8"></div>' + '<div class="sk-cube sk-cube9"></div>' + '</div>';
-              break;
-
-            case 'fading-circle':
-              preloader += '<div class="sk-fading-circle">' + '<div class="sk-circle1 sk-circle"></div>' + '<div class="sk-circle2 sk-circle"></div>' + '<div class="sk-circle3 sk-circle"></div>' + '<div class="sk-circle4 sk-circle"></div>' + '<div class="sk-circle5 sk-circle"></div>' + '<div class="sk-circle6 sk-circle"></div>' + '<div class="sk-circle7 sk-circle"></div>' + '<div class="sk-circle8 sk-circle"></div>' + '<div class="sk-circle9 sk-circle"></div>' + '<div class="sk-circle10 sk-circle"></div>' + '<div class="sk-circle11 sk-circle"></div>' + '<div class="sk-circle12 sk-circle"></div>' + '</div>';
-              break;
-
-            case 'folding-cube':
-              preloader += '<div class="sk-folding-cube">' + '<div class="sk-cube1 sk-cube"></div>' + '<div class="sk-cube2 sk-cube"></div>' + '<div class="sk-cube4 sk-cube"></div>' + '<div class="sk-cube3 sk-cube"></div>' + '</div>';
-              break;
-          }
-
-          preloader += '</div>';
-          navigation = '<a class="vbox-next">' + option.htmlNext + '</a><a class="vbox-prev">' + option.htmlPrev + '</a>';
-          vbheader = '<div class="vbox-title"></div><div class="vbox-num">0/0</div><div class="vbox-close">' + option.htmlClose + '</div>';
-          core = '<div class="vbox-overlay ' + extraCss + '" style="background:' + overlayColor + '">' + preloader + '<div class="vbox-container"><div class="vbox-content"></div></div>' + vbheader + navigation + '</div>';
-          $('body').append(core).addClass('vbox-open');
-          $('.vbox-preloader div:not(.sk-circle) .sk-child, .vbox-preloader .sk-rotating-plane, .vbox-preloader .sk-rect, .vbox-preloader div:not(.sk-folding-cube) .sk-cube, .vbox-preloader .sk-spinner-pulse').css('background-color', option.spinColor);
-          overlay = $('.vbox-overlay');
-          container = $('.vbox-container');
-          content = $('.vbox-content');
-          blocknum = $('.vbox-num');
-          blocktitle = $('.vbox-title');
-          $preloader = $('.vbox-preloader');
-          $preloader.show();
-          blocktitle.css(option.titlePosition, '-1px');
-          blocktitle.css({
-            'color': option.titleColor,
-            'background-color': option.titleBackground
-          });
-          $('.vbox-close').css({
-            'color': option.closeColor,
-            'background-color': option.closeBackground
-          });
-          $('.vbox-num').css(option.numerationPosition, '-1px');
-          $('.vbox-num').css({
-            'color': option.numerationColor,
-            'background-color': option.numerationBackground
-          });
-          $('.vbox-next span, .vbox-prev span').css({
-            'border-top-color': option.arrowsColor,
-            'border-right-color': option.arrowsColor
-          });
-          content.html('');
-          content.css('opacity', '0');
-          overlay.css('opacity', '0');
-          checknav(); // fade in overlay
-
-          overlay.animate({
-            opacity: 1
-          }, 250, function () {
-            if (obj.data('vbtype') == 'iframe') {
-              loadIframe();
-            } else if (obj.data('vbtype') == 'inline') {
-              loadInline();
-            } else if (obj.data('vbtype') == 'ajax') {
-              loadAjax();
-            } else if (obj.data('vbtype') == 'video') {
-              loadVid(autoplay);
-            } else {
-              content.html('<image src="' + dest + '">');
-              preloadFirst();
-            }
-
-            option.cb_post_open(obj, gallIndex, thenext, theprev);
-          });
-          /* -------- KEYBOARD ACTIONS -------- */
-
-          $('body').keydown(keyboardHandler);
-          /* -------- PREVGALL -------- */
-
-          $('.vbox-prev').on('click', function () {
-            navigateGall(theprev);
-          });
-          /* -------- NEXTGALL -------- */
-
-          $('.vbox-next').on('click', function () {
-            navigateGall(thenext);
-          });
-          return false;
-        }); // click
-
-        /* -------- CHECK NEXT / PREV -------- */
-
-        function checknav() {
-          thisgall = obj.data('gall');
-          numeratio = obj.data('numeratio');
-          gallItems = obj.data('gallItems');
-          infinigall = obj.data('infinigall');
-
-          if (gallItems) {
-            items = gallItems;
-          } else {
-            items = $('.vbox-item[data-gall="' + thisgall + '"]');
-          }
-
-          thenext = items.eq(items.index(obj) + 1);
-          theprev = items.eq(items.index(obj) - 1);
-
-          if (!thenext.length && infinigall === true) {
-            thenext = items.eq(0);
-          } // update gall numeration
-
-
-          if (items.length > 1) {
-            gallIndex = items.index(obj) + 1;
-            blocknum.html(gallIndex + ' / ' + items.length);
-          } else {
-            gallIndex = 1;
-          }
-
-          if (numeratio === true) {
-            blocknum.show();
-          } else {
-            blocknum.hide();
-          } // update title
-
-
-          if (title !== '') {
-            blocktitle.show();
-          } else {
-            blocktitle.hide();
-          } // update navigation arrows
-
-
-          if (!thenext.length && infinigall !== true) {
-            $('.vbox-next').css('display', 'none');
-            nextok = false;
-          } else {
-            $('.vbox-next').css('display', 'block');
-            nextok = true;
-          }
-
-          if (items.index(obj) > 0 || infinigall === true) {
-            $('.vbox-prev').css('display', 'block');
-            prevok = true;
-          } else {
-            $('.vbox-prev').css('display', 'none');
-            prevok = false;
-          } // activate swipe
-
-
-          if (prevok === true || nextok === true) {
-            content.on(TouchMouseEvent.DOWN, onDownEvent);
-            content.on(TouchMouseEvent.MOVE, onMoveEvent);
-            content.on(TouchMouseEvent.UP, onUpEvent);
-          }
-        }
-        /* -------- gallery navigation -------- */
-
-
-        function navigateGall(destination) {
-          if (destination.length < 1) {
-            return false;
-          }
-
-          if (keyNavigationDisabled) {
-            return false;
-          }
-
-          keyNavigationDisabled = true;
-          overlayColor = destination.data('overlay') || destination.data('overlaycolor');
-          framewidth = destination.data('framewidth');
-          frameheight = destination.data('frameheight');
-          border = destination.data('border');
-          bgcolor = destination.data('bgcolor');
-          dest = destination.data('href') || destination.attr('href');
-          autoplay = destination.data('autoplay');
-          title = destination.attr(destination.data('titleattr')) || ''; // swipe out item
-
-          if (destination === theprev) {
-            content.addClass('animated').addClass('swipe-right');
-          }
-
-          if (destination === thenext) {
-            content.addClass('animated').addClass('swipe-left');
-          }
-
-          $preloader.show();
-          content.animate({
-            opacity: 0
-          }, 500, function () {
-            overlay.css('background', overlayColor);
-            content.removeClass('animated').removeClass('swipe-left').removeClass('swipe-right').css({
-              'margin-left': 0,
-              'margin-right': 0
-            });
-
-            if (destination.data('vbtype') == 'iframe') {
-              loadIframe();
-            } else if (destination.data('vbtype') == 'inline') {
-              loadInline();
-            } else if (destination.data('vbtype') == 'ajax') {
-              loadAjax();
-            } else if (destination.data('vbtype') == 'video') {
-              loadVid(autoplay);
-            } else {
-              content.html('<image src="' + dest + '">');
-              preloadFirst();
-            }
-
-            obj = destination;
-            checknav();
-            keyNavigationDisabled = false;
-            option.cb_after_nav(obj, gallIndex, thenext, theprev);
-          });
-        }
-        /* -------- KEYBOARD HANDLER -------- */
-
-
-        function keyboardHandler(e) {
-          if (e.keyCode === 27) {
-            // esc
-            closeVbox();
-          }
-
-          if (e.keyCode == 37 && prevok === true) {
-            // left
-            navigateGall(theprev);
-          }
-
-          if (e.keyCode == 39 && nextok === true) {
-            // right
-            navigateGall(thenext);
-          }
-        }
-        /* -------- CLOSE VBOX -------- */
-
-
-        function closeVbox() {
-          var cb_pre_close = option.cb_pre_close(obj, gallIndex, thenext, theprev);
-
-          if (cb_pre_close === false) {
-            return false;
-          }
-
-          $('body').off('keydown', keyboardHandler).removeClass('vbox-open');
-          obj.focus();
-          overlay.animate({
-            opacity: 0
-          }, 500, function () {
-            overlay.remove();
-            keyNavigationDisabled = false;
-            option.cb_post_close();
-          });
-        }
-        /* -------- CLOSE CLICK -------- */
-
-
-        var closeclickclass = '.vbox-overlay';
-
-        if (!option.overlayClose) {
-          closeclickclass = '.vbox-close'; // close only on X
-        }
-
-        $('body').on('click touchstart', closeclickclass, function (e) {
-          if ($(e.target).is('.vbox-overlay') || $(e.target).is('.vbox-content') || $(e.target).is('.vbox-close') || $(e.target).is('.vbox-preloader') || $(e.target).is('.vbox-container')) {
-            closeVbox();
-          }
-        });
-        startX = 0;
-        endX = 0;
-        diff = 0;
-        threshold = 50;
-        startouch = false;
-
-        function onDownEvent(e) {
-          content.addClass('animated');
-          startY = endY = e.pageY;
-          startX = endX = e.pageX;
-          startouch = true;
-        }
-
-        function onMoveEvent(e) {
-          if (startouch === true) {
-            endX = e.pageX;
-            endY = e.pageY;
-            diffX = endX - startX;
-            diffY = endY - startY;
-            var absdiffX = Math.abs(diffX);
-            var absdiffY = Math.abs(diffY);
-
-            if (absdiffX > absdiffY && absdiffX <= 100) {
-              e.preventDefault();
-              content.css('margin-left', diffX);
-            }
-          }
-        }
-
-        function onUpEvent(e) {
-          if (startouch === true) {
-            startouch = false;
-            var subject = obj;
-            var change = false;
-            diff = endX - startX;
-
-            if (diff < 0 && nextok === true) {
-              subject = thenext;
-              change = true;
-            }
-
-            if (diff > 0 && prevok === true) {
-              subject = theprev;
-              change = true;
-            }
-
-            if (Math.abs(diff) >= threshold && change === true) {
-              navigateGall(subject);
-            } else {
-              content.css({
-                'margin-left': 0,
-                'margin-right': 0
-              });
-            }
-          }
-        }
-        /* == GLOBAL DECLERATIONS == */
-
-
-        var TouchMouseEvent = {
-          DOWN: "touchmousedown",
-          UP: "touchmouseup",
-          MOVE: "touchmousemove"
-        };
-        /* == EVENT LISTENERS == */
-
-        var onMouseEvent = function onMouseEvent(event) {
-          var type;
-
-          switch (event.type) {
-            case "mousedown":
-              type = TouchMouseEvent.DOWN;
-              break;
-
-            case "mouseup":
-              type = TouchMouseEvent.UP;
-              break;
-
-            case "mouseout":
-              type = TouchMouseEvent.UP;
-              break;
-
-            case "mousemove":
-              type = TouchMouseEvent.MOVE;
-              break;
-
-            default:
-              return;
-          }
-
-          var touchMouseEvent = normalizeEvent(type, event, event.pageX, event.pageY);
-          $(event.target).trigger(touchMouseEvent);
-        };
-
-        var onTouchEvent = function onTouchEvent(event) {
-          var type;
-
-          switch (event.type) {
-            case "touchstart":
-              type = TouchMouseEvent.DOWN;
-              break;
-
-            case "touchend":
-              type = TouchMouseEvent.UP;
-              break;
-
-            case "touchmove":
-              type = TouchMouseEvent.MOVE;
-              break;
-
-            default:
-              return;
-          }
-
-          var touch = event.originalEvent.touches[0];
-          var touchMouseEvent;
-
-          if (type == TouchMouseEvent.UP) {
-            touchMouseEvent = normalizeEvent(type, event, null, null);
-          } else {
-            touchMouseEvent = normalizeEvent(type, event, touch.pageX, touch.pageY);
-          }
-
-          $(event.target).trigger(touchMouseEvent);
-        };
-        /* == NORMALIZE == */
-
-
-        var normalizeEvent = function normalizeEvent(type, original, x, y) {
-          return $.Event(type, {
-            pageX: x,
-            pageY: y,
-            originalEvent: original
-          });
-        };
-        /* == LISTEN TO ORIGINAL EVENT == */
-
-
-        if ("ontouchstart" in window) {
-          $(document).on("touchstart", onTouchEvent);
-          $(document).on("touchmove", onTouchEvent);
-          $(document).on("touchend", onTouchEvent);
-        } else {
-          $(document).on("mousedown", onMouseEvent);
-          $(document).on("mouseup", onMouseEvent);
-          $(document).on("mouseout", onMouseEvent);
-          $(document).on("mousemove", onMouseEvent);
-        }
-        /* -------- LOAD AJAX -------- */
-
-
-        function loadAjax() {
-          $.ajax({
-            url: dest,
-            cache: false
-          }).done(function (msg) {
-            content.html('<div class="vbox-inline">' + msg + '</div>');
-            preloadFirst();
-          }).fail(function () {
-            content.html('<div class="vbox-inline"><p>Error retrieving contents, please retry</div>');
-            updateoverlay();
-          });
-        }
-        /* -------- LOAD IFRAME -------- */
-
-
-        function loadIframe() {
-          content.html('<iframe class="venoframe" src="' + dest + '"></iframe>'); //  $('.venoframe').load(function(){ // valid only for iFrames in same domain
-
-          updateoverlay(); //  });
-        }
-        /* -------- LOAD VIDEOs -------- */
-
-
-        function loadVid(autoplay) {
-          var player;
-          var videoObj = parseVideo(dest); // set rel=0 to hide related videos at the end of YT + optional autoplay
-
-          var stringAutoplay = autoplay ? "?rel=0&autoplay=1" : "?rel=0";
-          var queryvars = stringAutoplay + getUrlParameter(dest);
-
-          if (videoObj.type == 'vimeo') {
-            player = 'https://player.vimeo.com/video/';
-          } else if (videoObj.type == 'youtube') {
-            player = 'https://www.youtube.com/embed/';
-          }
-
-          content.html('<iframe class="venoframe vbvid" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay" frameborder="0" src="' + player + videoObj.id + queryvars + '"></iframe>');
-          updateoverlay();
-        }
-        /**
-        * Parse Youtube or Vimeo videos and get host & ID
-        */
-
-
-        function parseVideo(url) {
-          url.match(/(http:|https:|)\/\/(player.|www.)?(vimeo\.com|youtu(be\.com|\.be|be\.googleapis\.com))\/(video\/|embed\/|watch\?v=|v\/)?([A-Za-z0-9._%-]*)(\&\S+)?/);
-          var type;
-
-          if (RegExp.$3.indexOf('youtu') > -1) {
-            type = 'youtube';
-          } else if (RegExp.$3.indexOf('vimeo') > -1) {
-            type = 'vimeo';
-          }
-
-          return {
-            type: type,
-            id: RegExp.$6
-          };
-        }
-        /**
-        * get additional video url parameters
-        */
-
-
-        function getUrlParameter(name) {
-          var result = '';
-          var sPageURL = decodeURIComponent(name);
-          var firstsplit = sPageURL.split('?');
-
-          if (firstsplit[1] !== undefined) {
-            var sURLVariables = firstsplit[1].split('&');
-            var sParameterName;
-            var i;
-
-            for (i = 0; i < sURLVariables.length; i++) {
-              sParameterName = sURLVariables[i].split('=');
-              result = result + '&' + sParameterName[0] + '=' + sParameterName[1];
-            }
-          }
-
-          return encodeURI(result);
-        }
-        /* -------- LOAD INLINE -------- */
-
-
-        function loadInline() {
-          content.html('<div class="vbox-inline">' + $(dest).html() + '</div>');
-          updateoverlay();
-        }
-        /* -------- PRELOAD IMAGE -------- */
-
-
-        function preloadFirst() {
-          images = content.find('img');
-
-          if (images.length) {
-            images.each(function () {
-              $(this).one('load', function () {
-                updateoverlay();
-              });
-            });
-          } else {
-            updateoverlay();
-          }
-        }
-        /* -------- FADE-IN THE NEW CONTENT -------- */
-
-
-        function updateoverlay() {
-          blocktitle.html(title);
-          content.find(">:first-child").addClass('figlio').css({
-            'width': framewidth,
-            'height': frameheight,
-            'padding': border,
-            'background': bgcolor
-          });
-          $('image.figlio').on('dragstart', function (event) {
-            event.preventDefault();
-          });
-          updateOL();
-          content.animate({
-            'opacity': '1'
-          }, 'slow', function () {
-            $preloader.hide();
-          });
-          option.cb_content_loaded(obj, gallIndex, thenext, theprev);
-        }
-        /* -------- CENTER FRAME -------- */
-
-
-        function updateOL() {
-          var sonH = content.outerHeight();
-          var finH = $(window).height();
-
-          if (sonH + 60 < finH) {
-            margine = (finH - sonH) / 2;
-          } else {
-            margine = '30px';
-          }
-
-          content.css('margin-top', margine);
-          content.css('margin-bottom', margine);
-          option.cb_post_resize();
-        }
-
-        $(window).resize(function () {
-          if ($('.vbox-content').length) {
-            setTimeout(updateOL(), 800);
-          }
-        });
-      }); // each
-    } // venobox
-
-  }); // extend
-})(jQuery);
-
-/***/ }),
-
-/***/ "./resources/js/wow.js":
-/*!*****************************!*\
-  !*** ./resources/js/wow.js ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*
-* WOW wow.js - v1.3.0 - 2016-10-04
-* https://wowjs.uk
-* Copyright (c) 2016 Thomas Grainger; Licensed MIT
-*/
-(function (global, factory) {
-  if (true) {
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [module, exports], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-  } else { var mod; }
-})(this, function (module, exports) {
-  'use strict';
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-
-  var _class, _temp;
-
-  function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  }
-
-  var _createClass = function () {
-    function defineProperties(target, props) {
-      for (var i = 0; i < props.length; i++) {
-        var descriptor = props[i];
-        descriptor.enumerable = descriptor.enumerable || false;
-        descriptor.configurable = true;
-        if ("value" in descriptor) descriptor.writable = true;
-        Object.defineProperty(target, descriptor.key, descriptor);
-      }
-    }
-
-    return function (Constructor, protoProps, staticProps) {
-      if (protoProps) defineProperties(Constructor.prototype, protoProps);
-      if (staticProps) defineProperties(Constructor, staticProps);
-      return Constructor;
-    };
-  }();
-
-  function isIn(needle, haystack) {
-    return haystack.indexOf(needle) >= 0;
-  }
-
-  function extend(custom, defaults) {
-    for (var key in defaults) {
-      if (custom[key] == null) {
-        var value = defaults[key];
-        custom[key] = value;
-      }
-    }
-
-    return custom;
-  }
-
-  function isMobile(agent) {
-    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(agent);
-  }
-
-  function createEvent(event) {
-    var bubble = arguments.length <= 1 || arguments[1] === undefined ? false : arguments[1];
-    var cancel = arguments.length <= 2 || arguments[2] === undefined ? false : arguments[2];
-    var detail = arguments.length <= 3 || arguments[3] === undefined ? null : arguments[3];
-    var customEvent = void 0;
-
-    if (document.createEvent != null) {
-      // W3C DOM
-      customEvent = document.createEvent('CustomEvent');
-      customEvent.initCustomEvent(event, bubble, cancel, detail);
-    } else if (document.createEventObject != null) {
-      // IE DOM < 9
-      customEvent = document.createEventObject();
-      customEvent.eventType = event;
-    } else {
-      customEvent.eventName = event;
-    }
-
-    return customEvent;
-  }
-
-  function emitEvent(elem, event) {
-    if (elem.dispatchEvent != null) {
-      // W3C DOM
-      elem.dispatchEvent(event);
-    } else if (event in (elem != null)) {
-      elem[event]();
-    } else if ('on' + event in (elem != null)) {
-      elem['on' + event]();
-    }
-  }
-
-  function addEvent(elem, event, fn) {
-    if (elem.addEventListener != null) {
-      // W3C DOM
-      elem.addEventListener(event, fn, false);
-    } else if (elem.attachEvent != null) {
-      // IE DOM
-      elem.attachEvent('on' + event, fn);
-    } else {
-      // fallback
-      elem[event] = fn;
-    }
-  }
-
-  function removeEvent(elem, event, fn) {
-    if (elem.removeEventListener != null) {
-      // W3C DOM
-      elem.removeEventListener(event, fn, false);
-    } else if (elem.detachEvent != null) {
-      // IE DOM
-      elem.detachEvent('on' + event, fn);
-    } else {
-      // fallback
-      delete elem[event];
-    }
-  }
-
-  function getInnerHeight() {
-    if ('innerHeight' in window) {
-      return window.innerHeight;
-    }
-
-    return document.documentElement.clientHeight;
-  } // Minimalistic WeakMap shim, just in case.
-
-
-  var WeakMap = window.WeakMap || window.MozWeakMap || function () {
-    function WeakMap() {
-      _classCallCheck(this, WeakMap);
-
-      this.keys = [];
-      this.values = [];
-    }
-
-    _createClass(WeakMap, [{
-      key: 'get',
-      value: function get(key) {
-        for (var i = 0; i < this.keys.length; i++) {
-          var item = this.keys[i];
-
-          if (item === key) {
-            return this.values[i];
-          }
-        }
-
-        return undefined;
-      }
-    }, {
-      key: 'set',
-      value: function set(key, value) {
-        for (var i = 0; i < this.keys.length; i++) {
-          var item = this.keys[i];
-
-          if (item === key) {
-            this.values[i] = value;
-            return this;
-          }
-        }
-
-        this.keys.push(key);
-        this.values.push(value);
-        return this;
-      }
-    }]);
-
-    return WeakMap;
-  }(); // Dummy MutationObserver, to avoid raising exceptions.
-
-
-  var MutationObserver = window.MutationObserver || window.WebkitMutationObserver || window.MozMutationObserver || (_temp = _class = function () {
-    function MutationObserver() {
-      _classCallCheck(this, MutationObserver);
-
-      if (typeof console !== 'undefined' && console !== null) {
-        console.warn('MutationObserver is not supported by your browser.');
-        console.warn('WOW.js cannot detect dom mutations, please call .sync() after loading new content.');
-      }
-    }
-
-    _createClass(MutationObserver, [{
-      key: 'observe',
-      value: function observe() {}
-    }]);
-
-    return MutationObserver;
-  }(), _class.notSupported = true, _temp); // getComputedStyle shim, from http://stackoverflow.com/a/21797294
-
-  var getComputedStyle = window.getComputedStyle || function getComputedStyle(el) {
-    var getComputedStyleRX = /(\-([a-z]){1})/g;
-    return {
-      getPropertyValue: function getPropertyValue(prop) {
-        if (prop === 'float') {
-          prop = 'styleFloat';
-        }
-
-        if (getComputedStyleRX.test(prop)) {
-          prop.replace(getComputedStyleRX, function (_, _char) {
-            return _char.toUpperCase();
-          });
-        }
-
-        var currentStyle = el.currentStyle;
-        return (currentStyle != null ? currentStyle[prop] : void 0) || null;
-      }
-    };
-  };
-
-  var WOW = function () {
-    function WOW() {
-      var options = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
-
-      _classCallCheck(this, WOW);
-
-      this.defaults = {
-        boxClass: 'wow',
-        animateClass: 'animated',
-        offset: 0,
-        mobile: true,
-        live: true,
-        callback: null,
-        scrollContainer: null,
-        resetAnimation: true
-      };
-
-      this.animate = function animateFactory() {
-        if ('requestAnimationFrame' in window) {
-          return function (callback) {
-            return window.requestAnimationFrame(callback);
-          };
-        }
-
-        return function (callback) {
-          return callback();
-        };
-      }();
-
-      this.vendors = ['moz', 'webkit'];
-      this.start = this.start.bind(this);
-      this.resetAnimation = this.resetAnimation.bind(this);
-      this.scrollHandler = this.scrollHandler.bind(this);
-      this.scrollCallback = this.scrollCallback.bind(this);
-      this.scrolled = true;
-      this.config = extend(options, this.defaults);
-
-      if (options.scrollContainer != null) {
-        this.config.scrollContainer = document.querySelector(options.scrollContainer);
-      } // Map of elements to animation names:
-
-
-      this.animationNameCache = new WeakMap();
-      this.wowEvent = createEvent(this.config.boxClass);
-    }
-
-    _createClass(WOW, [{
-      key: 'init',
-      value: function init() {
-        this.element = window.document.documentElement;
-
-        if (isIn(document.readyState, ['interactive', 'complete'])) {
-          this.start();
-        } else {
-          addEvent(document, 'DOMContentLoaded', this.start);
-        }
-
-        this.finished = [];
-      }
-    }, {
-      key: 'start',
-      value: function start() {
-        var _this = this;
-
-        this.stopped = false;
-        this.boxes = [].slice.call(this.element.querySelectorAll('.' + this.config.boxClass));
-        this.all = this.boxes.slice(0);
-
-        if (this.boxes.length) {
-          if (this.disabled()) {
-            this.resetStyle();
-          } else {
-            for (var i = 0; i < this.boxes.length; i++) {
-              var box = this.boxes[i];
-              this.applyStyle(box, true);
-            }
-          }
-        }
-
-        if (!this.disabled()) {
-          addEvent(this.config.scrollContainer || window, 'scroll', this.scrollHandler);
-          addEvent(window, 'resize', this.scrollHandler);
-          this.interval = setInterval(this.scrollCallback, 50);
-        }
-
-        if (this.config.live) {
-          var mut = new MutationObserver(function (records) {
-            for (var j = 0; j < records.length; j++) {
-              var record = records[j];
-
-              for (var k = 0; k < record.addedNodes.length; k++) {
-                var node = record.addedNodes[k];
-
-                _this.doSync(node);
-              }
-            }
-
-            return undefined;
-          });
-          mut.observe(document.body, {
-            childList: true,
-            subtree: true
-          });
-        }
-      }
-    }, {
-      key: 'stop',
-      value: function stop() {
-        this.stopped = true;
-        removeEvent(this.config.scrollContainer || window, 'scroll', this.scrollHandler);
-        removeEvent(window, 'resize', this.scrollHandler);
-
-        if (this.interval != null) {
-          clearInterval(this.interval);
-        }
-      }
-    }, {
-      key: 'sync',
-      value: function sync() {
-        if (MutationObserver.notSupported) {
-          this.doSync(this.element);
-        }
-      }
-    }, {
-      key: 'doSync',
-      value: function doSync(element) {
-        if (typeof element === 'undefined' || element === null) {
-          element = this.element;
-        }
-
-        if (element.nodeType !== 1) {
-          return;
-        }
-
-        element = element.parentNode || element;
-        var iterable = element.querySelectorAll('.' + this.config.boxClass);
-
-        for (var i = 0; i < iterable.length; i++) {
-          var box = iterable[i];
-
-          if (!isIn(box, this.all)) {
-            this.boxes.push(box);
-            this.all.push(box);
-
-            if (this.stopped || this.disabled()) {
-              this.resetStyle();
-            } else {
-              this.applyStyle(box, true);
-            }
-
-            this.scrolled = true;
-          }
-        }
-      }
-    }, {
-      key: 'show',
-      value: function show(box) {
-        this.applyStyle(box);
-        box.className = box.className + ' ' + this.config.animateClass;
-
-        if (this.config.callback != null) {
-          this.config.callback(box);
-        }
-
-        emitEvent(box, this.wowEvent);
-
-        if (this.config.resetAnimation) {
-          addEvent(box, 'animationend', this.resetAnimation);
-          addEvent(box, 'oanimationend', this.resetAnimation);
-          addEvent(box, 'webkitAnimationEnd', this.resetAnimation);
-          addEvent(box, 'MSAnimationEnd', this.resetAnimation);
-        }
-
-        return box;
-      }
-    }, {
-      key: 'applyStyle',
-      value: function applyStyle(box, hidden) {
-        var _this2 = this;
-
-        var duration = box.getAttribute('data-wow-duration');
-        var delay = box.getAttribute('data-wow-delay');
-        var iteration = box.getAttribute('data-wow-iteration');
-        return this.animate(function () {
-          return _this2.customStyle(box, hidden, duration, delay, iteration);
-        });
-      }
-    }, {
-      key: 'resetStyle',
-      value: function resetStyle() {
-        for (var i = 0; i < this.boxes.length; i++) {
-          var box = this.boxes[i];
-          box.style.visibility = 'visible';
-        }
-
-        return undefined;
-      }
-    }, {
-      key: 'resetAnimation',
-      value: function resetAnimation(event) {
-        if (event.type.toLowerCase().indexOf('animationend') >= 0) {
-          var target = event.target || event.srcElement;
-          target.className = target.className.replace(this.config.animateClass, '').trim();
-        }
-      }
-    }, {
-      key: 'customStyle',
-      value: function customStyle(box, hidden, duration, delay, iteration) {
-        if (hidden) {
-          this.cacheAnimationName(box);
-        }
-
-        box.style.visibility = hidden ? 'hidden' : 'visible';
-
-        if (duration) {
-          this.vendorSet(box.style, {
-            animationDuration: duration
-          });
-        }
-
-        if (delay) {
-          this.vendorSet(box.style, {
-            animationDelay: delay
-          });
-        }
-
-        if (iteration) {
-          this.vendorSet(box.style, {
-            animationIterationCount: iteration
-          });
-        }
-
-        this.vendorSet(box.style, {
-          animationName: hidden ? 'none' : this.cachedAnimationName(box)
-        });
-        return box;
-      }
-    }, {
-      key: 'vendorSet',
-      value: function vendorSet(elem, properties) {
-        for (var name in properties) {
-          if (properties.hasOwnProperty(name)) {
-            var value = properties[name];
-            elem['' + name] = value;
-
-            for (var i = 0; i < this.vendors.length; i++) {
-              var vendor = this.vendors[i];
-              elem['' + vendor + name.charAt(0).toUpperCase() + name.substr(1)] = value;
-            }
-          }
-        }
-      }
-    }, {
-      key: 'vendorCSS',
-      value: function vendorCSS(elem, property) {
-        var style = getComputedStyle(elem);
-        var result = style.getPropertyCSSValue(property);
-
-        for (var i = 0; i < this.vendors.length; i++) {
-          var vendor = this.vendors[i];
-          result = result || style.getPropertyCSSValue('-' + vendor + '-' + property);
-        }
-
-        return result;
-      }
-    }, {
-      key: 'animationName',
-      value: function animationName(box) {
-        var aName = void 0;
-
-        try {
-          aName = this.vendorCSS(box, 'animation-name').cssText;
-        } catch (error) {
-          // Opera, fall back to plain property value
-          aName = getComputedStyle(box).getPropertyValue('animation-name');
-        }
-
-        if (aName === 'none') {
-          return ''; // SVG/Firefox, unable to get animation name?
-        }
-
-        return aName;
-      }
-    }, {
-      key: 'cacheAnimationName',
-      value: function cacheAnimationName(box) {
-        // https://bugzilla.mozilla.org/show_bug.cgi?id=921834
-        // box.dataset is not supported for SVG elements in Firefox
-        return this.animationNameCache.set(box, this.animationName(box));
-      }
-    }, {
-      key: 'cachedAnimationName',
-      value: function cachedAnimationName(box) {
-        return this.animationNameCache.get(box);
-      }
-    }, {
-      key: 'scrollHandler',
-      value: function scrollHandler() {
-        this.scrolled = true;
-      }
-    }, {
-      key: 'scrollCallback',
-      value: function scrollCallback() {
-        if (this.scrolled) {
-          this.scrolled = false;
-          var results = [];
-
-          for (var i = 0; i < this.boxes.length; i++) {
-            var box = this.boxes[i];
-
-            if (box) {
-              if (this.isVisible(box)) {
-                this.show(box);
-                continue;
-              }
-
-              results.push(box);
-            }
-          }
-
-          this.boxes = results;
-
-          if (!this.boxes.length && !this.config.live) {
-            this.stop();
-          }
-        }
-      }
-    }, {
-      key: 'offsetTop',
-      value: function offsetTop(element) {
-        // SVG elements don't have an offsetTop in Firefox.
-        // This will use their nearest parent that has an offsetTop.
-        // Also, using ('offsetTop' of element) causes an exception in Firefox.
-        while (element.offsetTop === undefined) {
-          element = element.parentNode;
-        }
-
-        var top = element.offsetTop;
-
-        while (element.offsetParent) {
-          element = element.offsetParent;
-          top += element.offsetTop;
-        }
-
-        return top;
-      }
-    }, {
-      key: 'isVisible',
-      value: function isVisible(box) {
-        var offset = box.getAttribute('data-wow-offset') || this.config.offset;
-        var viewTop = this.config.scrollContainer && this.config.scrollContainer.scrollTop || window.pageYOffset;
-        var viewBottom = viewTop + Math.min(this.element.clientHeight, getInnerHeight()) - offset;
-        var top = this.offsetTop(box);
-        var bottom = top + box.clientHeight;
-        return top <= viewBottom && bottom >= viewTop;
-      }
-    }, {
-      key: 'disabled',
-      value: function disabled() {
-        return !this.config.mobile && isMobile(navigator.userAgent);
-      }
-    }]);
-
-    return WOW;
-  }();
-
-  exports["default"] = WOW;
-  module.exports = exports['default'];
-});
-
-/***/ }),
-
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -54946,7 +52872,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleNotFoundError: Module not found: Error: Can't resolve './public/image/intro-bg.jpg' in '/Applications/MAMP/htdocs/ColossusProject/resources/sass'\n    at factory.create (/Applications/MAMP/htdocs/ColossusProject/node_modules/webpack/lib/Compilation.js:823:10)\n    at factory (/Applications/MAMP/htdocs/ColossusProject/node_modules/webpack/lib/NormalModuleFactory.js:397:22)\n    at resolver (/Applications/MAMP/htdocs/ColossusProject/node_modules/webpack/lib/NormalModuleFactory.js:130:21)\n    at asyncLib.parallel (/Applications/MAMP/htdocs/ColossusProject/node_modules/webpack/lib/NormalModuleFactory.js:224:22)\n    at /Applications/MAMP/htdocs/ColossusProject/node_modules/neo-async/async.js:2825:7\n    at /Applications/MAMP/htdocs/ColossusProject/node_modules/neo-async/async.js:6886:13\n    at normalResolver.resolve (/Applications/MAMP/htdocs/ColossusProject/node_modules/webpack/lib/NormalModuleFactory.js:214:25)\n    at doResolve (/Applications/MAMP/htdocs/ColossusProject/node_modules/enhanced-resolve/lib/Resolver.js:184:12)\n    at hook.callAsync (/Applications/MAMP/htdocs/ColossusProject/node_modules/enhanced-resolve/lib/Resolver.js:238:5)\n    at _fn0 (eval at create (/Applications/MAMP/htdocs/ColossusProject/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at resolver.doResolve (/Applications/MAMP/htdocs/ColossusProject/node_modules/enhanced-resolve/lib/UnsafeCachePlugin.js:37:5)\n    at hook.callAsync (/Applications/MAMP/htdocs/ColossusProject/node_modules/enhanced-resolve/lib/Resolver.js:238:5)\n    at _fn0 (eval at create (/Applications/MAMP/htdocs/ColossusProject/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at hook.callAsync (/Applications/MAMP/htdocs/ColossusProject/node_modules/enhanced-resolve/lib/Resolver.js:238:5)\n    at _fn0 (eval at create (/Applications/MAMP/htdocs/ColossusProject/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:27:1)\n    at resolver.doResolve (/Applications/MAMP/htdocs/ColossusProject/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:42:38)\n    at hook.callAsync (/Applications/MAMP/htdocs/ColossusProject/node_modules/enhanced-resolve/lib/Resolver.js:238:5)\n    at _fn43 (eval at create (/Applications/MAMP/htdocs/ColossusProject/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at hook.callAsync (/Applications/MAMP/htdocs/ColossusProject/node_modules/enhanced-resolve/lib/Resolver.js:238:5)\n    at _fn0 (eval at create (/Applications/MAMP/htdocs/ColossusProject/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:27:1)\n    at resolver.doResolve (/Applications/MAMP/htdocs/ColossusProject/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:42:38)\n    at hook.callAsync (/Applications/MAMP/htdocs/ColossusProject/node_modules/enhanced-resolve/lib/Resolver.js:238:5)\n    at _fn1 (eval at create (/Applications/MAMP/htdocs/ColossusProject/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at hook.callAsync (/Applications/MAMP/htdocs/ColossusProject/node_modules/enhanced-resolve/lib/Resolver.js:238:5)\n    at _fn0 (eval at create (/Applications/MAMP/htdocs/ColossusProject/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at fs.stat (/Applications/MAMP/htdocs/ColossusProject/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js:22:13)\n    at process.nextTick (/Applications/MAMP/htdocs/ColossusProject/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:73:15)\n    at process._tickCallback (internal/process/next_tick.js:61:11)");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 

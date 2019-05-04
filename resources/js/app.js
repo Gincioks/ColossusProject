@@ -5,17 +5,18 @@
  */
 
 require('./bootstrap');
-require('./easing');
-require('./owl.carousel');
-require('./hoverIntent');
-require('./superfish');
-require('./venobox');
-require('./wow');
 require('./main');
 
 
+window.Easing = require('easing-js');
+window.Jquery = require('jquery');
+window.Jquerymigrate = require('jquery-migrate/dist/jquery-migrate');
 window.Vue = require('vue');
-
+window.owl.carousel = require('owl.carousel/dist/assets/owl.carousel.css');
+window.Superfish = require('superfish/dist/js/superfish');
+window.HoverIntent = require('superfish/dist/js/hoverIntent');
+window.VenoBox = require('venobox/venobox/venobox');
+window.WOW = require('wowjs/dist/wow');
 
 /**
  * The following block of code may be used to automatically register your

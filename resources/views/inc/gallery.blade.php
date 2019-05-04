@@ -9,8 +9,8 @@
         </div>
     </div>
     <div class="owl-carousel gallery-carousel">
-        <a href="{{asset("image/gallery/1.jpg")}}" class="venobox" data-gall="gallery-carousel"><img src="{{asset("image/gallery/1.jpg")}}" alt=""></a>
-        <a href="{{asset("image/gallery/2.jpg")}}" class="venobox" data-gall="gallery-carousel"><img src="{{asset("image/gallery/2.jpg")}}" alt=""></a>
+        <a href="{{asset("/image/gallery/1.jpg")}}" class="venobox" data-gall="gallery-carousel"><img src="{{asset("/image/gallery/1.jpg")}}" alt=""></a>
+        <a href="{{asset("/image/gallery/2.jpg")}}" class="venobox" data-gall="gallery-carousel"><img src="{{asset("image/gallery/2.jpg")}}" alt=""></a>
         <a href="{{asset("image/gallery/3.jpg")}}" class="venobox" data-gall="gallery-carousel"><img src="{{asset("image/gallery/3.jpg")}}" alt=""></a>
         <a href="{{asset("image/gallery/4.jpg")}}" class="venobox" data-gall="gallery-carousel"><img src="{{asset("image/gallery/4.jpg")}}" alt=""></a>
         <a href="{{asset("image/gallery/5.jpg")}}" class="venobox" data-gall="gallery-carousel"><img src="{{asset("image/gallery/5.jpg")}}" alt=""></a>
