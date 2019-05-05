@@ -33,7 +33,8 @@
 
 @yield('content')
 <!-- Template Main Javascript File -->
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
 <script src="{{asset("/js/app.js")}}"></script>
 
 

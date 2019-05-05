@@ -1,3 +1,5 @@
+import 'owl.carousel';
+
 jQuery(document).ready(function( $ ) {
 
   // Back to top button
@@ -92,7 +94,7 @@ jQuery(document).ready(function( $ ) {
 
   // Smooth scroll for the menu and links with .scrollto classes
   $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
       var target = $(this.hash);
       if (target.length) {
         var top_space = 0;
@@ -138,9 +140,7 @@ jQuery(document).ready(function( $ ) {
   password.onchange = validatePassword;
   confirm_password.onkeyup = validatePassword;
 
-  $(document).ready(function(){
-    $(".owl-carousel").owlCarousel();
-  });
+
   // Gallery carousel (uses the Owl Carousel library)
   $(".gallery-carousel").owlCarousel({
     autoplay: true,
@@ -149,6 +149,5 @@ jQuery(document).ready(function( $ ) {
     center:true,
     responsive: { 0: { items: 1 }, 768: { items: 3 }, 992: { items: 4 }, 1200: {items: 5}
     }
-
   });
 });
