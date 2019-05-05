@@ -1,30 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Colossus Project</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <!-- Favicons -->
-    <link href="{{asset("image/favicon.png")}}" rel="icon">
-    <link href="{{asset("image/apple-touch-icon.png")}}"  rel="apple-touch-icon">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
-          rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-    <!-- Main Stylesheet File -->
-    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
-    <style></style>
-</head>
-<body>
-
-
 <!--==========================
     Header
   ============================-->
@@ -40,15 +13,15 @@
                 <li><a href="#speakers">Žaidimai</a></li>
                 <li><a href="#gallery">Galerija</a></li>
                 <li><a href="#supporters">Sponsors</a></li>
-                <li class="buy-tickets"><a href="" data-toggle="modal" data-target="#modalLRForm" >Prisijungti</a></li>
+                <li class="buy-tickets"><a href="" data-toggle="modal" data-target="#modalLRForm">Prisijungti</a></li>
             </ul>
         </nav><!-- #nav-menu-container -->
     </div>
 </header><!-- #header -->
 
 <!--==========================
-      Login Modal
-============================-->
+       Login Modal
+ ============================-->
 <!--Modal: Login / Register Form-->
 <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog cascading-modal" role="document">
@@ -59,11 +32,13 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+                        <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i
+                                    class="fas fa-user mr-1"></i>
                             Prisijungti</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+                        <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i
+                                    class="fas fa-user-plus mr-1"></i>
                             Registracija</a>
                     </li>
                 </ul>
@@ -76,13 +51,15 @@
                         <br>
                         <br>
                         <!--Body-->
-                        <div style="text-align: center;">
+                        <center>
                             <form class="form-signin text col-md-6">
                                 <label for="inputUsername" class="sr-only">Slapyvardis</label>
-                                <input type="text" id="inputUsername" class="form-control form-control-sm" placeholder="Slapyvardis" required autofocus>
+                                <input type="text" id="inputUsername" class="form-control form-control-sm"
+                                       placeholder="Slapyvardis" required autofocus>
                                 <br>
                                 <label for="inputPassword" class="sr-only">Slaptažodis</label>
-                                <input type="password" id="inputPassword" class="form-control form-control-sm" placeholder="Slaptažodis" required>
+                                <input type="password" id="inputPassword" class="form-control form-control-sm"
+                                       placeholder="Slaptažodis" required>
                                 <br>
                                 <br>
                                 <div class="checkbox mb-3">
@@ -101,9 +78,11 @@
                                 <div class="options text-center text-md-right mt-1">
                                     <p class="text-sm-left">Užmiršai <a href="#" class="blue-text">Slaptažodį?</a></p>
                                 </div>
-                                <button type="button" class="btn btn-secondary btn-lg btn-sm waves-effect ml-auto" data-dismiss="modal">Uždaryti</button>
+                                <button type="button" class="btn btn-secondary btn-lg btn-sm waves-effect ml-auto"
+                                        data-dismiss="modal">Uždaryti
+                                </button>
                             </div>
-                        </div>
+                        </center>
                     </div>
                     <!--/.Panel 7-->
 
@@ -113,19 +92,24 @@
                         <br>
                         <br>
                         <!--Body-->
-                        <div style="text-align: center;">
-                            <form class="form-signin text col-md-6" method="POST">
+                        <center>
+                            <form class="form-signin text col-md-6" action="user_control_reg.php" method="POST">
                                 <label for="username" class="sr-only">username</label>
-                                <input type="text" id="username" name="username" class="form-control form-control-sm" placeholder="Vartotojo Vardas" required autofocus>
+                                <input type="text" id="username" name="username" class="form-control form-control-sm"
+                                       placeholder="Vartotojo Vardas" required autofocus>
                                 <br>
                                 <label for="email" class="sr-only">email</label>
-                                <input type="email" id="email" name="email" class="form-control form-control-sm" placeholder="El. pašto adresas" required>
+                                <input type="email" id="email" name="email" class="form-control form-control-sm"
+                                       placeholder="El. pašto adresas" required>
                                 <br>
                                 <label for="password" class="sr-only">password</label>
-                                <input type="password" id="password" name="password" class="form-control form-control-sm" placeholder="Slaptažodis" required>
+                                <input type="password" id="password" name="password"
+                                       class="form-control form-control-sm" placeholder="Slaptažodis" required>
                                 <br>
                                 <label for="password" class="sr-only">password</label>
-                                <input type="password" id="confirm_password" name="password" class="form-control form-control-sm" placeholder="Pakartokite slaptažodi" required>
+                                <input type="password" id="confirm_password" name="password"
+                                       class="form-control form-control-sm" placeholder="Pakartokite slaptažodi"
+                                       required>
                                 <br>
                                 <br>
                                 <button class="login" type="submit">Registruotis</button>
@@ -136,9 +120,11 @@
                             <div class="modal-footer">
                                 <div class="options text-right">
                                 </div>
-                                <button type="button" class="btn btn-secondary btn-lg btn-sm waves-effect ml-auto" data-dismiss="modal">Uždaryti</button>
+                                <button type="button" class="btn btn-secondary btn-lg btn-sm waves-effect ml-auto"
+                                        data-dismiss="modal">Uždaryti
+                                </button>
                             </div>
-                        </div>
+                        </center>
                     </div>
                     <!--/.Panel 8-->
                 </div>
@@ -147,5 +133,3 @@
         <!--/.Content-->
     </div>
 </div>
-</body>
-</html>

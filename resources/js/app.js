@@ -6,6 +6,7 @@
 
 require('./bootstrap');
 require('./main');
+require('./easing.min');
 
 window.Easing = require('easing-js');
 window.Vue = require('vue');
