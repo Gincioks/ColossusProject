@@ -126,15 +126,26 @@ jQuery(document).ready(function( $ ) {
     }
   });
 
+  // Password ex
   var password = document.getElementById("password")
-      , confirm_password = document.getElementById("confirm_password");
+      , confirm_password = document.getElementById("password-confirm");
+  var letters = /^[0-9a-zA-Z]+$/;
 
   function validatePassword(){
     if(password.value !== confirm_password.value) {
       confirm_password.setCustomValidity("Slaptažodžiai nesutampa");
-    } else {
-      confirm_password.setCustomValidity('');
+    } else if(!password.value.match(letters))
+    {
+      confirm_password.setCustomValidity("Slaptažodis turi susidaryti iš lotynišku simbolių");
     }
+    else if (password.value==='' || password.value.length<=7)
+    {
+      confirm_password.setCustomValidity("Slaptažodis turi susidaryti bent 8 simboliai");
+    }
+    else
+      {
+        confirm_password.setCustomValidity("");
+      }
   }
 
   password.onchange = validatePassword;
