@@ -54469,12 +54469,7 @@ jQuery(document).ready(function ($) {
     } else {
       $('#header').removeClass('header-scrolled');
     }
-  });
-
-  if ($(window).scrollTop() > 100) {
-    $('#header').addClass('header-scrolled');
-  } // Real view height for mobile devices
-
+  }); // Real view height for mobile devices
 
   if (window.matchMedia("(max-width: 767px)").matches) {
     $('#intro').css({
@@ -54493,6 +54488,13 @@ jQuery(document).ready(function ($) {
   }); // Initiate superfish on nav menu
 
   $('.nav-menu').superfish({
+    animation: {
+      opacity: 'show'
+    },
+    speed: 400
+  }); // Initiate superfish on nav menu
+
+  $('.nav-menulogin').superfish({
     animation: {
       opacity: 'show'
     },

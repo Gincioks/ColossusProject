@@ -18973,6 +18973,48 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Header Login
+--------------------------------------------------------------*/
+
+#headerlogin {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 997;
+  background: rgba(6, 12, 34, 0.98);
+  height: 70px;
+  padding: 15px 0;
+  transition: all 0.5s;
+}
+
+#headerlogin #logo h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 6px 0;
+  line-height: 1;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#headerlogin #logo h1 span {
+  color: #f82249;
+}
+
+#headerlogin #logo h1 a,
+#headerlogin #logo h1 a:hover {
+  color: #fff;
+}
+
+#headerlogin #logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
+
+/*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 
@@ -20374,6 +20416,29 @@ body.mobile-nav-active #mobile-nav-toggle {
   #subscribe button {
     margin-top: 10px;
   }
+}
+
+.deposit {
+  color: #fff;
+  background: #f82249;
+  padding: 15px 70px;
+  border-radius: 50px;
+  border: 2px solid #f82249;
+  transition: all ease-in-out 0.3s;
+  font-weight: 500;
+  margin-left: 8px;
+  margin-top: 2px;
+  line-height: 1;
+  font-size: 13px;
+}
+
+.deposit a:hover {
+  background: none;
+}
+
+.deposit:hover a:before,
+.deposit a:before {
+  visibility: hidden;
 }
 
 .navbar-laravel {
