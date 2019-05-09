@@ -18,4 +18,7 @@ Route::get('/', function () {
 
 Auth::routes(['verify' => true]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('home', 'HomeController@profile')->name('profile');
+Route::post('home', 'HomeController@imageUploadPost')->name('profile.upload');
+
+
