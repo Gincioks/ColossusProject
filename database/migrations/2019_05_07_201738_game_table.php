@@ -16,10 +16,12 @@ class GameTable extends Migration
         Schema::create('games', function (Blueprint $table)
         {
             $table->bigIncrements('id');
+            $table->string('user_id');
             $table->string('game');
             $table->string('game_play');
             $table->string('balance');
             $table->string('privileges');
+            $table->timestamps();
         });
     }
     /**

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Games;
 use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
@@ -63,10 +64,55 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+
+        $user->games = Games::create([
+            'user_id' => $user->id,
+            'game' => 'CSGO',
+            'game_play' => '0',
+            'balance' => '0',
+            'privileges' => 'Žaidėjas',
+        ]);
+        $user->games = Games::create([
+            'user_id' => $user->id,
+            'game' => 'CS16',
+            'game_play' => '0',
+            'balance' => '0',
+            'privileges' => 'Žaidėjas',
+        ]);
+        $user->games = Games::insert([
+            'user_id' => $user->id,
+            'game' => 'Mc',
+            'game_play' => '0',
+            'balance' => '0',
+            'privileges' => 'Žaidėjas',
+        ]);
+        $user->games = Games::insert([
+            'user_id' => $user->id,
+            'game' => 'Samp',
+            'game_play' => '0',
+            'balance' => '0',
+            'privileges' => 'Žaidėjas',
+        ]);
+        $user->games = Games::insert([
+            'user_id' => $user->id,
+            'game' => 'Rust',
+            'game_play' => '0',
+            'balance' => '0',
+            'privileges' => 'Žaidėjas',
+        ]);
+        $user->games = Games::insert([
+            'user_id' => $user->id,
+            'game' => 'GM',
+            'game_play' => '0',
+            'balance' => '0',
+            'privileges' => 'Žaidėjas',
+        ]);
+
+        return $user;
     }
 }

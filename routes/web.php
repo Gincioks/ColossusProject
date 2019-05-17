@@ -11,6 +11,7 @@
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -18,7 +19,11 @@ Route::get('/', function () {
 
 Auth::routes(['verify' => true]);
 
-Route::get('home', 'HomeController@profile')->name('profile');
-Route::post('home', 'HomeController@imageUploadPost')->name('profile.upload');
+Route::get('home', 'HomeController@index')->name('home');
+
+
+Route::get('profile', 'UserController@profile');
+Route::post('profile', 'UserController@update_avatar');
+Route::patch('profile/{id}', 'UserController@update');
 
 

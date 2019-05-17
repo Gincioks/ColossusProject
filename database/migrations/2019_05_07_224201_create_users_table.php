@@ -17,9 +17,9 @@ class CreateUsersTable extends Migration
             $table->bigIncrements('id');
             $table->string('permission')->default('Narys');
             $table->string('name')->unique();
-            $table->string('full_name')->nullable();
+            $table->string('full_name')->default('Nenurodyta');
             $table->string('email')->unique();
-            $table->string('phone_number')->default('+3706');
+            $table->string('phone_number')->default('Nenurodyta');
             $table->string('sex')->default('Nenurodyta');
             $table->string('birthday')->default('Nenurodyta');
             $table->timestamp('email_verified_at')->nullable();
